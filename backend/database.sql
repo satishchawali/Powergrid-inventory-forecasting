@@ -1,41 +1,21 @@
--- ============================================
--- Power Grid Inventory Demand Forecasting System
--- Database: MySQL
--- ============================================
-
--- 1. Create Database
-CREATE DATABASE IF NOT EXISTS powergrid_inventory;
-USE powergrid_inventory;
-
--- ============================================
--- 2. Users Table (Authentication & Roles)
--- ============================================
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     full_name VARCHAR(100) NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
     password_hash VARCHAR(255) NOT NULL,
-    role ENUM('ADMIN', 'MANAGER', 'ANALYST') DEFAULT 'ANALYST',
+    role ENUM('ADMIN') DEFAULT 'ADMIN',
     is_active BOOLEAN DEFAULT TRUE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
--- ============================================
--- 3. Power Projects Table
--- ============================================
 CREATE TABLE power_projects (
     project_id INT AUTO_INCREMENT PRIMARY KEY,
     project_name VARCHAR(150) NOT NULL,
-    project_type VARCHAR(50),
+    project_type VARCHAR(50), -- Transmission / Substation
     region VARCHAR(50),
     start_date DATE,
     expected_end_date DATE,
     project_status ENUM('PLANNED','ONGOING','COMPLETED','DELAYED')
 );
-
--- ============================================
--- 4. Inventory Items Table
--- ============================================
 CREATE TABLE inventory_items (
     item_id INT AUTO_INCREMENT PRIMARY KEY,
     item_name VARCHAR(150) NOT NULL,
@@ -44,10 +24,6 @@ CREATE TABLE inventory_items (
     unit VARCHAR(20),
     reorder_level INT
 );
-
--- ============================================
--- 5. Project Inventory Requirement Table
--- ============================================
 CREATE TABLE project_inventory_requirement (
     requirement_id INT AUTO_INCREMENT PRIMARY KEY,
     project_id INT,
@@ -57,10 +33,6 @@ CREATE TABLE project_inventory_requirement (
     FOREIGN KEY (project_id) REFERENCES power_projects(project_id),
     FOREIGN KEY (item_id) REFERENCES inventory_items(item_id)
 );
-
--- ============================================
--- 6. Inventory Stock Table
--- ============================================
 CREATE TABLE inventory_stock (
     stock_id INT AUTO_INCREMENT PRIMARY KEY,
     item_id INT,
@@ -69,10 +41,6 @@ CREATE TABLE inventory_stock (
     last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (item_id) REFERENCES inventory_items(item_id)
 );
-
--- ============================================
--- 7. Demand History Table (ML Training Data)
--- ============================================
 CREATE TABLE demand_history (
     demand_id INT AUTO_INCREMENT PRIMARY KEY,
     item_id INT,
@@ -82,10 +50,6 @@ CREATE TABLE demand_history (
     FOREIGN KEY (item_id) REFERENCES inventory_items(item_id),
     FOREIGN KEY (project_id) REFERENCES power_projects(project_id)
 );
-
--- ============================================
--- 8. Maintenance Records Table
--- ============================================
 CREATE TABLE maintenance_records (
     maintenance_id INT AUTO_INCREMENT PRIMARY KEY,
     item_id INT,
@@ -94,10 +58,6 @@ CREATE TABLE maintenance_records (
     downtime_hours INT,
     FOREIGN KEY (item_id) REFERENCES inventory_items(item_id)
 );
-
--- ============================================
--- 9. Demand Forecast Table (ML Output)
--- ============================================
 CREATE TABLE demand_forecast (
     forecast_id INT AUTO_INCREMENT PRIMARY KEY,
     item_id INT,
@@ -110,13 +70,5 @@ CREATE TABLE demand_forecast (
     FOREIGN KEY (project_id) REFERENCES power_projects(project_id)
 );
 
--- ============================================
--- 10. Sample Admin User
--- ============================================
-INSERT INTO users (full_name, email, password_hash, role)
-VALUES (
-    'Admin User',
-    'admin@powergrid.com',
-    '$2b$12$replace_with_bcrypt_hash',
-    'ADMIN'
-);
+
+
