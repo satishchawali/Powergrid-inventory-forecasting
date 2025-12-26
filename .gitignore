@@ -1,0 +1,65 @@
+# =========================
+# OS & Editor files
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# =========================
+# Python cache & env
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# =========================
+# Virtual Environments (ALL)
+# =========================
+venv/
+.env/
+.env.*
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Secrets
+# =========================
+*.env
+config.py
+secrets.json
+
+# =========================
+# ML artifacts (DO NOT PUSH)
+# =========================
+*.pkl
+*.joblib
+*.h5
+*.onnx
+
+# =========================
+# Dataset files (optional)
+# =========================
+data/*.csv
+data/*.xlsx
+
+# =========================
+# Node / React
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Build outputs
+# =========================
+build/
+dist/

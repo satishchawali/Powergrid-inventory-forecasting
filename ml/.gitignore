@@ -1,0 +1,13 @@
+# Virtual env
+venv/
+
+# Trained models
+*.pkl
+*.joblib
+
+# Data
+data/*.csv
+data/*.xlsx
+
+# Cache
+__pycache__/
