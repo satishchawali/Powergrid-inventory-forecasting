@@ -4,7 +4,7 @@ import numpy as np
 
 # Load model dynamically
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-MODEL_PATH = os.path.join(BASE_DIR, "ml", "inventory_forecast_model.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "ml/models", "inventory_forecast_model.pkl")
 
 if not os.path.exists(MODEL_PATH):
     raise FileNotFoundError(f"Model not found at {MODEL_PATH}")
