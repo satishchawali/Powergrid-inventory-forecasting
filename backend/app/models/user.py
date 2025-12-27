@@ -16,3 +16,4 @@ class User(Base):
     role = Column(Enum(UserRole), default=UserRole.ADMIN)
     is_active = Column(Boolean, default=True)
     created_at = Column(TIMESTAMP, server_default=func.now())
+    last_login_at = Column(TIMESTAMP, nullable=True)
