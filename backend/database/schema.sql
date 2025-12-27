@@ -72,3 +72,5 @@ CREATE TABLE demand_forecast (
 
 
 
+ALTER TABLE users
+ADD COLUMN last_login TIMESTAMP NULL AFTER is_active;
