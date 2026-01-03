@@ -11,6 +11,7 @@ class User(Base):
 
     user_id = Column(Integer, primary_key=True, index=True)
     full_name = Column(String(100), nullable=False)
+    username = Column(String(50), unique=True, nullable=False, index=True)
     email = Column(String(100), unique=True, nullable=False)
     password_hash = Column(String(255), nullable=False)
     role = Column(Enum(UserRole), default=UserRole.ADMIN)
