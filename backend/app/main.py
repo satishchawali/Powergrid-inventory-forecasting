@@ -1,4 +1,4 @@
-from app.routes import forecast
+from app.routes import forecast, auth
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -13,6 +13,7 @@ app.add_middleware(
 )
 
 app.include_router(forecast.router)
+app.include_router(auth.router)
 
 @app.get("/")
 def home():
