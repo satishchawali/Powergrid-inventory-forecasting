@@ -2,36 +2,64 @@
   text-align: center;
 }
 
+/* Remove default React spinning logo styles */
 .App-logo {
-  height: 40vmin;
+  height: 80px;
+  /* new logo size */
   pointer-events: none;
+  animation: none;
+  /* remove spin */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Header styling */
 .App-header {
   background-color: #282c34;
+  /* keep dark theme */
   min-height: 100vh;
+  /* full page height for forecast page */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  /* start from top */
+  padding-top: 40px;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
+/* Logo + site name container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* center horizontally */
+  gap: 15px;
+  /* space between logo and name */
+  padding: 20px 0;
+}
+
+.logo {
+  height: 100px;
+  /* logo size */
+}
+
+.site-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Links */
 .App-link {
   color: #61dafb;
 }
 
+/* Remove old keyframe spinning logo animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
