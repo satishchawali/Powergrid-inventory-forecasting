@@ -1,14 +1,15 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
-import logo from './logo.svg';
+import { Routes, Route } from 'react-router-dom';
+import logo from './logo.png';
 import './App.css';
 import ForecastPage from './pages/ForecastPage';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
-
+import LoginPage from './pages/Login/LoginPage';
+import RegisterPage from './pages/Register/RegisterPage';
+import HomePage from './pages/Home/HomePage';
 function App() {
   return (
     <div className="App">
       <Routes>
+        <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/forecast" element={
@@ -22,7 +23,7 @@ function App() {
             </main>
           </>
         } />
-        <Route path="/" element={<Navigate to="/login" replace />} />
+
       </Routes>
     </div>
   );
