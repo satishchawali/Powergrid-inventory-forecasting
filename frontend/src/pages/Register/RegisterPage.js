@@ -22,10 +22,13 @@ export default function RegisterPage() {
             return;
         }
 
-        //await mockRegister(form);
-        await registerUser(form);
-        alert("Registered successfully 🎉");
-        navigate("/login");
+        try {
+            await registerUser(form);
+            alert("Registered successfully 🎉");
+            navigate("/login");
+        } catch (error) {
+            alert(error.message);
+        }
     };
 
     return (
