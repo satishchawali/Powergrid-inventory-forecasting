@@ -23,7 +23,16 @@ export const registerUser = async (formData) => {
         body: JSON.stringify(formData)
     });
 
-    if (!response.ok) throw new Error("Registration failed");
+    if (!response.ok) {
+        const errorData = await response.json();
+        let errorMessage = "Registration failed";
+        if (errorData.detail) {
+            errorMessage = Array.isArray(errorData.detail)
+                ? errorData.detail.map(err => err.msg).join(", ")
+                : errorData.detail;
+        }
+        throw new Error(errorMessage);
+    }
     return await response.json();
 };
 

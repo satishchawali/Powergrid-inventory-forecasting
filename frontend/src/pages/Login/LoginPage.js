@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 // import API from "../services/api";
-import { mockLogin } from "../../services/mockAuth";
+//import { mockLogin } from "../../services/mockAuth";
 import logo from "../../logo.png";
 import "./LoginPage.css";
+import { loginUser } from "../../services/api";
 
 export default function LoginPage() {
     const [username, setUsername] = useState("");
@@ -33,7 +34,8 @@ export default function LoginPage() {
         }
 
         try {
-            const res = await mockLogin(username, password);
+            // const res = await mockLogin(username, password);
+            const res = await loginUser(username, password);
             localStorage.setItem("token", res.access_token);
             navigate("/forecast");
         } catch {
