@@ -5,6 +5,8 @@ import ForecastPage from './pages/ForecastPage';
 import LoginPage from './pages/Login/LoginPage';
 import RegisterPage from './pages/Register/RegisterPage';
 import HomePage from './pages/Home/HomePage';
+import DashboardPage from "./pages/Dashboard/DashboardPage";
+
 function App() {
   return (
     <div className="App">
@@ -23,7 +25,7 @@ function App() {
             </main>
           </>
         } />
-
+        <Route path="/dashboard" element={<DashboardPage />} />
       </Routes>
     </div>
   );
