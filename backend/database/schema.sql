@@ -18,13 +18,15 @@ CREATE TABLE power_projects (
     project_status ENUM('PLANNED','ONGOING','COMPLETED','DELAYED')
 );
 CREATE TABLE inventory_items (
-    item_id INT AUTO_INCREMENT PRIMARY KEY,
-    item_name VARCHAR(150) NOT NULL,
-    equipment_rating VARCHAR(50),
-    voltage_level VARCHAR(50),
+    item_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    category VARCHAR(100),
+    quantity FLOAT,
     unit VARCHAR(20),
-    reorder_level INT
+    threshold FLOAT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
 CREATE TABLE project_inventory_requirement (
     requirement_id INT AUTO_INCREMENT PRIMARY KEY,
     project_id INT,
@@ -72,6 +74,12 @@ CREATE TABLE demand_forecast (
 );
 
 
+CREATE TABLE reports (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(200),
+    status VARCHAR(50),
+    created_at DATE
+);
 
 ALTER TABLE users
 ADD COLUMN last_login TIMESTAMP NULL AFTER is_active;
