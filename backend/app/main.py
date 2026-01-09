@@ -1,4 +1,4 @@
-from app.routes import forecast, auth
+from app.routes import forecast, auth, dashboard, inventory
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -14,6 +14,8 @@ app.add_middleware(
 
 app.include_router(forecast.router)
 app.include_router(auth.router)
+app.include_router(dashboard.router)
+app.include_router(inventory.router)
 
 @app.get("/")
 def home():
