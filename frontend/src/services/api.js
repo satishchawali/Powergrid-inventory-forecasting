@@ -47,3 +47,27 @@ export const getForecast = async (day) => {
     if (!response.ok) throw new Error(`Error: ${response.status}`);
     return await response.json();
 };
+
+export const getInventory = async () => {
+    const response = await fetch(`${API_URL}/inventory/`, {
+        headers: {
+            "Content-Type": "application/json",
+            ...getAuthHeaders()
+        }
+    });
+
+    if (!response.ok) throw new Error(`Error: ${response.status}`);
+    return await response.json();
+};
+
+export const getDashboard = async () => {
+    const response = await fetch(`${API_URL}/dashboard/`, {
+        headers: {
+            "Content-Type": "application/json",
+            ...getAuthHeaders()
+        }
+    });
+
+    if (!response.ok) throw new Error(`Error: ${response.status}`);
+    return await response.json();
+};
