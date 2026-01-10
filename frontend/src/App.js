@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import logo from './logo.png';
+import logo from './assets/logo.png';
 import './App.css';
 import ForecastPage from './pages/ForecastPage';
 import LoginPage from './pages/Login/LoginPage';
