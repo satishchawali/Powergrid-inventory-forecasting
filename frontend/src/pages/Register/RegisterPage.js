@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "../../logo.png";
+import logo from "../../assets/logo.png";
 import "./RegisterPage.css";
 import { registerUser } from "../../services/api";
 
