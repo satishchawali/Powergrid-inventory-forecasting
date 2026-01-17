@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from "react";
 
 const ForecastDisplay = ({ data }) => {
+
+    useEffect(() => {
+        document.title = "Forcast - Forcastify";
+    }, []);
+
     if (!data) return null;
 
     return (
@@ -8,7 +13,10 @@ const ForecastDisplay = ({ data }) => {
             <h3>Forecast Result</h3>
             <p><strong>Item:</strong> {data.item}</p>
             <p><strong>Day:</strong> {data.day}</p>
-            <p><strong>Forecasted Demand:</strong> {data.forecasted_demand} {data.unit}</p>
+            <p>
+                <strong>Forecasted Demand:</strong>{" "}
+                {data.forecasted_demand} {data.unit}
+            </p>
         </div>
     );
 };
