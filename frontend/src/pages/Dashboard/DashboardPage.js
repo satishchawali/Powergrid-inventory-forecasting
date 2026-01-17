@@ -1,7 +1,10 @@
+import { useState, useEffect } from "react";
+import { getDashboard } from "../../services/api";
 import "./DashboardPage.css";
 import { useEffect } from "react";
 
 function DashboardPage() {
+<<<<<<< HEAD
     useEffect(() => {
         document.title = "Dashboard - Forcastify";
     }, []);
@@ -11,45 +14,59 @@ function DashboardPage() {
         { title: "Recent Reports", value: 5, subtitle: "Generated this month" },
         { title: "System Status", value: "Online", subtitle: "All systems operational" }
     ];
+=======
+    const [stats, setStats] = useState([]);
+    const [materials, setMaterials] = useState([]);
+    const [reports, setReports] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+>>>>>>> origin/main
 
-    const materials = [
-        {
-            name: "Galvanized Steel Towers",
-            category: "Tower Components",
-            quantity: "245 Units",
-            status: "In Stock"
-        },
-        {
-            name: "ACSR Conductor Cable",
-            category: "Transmission Line",
-            quantity: "12.5 Kilometers",
-            status: "Low Stock"
-        },
-        {
-            name: "Porcelain Insulators",
-            category: "Sub-station Fittings",
-            quantity: "1250 Units",
-            status: "In Stock"
-        }
-    ];
+    useEffect(() => {
+        const fetchDashboardData = async () => {
+            try {
+                const data = await getDashboard();
 
-    const reports = [
-        {
-            title: "Q4 2024 Material Demand Forecast",
-            status: "Completed",
-            date: "2024-01-15"
-        },
-        {
-            title: "Current Inventory Status Report",
-            status: "Completed",
-            date: "2024-01-16"
-        },
-        {
-            title: "Material Usage Analysis - 2024",
-            status: "In Progress",
-            date: "2024-01-14"
-        }
-    ];
+                // Map API response to the format expected by the UI
+                const statsData = [
+                    { title: "Total Materials", value: data.total_materials, subtitle: "Active inventory items" },
+                    { title: "Low Stock Items", value: data.low_stock_items, subtitle: "Require attention" },
+                    { title: "Recent Reports", value: data.recent_reports, subtitle: "Generated this month" },
+                    { title: "System Status", value: data.system_status, subtitle: "All systems operational" }
+                ];
+
+                setStats(statsData);
+                setMaterials(data.materials);
+                setReports(data.reports);
+            } catch (err) {
+                console.error("Error fetching dashboard data:", err);
+                setError("Failed to load dashboard data. Please try again later.");
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchDashboardData();
+    }, []);
+
+    if (loading) {
+        return (
+            <div className="dashboard-container loading-container">
+                <div className="loader"></div>
+                <h1>Loading Dashboard...</h1>
+            </div>
+        );
+    }
+
+    if (error) {
+        return (
+            <div className="dashboard-container error-container">
+                <h1>Error</h1>
+                <p>{error}</p>
+                <button onClick={() => window.location.reload()}>Retry</button>
+            </div>
+        );
+    }
 
     return (
         <div className="dashboard-container">
