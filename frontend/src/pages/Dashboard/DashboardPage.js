@@ -1,6 +1,10 @@
 import "./DashboardPage.css";
+import { useEffect } from "react";
 
 function DashboardPage() {
+    useEffect(() => {
+        document.title = "Dashboard - Forcastify";
+    }, []);
     const stats = [
         { title: "Total Materials", value: 5, subtitle: "Active inventory items" },
         { title: "Low Stock Items", value: 1, subtitle: "Require attention" },
