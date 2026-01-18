@@ -3,8 +3,13 @@ import { useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.png"
 import "./LoginPage.css";
 import { loginUser } from "../../services/api";
+import { useEffect } from "react";
 
 export default function LoginPage() {
+    useEffect(() => {
+        document.title = "Login - Forcastify";
+    }, []);
+
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
@@ -21,7 +26,9 @@ export default function LoginPage() {
         try {
             const res = await loginUser(username, password);
             localStorage.setItem("token", res.access_token);
-            navigate("/forecast");
+            localStorage.setItem("username", res.username);
+            localStorage.setItem("email", res.email);
+            navigate("/dashboard");
         } catch {
             alert("Login failed ❌");
         }

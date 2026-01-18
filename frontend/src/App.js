@@ -1,31 +1,30 @@
-import { Routes, Route } from 'react-router-dom';
-import logo from './assets/logo.png';
-import './App.css';
-import ForecastPage from './pages/ForecastPage';
-import LoginPage from './pages/Login/LoginPage';
-import RegisterPage from './pages/Register/RegisterPage';
-import HomePage from './pages/Home/HomePage';
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+
+import LoginPage from "./pages/Login/LoginPage";
+import RegisterPage from "./pages/Register/RegisterPage";
+import HomePage from "./pages/Home/HomePage";
 import DashboardPage from "./pages/Dashboard/DashboardPage";
+import ForecastPage from "./pages/ForecastPage";
+
+import DashboardLayout from "./components/Layout/DashboardLayout";
 
 function App() {
   return (
     <div className="App">
       <Routes>
+
+        {/* PUBLIC ROUTES (NO SIDEBAR) */}
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
-        <Route path="/forecast" element={
-          <>
-            <header className="App-header">
-              <img src={logo} className="App-logo" alt="logo" />
-              <h1>Power Grid Inventory Forecasting</h1>
-            </header>
-            <main>
-              <ForecastPage />
-            </main>
-          </>
-        } />
-        <Route path="/dashboard" element={<DashboardPage />} />
+
+        {/* DASHBOARD ROUTES (WITH SIDEBAR) */}
+        <Route element={<DashboardLayout />}>
+          <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/forecast" element={<ForecastPage />} />
+        </Route>
+
       </Routes>
     </div>
   );
