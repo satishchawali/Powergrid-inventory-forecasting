@@ -1,13 +1,26 @@
 import { useState, useEffect } from "react";
 import { getDashboard } from "../../services/api";
 import "./DashboardPage.css";
+import { useEffect } from "react";
 
 function DashboardPage() {
+<<<<<<< HEAD
+    useEffect(() => {
+        document.title = "Dashboard - Forcastify";
+    }, []);
+    const stats = [
+        { title: "Total Materials", value: 5, subtitle: "Active inventory items" },
+        { title: "Low Stock Items", value: 1, subtitle: "Require attention" },
+        { title: "Recent Reports", value: 5, subtitle: "Generated this month" },
+        { title: "System Status", value: "Online", subtitle: "All systems operational" }
+    ];
+=======
     const [stats, setStats] = useState([]);
     const [materials, setMaterials] = useState([]);
     const [reports, setReports] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+>>>>>>> origin/main
 
     useEffect(() => {
         const fetchDashboardData = async () => {
