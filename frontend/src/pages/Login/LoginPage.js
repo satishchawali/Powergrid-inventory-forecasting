@@ -1,32 +1,22 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-// import API from "../services/api";
-//import { mockLogin } from "../../services/mockAuth";
-import logo from "../../logo.png";
+import logo from "../../assets/logo.png"
 import "./LoginPage.css";
 import { loginUser } from "../../services/api";
+import { useEffect } from "react";
 
 export default function LoginPage() {
+    useEffect(() => {
+        document.title = "Login - Forcastify";
+    }, []);
+
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
 
-    /* Backend version (use later)
-    const login = async () => {
-      try {
-        const res = await API.post("/auth/login", {
-          username,
-          password
-        });
-        localStorage.setItem("token", res.data.access_token);
-        navigate("/forecast");
-      } catch (err) {
-        alert("Invalid credentials");
-      }
-    };
-    */
+    const usernameRef = useRef(null);
+    const passwordRef = useRef(null);
 
-    // Mock version (current)
     const login = async () => {
         if (!username || !password) {
             alert("Please fill all fields");
@@ -34,10 +24,11 @@ export default function LoginPage() {
         }
 
         try {
-            // const res = await mockLogin(username, password);
             const res = await loginUser(username, password);
             localStorage.setItem("token", res.access_token);
-            navigate("/forecast");
+            localStorage.setItem("username", res.username);
+            localStorage.setItem("email", res.email);
+            navigate("/dashboard");
         } catch {
             alert("Login failed ❌");
         }
@@ -51,17 +42,31 @@ export default function LoginPage() {
                 <p className="subtitle">Login to continue</p>
 
                 <input
+                    ref={usernameRef}
                     type="text"
                     placeholder="Username"
                     value={username}
+                    autoComplete="off"
                     onChange={(e) => setUsername(e.target.value)}
+                    onKeyDown={(e) => {
+                        if (e.key === "Enter") {
+                            passwordRef.current.focus();
+                        }
+                    }}
                 />
 
                 <input
+                    ref={passwordRef}
                     type="password"
                     placeholder="Password"
                     value={password}
+                    autoComplete="new-password"
                     onChange={(e) => setPassword(e.target.value)}
+                    onKeyDown={(e) => {
+                        if (e.key === "Enter") {
+                            login(); // submit on Enter
+                        }
+                    }}
                 />
 
                 <button className="login-btn" onClick={login}>

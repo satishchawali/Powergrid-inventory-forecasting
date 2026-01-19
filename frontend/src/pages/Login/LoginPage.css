@@ -28,7 +28,7 @@
 }
 
 .login-card input {
-    width: 100%;
+    width: 90%;
     padding: 11px;
     margin-bottom: 15px;
     border-radius: 8px;
@@ -50,10 +50,11 @@
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
+    align-items: center;
 }
 
 .login-btn:hover {
-    background: #26619c;
+    background: #033d76;
 }
 
 .register-text {
@@ -68,8 +69,12 @@
     font-weight: bold;
 }
 
+.register-text span:hover {
+    text-decoration: underline;
+}
+
 .card-logo {
-    width: 100px;
-    height: auto;
-    margin-bottom: 15px;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
 }
