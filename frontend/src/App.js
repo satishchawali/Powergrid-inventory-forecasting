@@ -6,6 +6,7 @@ import RegisterPage from "./pages/Register/RegisterPage";
 import HomePage from "./pages/Home/HomePage";
 import DashboardPage from "./pages/Dashboard/DashboardPage";
 import ForecastPage from "./pages/ForecastPage";
+import SettingPage from "./pages/Settings/SettingsPage"
 
 import DashboardLayout from "./components/Layout/DashboardLayout";
 
@@ -23,6 +24,8 @@ function App() {
         <Route element={<DashboardLayout />}>
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/forecast" element={<ForecastPage />} />
+          <Route path="/settings" element={<SettingPage />} />
+
         </Route>
 
       </Routes>
