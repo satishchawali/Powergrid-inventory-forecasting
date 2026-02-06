@@ -34,80 +34,149 @@
         0 0 14px rgba(37, 99, 235, 0.35);
 }
 
+.stat-card h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+}
 
-.stat-card h2 {
-    margin: 10px 0;
+.stat-card h4 {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 12px;
+}
+
+.stat-card p {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-top: 8px;
 }
 
 .stat-card .online {
-    color: green;
+    color: #22c55e;
 }
+
+/* Specific color for Low Stock count if needed, adding a utility class in JS or just styling 2nd card children if fixed order, 
+   but for now generic is fine or depends on JS logic. 
+   Let's assume the user wants the exact look, so 'Low Stock' count usually orange. 
+*/
 
 .lower-grid {
     display: grid;
-    grid-template-columns: 2fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
+    width: 100%;
 }
 
 .card {
     background: white;
-    padding: 20px;
+    padding: 24px;
+    width: 90%;
     border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
 }
 
 .card-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #111827;
+}
+
+.card-header p {
+    margin: 4px 0 0 0;
+    font-size: 0.85rem;
+    color: #6b7280;
 }
 
 .card-header button {
-    border: none;
-    background: #eef2ff;
-    padding: 6px 12px;
+    border: 1px solid #e5e7eb;
+    background: white;
+    padding: 6px 16px;
     border-radius: 6px;
     cursor: pointer;
+    font-size: 0.85rem;
+    color: #374151;
+    transition: all 0.2s;
+}
+
+.card-header button:hover {
+    background: #f9fafb;
+    border-color: #d1d5db;
 }
 
 .list-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 0;
-    border-bottom: 1px solid #eee;
+    padding: 16px 0;
+    border-bottom: 1px solid #f3f4f6;
 }
 
 .list-row:last-child {
     border-bottom: none;
 }
 
+.list-row strong {
+    display: block;
+    color: #1f2937;
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.list-row p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.85rem;
+}
+
 .right {
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
 }
 
 .badge {
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
 }
 
 .instock {
-    background: #e6f4ea;
-    color: green;
+    background: #dcfce7;
+    color: #166534;
 }
 
 .lowstock {
-    background: #fff7ed;
-    color: #b45309;
+    background: #fef9c3;
+    color: #854d0e;
 }
 
 .completed {
-    background: #e6f4ea;
-    color: green;
+    background: #dcfce7;
+    color: #166534;
 }
 
 .inprogress {
-    background: #eef2ff;
-    color: #3730a3;
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.right p {
+    font-size: 0.8rem;
+    color: #6b7280;
 }

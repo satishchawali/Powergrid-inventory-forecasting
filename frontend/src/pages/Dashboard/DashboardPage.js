@@ -80,7 +80,10 @@ function DashboardPage() {
                 {/* MATERIAL STATUS */}
                 <div className="card">
                     <div className="card-header">
-                        <h3>Material Status</h3>
+                        <div>
+                            <h3>Material Status</h3>
+                            <p>Current inventory status overview</p>
+                        </div>
                         <button>View All</button>
                     </div>
 
@@ -103,7 +106,10 @@ function DashboardPage() {
                 {/* RECENT REPORTS */}
                 <div className="card">
                     <div className="card-header">
-                        <h3>Recent Reports</h3>
+                        <div>
+                            <h3>Recent Reports</h3>
+                            <p>Latest generated reports and analytics</p>
+                        </div>
                         <button>View All</button>
                     </div>
 
@@ -111,11 +117,14 @@ function DashboardPage() {
                         <div className="list-row" key={index}>
                             <div>
                                 <strong>{r.title}</strong>
+                                <p>Report</p>
+                            </div>
+                            <div className="right">
+                                <span className={`badge ${r.status.replace(" ", "").toLowerCase()}`}>
+                                    {r.status}
+                                </span>
                                 <p>{r.date}</p>
                             </div>
-                            <span className={`badge ${r.status.replace(" ", "").toLowerCase()}`}>
-                                {r.status}
-                            </span>
                         </div>
                     ))}
                 </div>

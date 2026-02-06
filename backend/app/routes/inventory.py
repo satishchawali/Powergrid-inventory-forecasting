@@ -11,7 +11,7 @@ def get_inventory(db: Session = Depends(get_db)):
 
     return [    
         {
-            "id": item.item_id,
+            "item_id": item.item_id,
             "name": item.name,
             "category": item.category,
             "quantity": item.quantity,

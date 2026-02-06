@@ -1,11 +1,38 @@
 const API_URL = "http://127.0.0.1:8000";
 
 /**
- * Attach JWT token to every protected request
+ * Global helper for FETCH requests to handle 401 (Expired/Invalid Token)
  */
-const getAuthHeaders = () => {
+const apiFetch = async (endpoint, options = {}) => {
     const token = localStorage.getItem("access_token");
-    return token ? { Authorization: `Bearer ${token}` } : {};
+
+    // Merge headers
+    const headers = {
+        "Content-Type": "application/json",
+        ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        ...options.headers,
+    };
+
+    const response = await fetch(`${API_URL}${endpoint}`, {
+        ...options,
+        headers,
+    });
+
+    if (response.status === 401) {
+        // 🚨 TOKEN EXPIRED OR UNAUTHORIZED
+        // But don't logout/redirect if we're actually trying to login!
+        if (endpoint !== "/auth/login") {
+            localStorage.removeItem("access_token");
+
+            // Only alert if we're not already on the login page
+            if (!window.location.pathname.includes("/login")) {
+                alert("Your session has expired. Please log in again.");
+                window.location.href = "/login";
+            }
+        }
+    }
+
+    return response;
 };
 
 /* ===================== AUTH ===================== */
@@ -14,9 +41,8 @@ const getAuthHeaders = () => {
  * LOGIN
  */
 export const loginUser = async (username, password) => {
-    const response = await fetch(`${API_URL}/auth/login`, {
+    const response = await apiFetch("/auth/login", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
     });
 
@@ -25,10 +51,7 @@ export const loginUser = async (username, password) => {
     }
 
     const data = await response.json();
-
-    // 🔐 STORE TOKEN
     localStorage.setItem("access_token", data.access_token);
-
     return data;
 };
 
@@ -36,9 +59,8 @@ export const loginUser = async (username, password) => {
  * REGISTER
  */
 export const registerUser = async (formData) => {
-    const response = await fetch(`${API_URL}/auth/register`, {
+    const response = await apiFetch("/auth/register", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
     });
 
@@ -71,12 +93,7 @@ export const logoutUser = () => {
  * GET USER PROFILE
  */
 export const getUserProfile = async () => {
-    const response = await fetch(`${API_URL}/settings/profile`, {
-        headers: {
-            "Content-Type": "application/json",
-            ...getAuthHeaders(),
-        },
-    });
+    const response = await apiFetch("/settings/profile");
 
     if (!response.ok) {
         throw new Error(`Failed to load profile (${response.status})`);
@@ -89,12 +106,8 @@ export const getUserProfile = async () => {
  * UPDATE USER PROFILE
  */
 export const updateUserProfile = async (data) => {
-    const response = await fetch(`${API_URL}/settings/profile`, {
+    const response = await apiFetch("/settings/profile", {
         method: "PUT",
-        headers: {
-            "Content-Type": "application/json",
-            ...getAuthHeaders(),
-        },
         body: JSON.stringify(data),
     });
 
@@ -112,12 +125,8 @@ export const updateUserProfile = async (data) => {
  * CHANGE PASSWORD
  */
 export const changePassword = async (data) => {
-    const response = await fetch(`${API_URL}/settings/change-password`, {
+    const response = await apiFetch("/settings/change-password", {
         method: "PUT",
-        headers: {
-            "Content-Type": "application/json",
-            ...getAuthHeaders(),
-        },
         body: JSON.stringify(data),
     });
 
@@ -131,13 +140,8 @@ export const changePassword = async (data) => {
 
 /* ===================== APP DATA ===================== */
 
-export const getForecast = async (day) => {
-    const response = await fetch(`${API_URL}/forecast?day=${day}`, {
-        headers: {
-            "Content-Type": "application/json",
-            ...getAuthHeaders(),
-        },
-    });
+export const getForecast = async (period = 7) => {
+    const response = await apiFetch(`/forecast?period=${period}`);
 
     if (!response.ok) {
         throw new Error(`Forecast error (${response.status})`);
@@ -147,12 +151,7 @@ export const getForecast = async (day) => {
 };
 
 export const getInventory = async () => {
-    const response = await fetch(`${API_URL}/inventory/`, {
-        headers: {
-            "Content-Type": "application/json",
-            ...getAuthHeaders(),
-        },
-    });
+    const response = await apiFetch("/inventory/");
 
     if (!response.ok) {
         throw new Error(`Inventory error (${response.status})`);
@@ -162,16 +161,39 @@ export const getInventory = async () => {
 };
 
 export const getDashboard = async () => {
-    const response = await fetch(`${API_URL}/dashboard/`, {
-        headers: {
-            "Content-Type": "application/json",
-            ...getAuthHeaders(),
-        },
-    });
+    const response = await apiFetch("/dashboard/");
 
     if (!response.ok) {
         throw new Error(`Dashboard error (${response.status})`);
     }
 
+    return await response.json();
+};
+
+/* ===================== REPORTS ===================== */
+
+export const getReports = async () => {
+    const response = await apiFetch("/reports/");
+    if (!response.ok) throw new Error("Failed to fetch reports");
+    return await response.json();
+};
+
+export const getReportTypes = async () => {
+    const response = await apiFetch("/reports/types");
+    if (!response.ok) throw new Error("Failed to fetch report types");
+    return await response.json();
+};
+
+export const generateReport = async (typeId, title) => {
+    const response = await apiFetch(`/reports/generate?type_id=${typeId}${title ? `&title=${encodeURIComponent(title)}` : ""}`, {
+        method: "POST",
+    });
+    if (!response.ok) throw new Error("Failed to generate report");
+    return await response.json();
+};
+
+export const getReportStatus = async (reportId) => {
+    const response = await apiFetch(`/reports/${reportId}/status`);
+    if (!response.ok) throw new Error("Failed to check report status");
     return await response.json();
 };
