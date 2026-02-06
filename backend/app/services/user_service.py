@@ -1,5 +1,7 @@
 from sqlalchemy.orm import Session
+from fastapi import HTTPException, status
 from app.models.user import User
+from app.auth_utils import verify_password, get_password_hash
 
 def get_user_profile(db: Session, user_id: int):
     return (
@@ -18,10 +20,12 @@ def update_user_profile(db: Session, user_id: int, data):
     return user
 
 def change_user_password(db: Session, user_id: int, old_password: str, new_password: str):
-    user = db.query(User).filter(User.id == user_id).first()
+    user = db.query(User).filter(User.user_id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
 
-    if not verify_password(old_password, user.hashed_password):
+    if not verify_password(old_password, user.password_hash):
         raise HTTPException(status_code=400, detail="Old password is incorrect")
 
-    user.hashed_password = get_password_hash(new_password)
+    user.password_hash = get_password_hash(new_password)
     db.commit()

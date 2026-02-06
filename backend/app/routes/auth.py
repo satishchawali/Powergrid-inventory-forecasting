@@ -1,9 +1,10 @@
 from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 from app.database import SessionLocal
 from app.models.user import User
-from app.schemas.user import UserRegister, UserLogin, Token, UserProfileResponse, UserProfileUpdate, changePassword
-from app.auth_utils import get_password_hash, verify_password, create_access_token, decode_token,oauth2_scheme
+from app.schemas.user import UserRegister, UserLogin, Token
+from app.auth_utils import get_password_hash, verify_password, create_access_token, decode_token, oauth2_scheme, get_current_user
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
@@ -65,36 +66,26 @@ def login(user_data: UserLogin, db: Session = Depends(get_db)):
         "email": user.email
     }
 
-def get_current_user_id(token: str = Depends(oauth2_scheme)):
-    user_id = decode_token(token)
-    if user_id is None:
-        raise HTTPException(status_code=401, detail="Invalid token")
-    return int(user_id)
+
+@router.post("/token", response_model=Token)
+def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.username == form_data.username).first()
+    if not user or not verify_password(form_data.password, user.password_hash):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Incorrect username or password",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    
+    access_token = create_access_token(data={"sub": str(user.user_id)})
+    return {
+        "access_token": access_token, 
+        "token_type": "bearer",
+        "username": user.username,
+        "email": user.email
+    }
 
 
-# ---------------- PROFILE ----------------
-@router.get("/profile", response_model=UserProfileResponse)
-def get_profile(
-    db: Session = Depends(get_db),
-    user_id: int = Depends(get_current_user_id),
-):
-   user = db.query(User).filter(User.user_id == user_id).first()
-   return user
 
-@router.put("/profile", response_model=UserProfileUpdate)
-def update_user_profile(
-    payload: UserProfileUpdate,
-    db: Session = Depends(get_db),
-    user_id: int = Depends(get_current_user_id),
-):
-    return update_profile(db, user_id, payload.full_name, payload.email)
 
-# ---------------- PASSWORD ----------------
-@router.put("/change-password")
-def change_user_password(
-    payload: changePassword,
-    db: Session = Depends(get_db),
-    user_id: int = Depends(get_current_user_id),
-):
-    change_password(db, user_id, payload.old_password, payload.new_password)
-    return {"message": "Password updated successfully"}
+

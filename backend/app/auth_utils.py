@@ -37,7 +37,7 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None) -
 
 def decode_token(token: str) -> dict:
     try:
-        payload = jwt.decode(token, settings.JWT_SECRET, algorithms=["HS256"])
+        payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM])
         return payload.get("sub")
     except JWTError:
         return None
@@ -50,9 +50,11 @@ def get_current_user(
         payload = jwt.decode(
             token,
             settings.SECRET_KEY,
-            algorithms=["HS256"]
+            algorithms=[settings.ALGORITHM]
         )
-        user_id: int = payload.get("user_id")
+        user_id = payload.get("sub")
+        if user_id is not None:
+            user_id = int(user_id)
 
         if user_id is None:
             raise HTTPException(status_code=401, detail="Invalid token")

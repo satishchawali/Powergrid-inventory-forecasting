@@ -71,7 +71,7 @@ export const logoutUser = () => {
  * GET USER PROFILE
  */
 export const getUserProfile = async () => {
-    const response = await fetch(`${API_URL}/auth/profile`, {
+    const response = await fetch(`${API_URL}/settings/profile`, {
         headers: {
             "Content-Type": "application/json",
             ...getAuthHeaders(),
@@ -89,7 +89,7 @@ export const getUserProfile = async () => {
  * UPDATE USER PROFILE
  */
 export const updateUserProfile = async (data) => {
-    const response = await fetch(`${API_URL}/auth/profile`, {
+    const response = await fetch(`${API_URL}/settings/profile`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
@@ -112,7 +112,7 @@ export const updateUserProfile = async (data) => {
  * CHANGE PASSWORD
  */
 export const changePassword = async (data) => {
-    const response = await fetch(`${API_URL}/auth/change-password`, {
+    const response = await fetch(`${API_URL}/settings/change-password`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
