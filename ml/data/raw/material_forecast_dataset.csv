@@ -1,0 +1,37 @@
+project_budget,region,tower_type,month,year,weather_index,lead_time_days,material_name,quantity
+12000000,Maharashtra,Transmission,1,2024,0.45,18,Power Transformer 220kV,5
+12000000,Maharashtra,Transmission,1,2024,0.45,18,Copper Cable 400mm,2200
+12000000,Maharashtra,Transmission,1,2024,0.45,18,Circuit Breaker,12
+8000000,Tamil Nadu,Distribution,2,2024,0.60,15,Insulator Disc,450
+8000000,Tamil Nadu,Distribution,2,2024,0.60,15,Steel Tower,25
+8000000,Tamil Nadu,Distribution,2,2024,0.60,15,Earthing Rod,500
+15000000,Delhi,Transmission,3,2024,0.40,20,Power Transformer 220kV,6
+15000000,Delhi,Transmission,3,2024,0.40,20,Copper Cable 400mm,2800
+15000000,Delhi,Transmission,3,2024,0.40,20,Relay Panel,14
+6000000,Karnataka,Distribution,4,2024,0.75,12,Insulator Disc,520
+6000000,Karnataka,Distribution,4,2024,0.75,12,Circuit Breaker,9
+6000000,Karnataka,Distribution,4,2024,0.75,12,High Voltage Fuse,90
+20000000,Gujarat,Transmission,5,2024,0.55,25,Power Transformer 220kV,8
+20000000,Gujarat,Transmission,5,2024,0.55,25,Copper Cable 400mm,3500
+20000000,Gujarat,Transmission,5,2024,0.55,25,Steel Tower,40
+9000000,Bihar,Distribution,6,2024,0.80,14,Insulator Disc,480
+9000000,Bihar,Distribution,6,2024,0.80,14,Earthing Rod,550
+9000000,Bihar,Distribution,6,2024,0.80,14,Relay Panel,10
+18000000,Rajasthan,Transmission,7,2024,0.50,22,Power Transformer 220kV,7
+18000000,Rajasthan,Transmission,7,2024,0.50,22,Copper Cable 400mm,3100
+18000000,Rajasthan,Transmission,7,2024,0.50,22,Circuit Breaker,16
+7000000,Uttar Pradesh,Distribution,8,2024,0.85,13,Insulator Disc,600
+7000000,Uttar Pradesh,Distribution,8,2024,0.85,13,High Voltage Fuse,110
+7000000,Uttar Pradesh,Distribution,8,2024,0.85,13,Earthing Rod,620
+16000000,West Bengal,Transmission,9,2024,0.48,21,Power Transformer 220kV,6
+16000000,West Bengal,Transmission,9,2024,0.48,21,Copper Cable 400mm,2700
+16000000,West Bengal,Transmission,9,2024,0.48,21,Relay Panel,15
+5000000,Madhya Pradesh,Distribution,10,2024,0.78,11,Insulator Disc,430
+5000000,Madhya Pradesh,Distribution,10,2024,0.78,11,Steel Tower,20
+5000000,Madhya Pradesh,Distribution,10,2024,0.78,11,Circuit Breaker,8
+22000000,Maharashtra,Transmission,11,2024,0.52,28,Power Transformer 220kV,9
+22000000,Maharashtra,Transmission,11,2024,0.52,28,Copper Cable 400mm,4000
+22000000,Maharashtra,Transmission,11,2024,0.52,28,Steel Tower,50
+10000000,Tamil Nadu,Distribution,12,2024,0.65,16,Insulator Disc,500
+10000000,Tamil Nadu,Distribution,12,2024,0.65,16,Relay Panel,12
+10000000,Tamil Nadu,Distribution,12,2024,0.65,16,High Voltage Fuse,100
