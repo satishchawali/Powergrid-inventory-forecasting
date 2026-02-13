@@ -23,6 +23,26 @@
     font-size: 1rem;
 }
 
+.back-btn {
+    background: none;
+    border: none;
+    color: #6366f1;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s;
+}
+
+.back-btn:hover {
+    color: #4f46e5;
+    text-decoration: underline;
+}
+
 .create-report-btn {
     background: #6366f1;
     color: white;

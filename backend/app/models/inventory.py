@@ -12,7 +12,6 @@ class InventoryItem(Base):
     quantity = Column(Float, nullable=False)
     unit = Column(String(20), nullable=False)
     threshold = Column(Float, nullable=False)
-
     stocks = relationship("InventoryStock", back_populates="item")
 
 class InventoryStock(Base):

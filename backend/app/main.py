@@ -2,9 +2,7 @@ from app.routes import forecast, auth, dashboard, inventory, settings, reports
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.database import engine, Base
-import app.models # This ensures all models (like Report) are registered with Base.metadata
-
-# Create database tables on startup
+import app.models
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Power Grid Inventory Forecasting")

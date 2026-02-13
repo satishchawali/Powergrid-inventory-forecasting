@@ -11,7 +11,7 @@ CREATE TABLE users (
 CREATE TABLE power_projects (
     project_id INT AUTO_INCREMENT PRIMARY KEY,
     project_name VARCHAR(150) NOT NULL,
-    project_type VARCHAR(50), -- Transmission / Substation
+    project_type VARCHAR(50),
     region VARCHAR(50),
     start_date DATE,
     expected_end_date DATE,

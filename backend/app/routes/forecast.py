@@ -12,8 +12,6 @@ router = APIRouter(prefix="/forecast", tags=["Forecast"])
 
 @router.get("/")
 def get_forecast(period: int = 7, db: Session = Depends(get_db)):
-    # 1. Historical Data (Last 6 Months)
-    # Using DATE_FORMAT for MySQL as seen in .env
     history_records = db.query(
         func.date_format(DemandHistory.demand_date, '%Y-%m').label('month'),
         func.sum(DemandHistory.quantity_used).label('demand')
@@ -30,7 +28,6 @@ def get_forecast(period: int = 7, db: Session = Depends(get_db)):
             {"label": "2025-01", "demand": 18000}
         ]
 
-    # 2. Forecasted Data
     forecast_records = db.query(
         func.date_format(DemandForecast.forecast_month, '%Y-%m').label('month'),
         func.sum(DemandForecast.predicted_quantity).label('demand')
@@ -47,7 +44,6 @@ def get_forecast(period: int = 7, db: Session = Depends(get_db)):
             {"label": "2025-05 (Forecast)", "demand": 22500}
         ]
 
-    # 3. Material Breakdown
     breakdown_records = db.query(
         InventoryItem.name.label('material'),
         InventoryItem.category.label('category'),
@@ -59,7 +55,7 @@ def get_forecast(period: int = 7, db: Session = Depends(get_db)):
 
     breakdown = []
     for r in breakdown_records:
-        confidence = "92%" # Default
+        confidence = "92%"
         if r.risk:
             confidence = "96%" if r.risk == "LOW" else "88%" if r.risk == "MEDIUM" else "78%"
             
@@ -71,7 +67,6 @@ def get_forecast(period: int = 7, db: Session = Depends(get_db)):
             "confidence": confidence
         })
 
-    # If breakdown is empty, try to show some inventory items with simulated forecasts
     if not breakdown:
         items = db.query(InventoryItem).limit(4).all()
         for item in items:
