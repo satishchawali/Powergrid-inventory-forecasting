@@ -17,12 +17,10 @@ function App() {
     <div className="App">
       <Routes>
 
-        {/* PUBLIC ROUTES (NO SIDEBAR) */}
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
 
-        {/* DASHBOARD ROUTES (WITH SIDEBAR) */}
         <Route element={<DashboardLayout />}>
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/forecast" element={<ForecastPage />} />

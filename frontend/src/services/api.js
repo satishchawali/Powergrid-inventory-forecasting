@@ -1,12 +1,8 @@
 const API_URL = "http://127.0.0.1:8000";
 
-/**
- * Global helper for FETCH requests to handle 401 (Expired/Invalid Token)
- */
 const apiFetch = async (endpoint, options = {}) => {
     const token = localStorage.getItem("access_token");
 
-    // Merge headers
     const headers = {
         "Content-Type": "application/json",
         ...(token ? { Authorization: `Bearer ${token}` } : {}),
@@ -19,12 +15,9 @@ const apiFetch = async (endpoint, options = {}) => {
     });
 
     if (response.status === 401) {
-        // 🚨 TOKEN EXPIRED OR UNAUTHORIZED
-        // But don't logout/redirect if we're actually trying to login!
         if (endpoint !== "/auth/login") {
             localStorage.removeItem("access_token");
 
-            // Only alert if we're not already on the login page
             if (!window.location.pathname.includes("/login")) {
                 alert("Your session has expired. Please log in again.");
                 window.location.href = "/login";
@@ -35,11 +28,6 @@ const apiFetch = async (endpoint, options = {}) => {
     return response;
 };
 
-/* ===================== AUTH ===================== */
-
-/**
- * LOGIN
- */
 export const loginUser = async (username, password) => {
     const response = await apiFetch("/auth/login", {
         method: "POST",
@@ -55,9 +43,6 @@ export const loginUser = async (username, password) => {
     return data;
 };
 
-/**
- * REGISTER
- */
 export const registerUser = async (formData) => {
     const response = await apiFetch("/auth/register", {
         method: "POST",
@@ -80,18 +65,10 @@ export const registerUser = async (formData) => {
     return await response.json();
 };
 
-/**
- * LOGOUT
- */
 export const logoutUser = () => {
     localStorage.removeItem("access_token");
 };
 
-/* ===================== PROFILE ===================== */
-
-/**
- * GET USER PROFILE
- */
 export const getUserProfile = async () => {
     const response = await apiFetch("/settings/profile");
 
@@ -102,9 +79,6 @@ export const getUserProfile = async () => {
     return await response.json();
 };
 
-/**
- * UPDATE USER PROFILE
- */
 export const updateUserProfile = async (data) => {
     const response = await apiFetch("/settings/profile", {
         method: "PUT",
@@ -119,11 +93,6 @@ export const updateUserProfile = async (data) => {
     return await response.json();
 };
 
-/* ===================== PASSWORD ===================== */
-
-/**
- * CHANGE PASSWORD
- */
 export const changePassword = async (data) => {
     const response = await apiFetch("/settings/change-password", {
         method: "PUT",
@@ -137,8 +106,6 @@ export const changePassword = async (data) => {
 
     return await response.json();
 };
-
-/* ===================== APP DATA ===================== */
 
 export const getForecast = async (period = 7) => {
     const response = await apiFetch(`/forecast?period=${period}`);
@@ -169,8 +136,6 @@ export const getDashboard = async () => {
 
     return await response.json();
 };
-
-/* ===================== REPORTS ===================== */
 
 export const getReports = async () => {
     const response = await apiFetch("/reports/");

@@ -10,14 +10,14 @@ export default function SettingsPage() {
     }, []);
 
     return (
-        <div className="settings-container">
-            {/* Page Header */}
-            <div className="settings-header">
-                <h1>Settings</h1>
-                <p>Manage your account settings and preferences</p>
+        <div className="settings-container page-container">
+            <div className="page-header">
+                <div className="header-info">
+                    <h1>Settings</h1>
+                    <p className="subtitle">Manage your account settings and preferences</p>
+                </div>
             </div>
 
-            {/* Tabs */}
             <div className="settings-tabs">
                 <button
                     className={activeTab === "profile" ? "active" : ""}
@@ -39,7 +39,6 @@ export default function SettingsPage() {
                 </button>
             </div>
 
-            {/* Content Area */}
             <div className="settings-content">
                 {activeTab === "profile" && <ProfileTab />}
                 {activeTab === "notifications" && (
@@ -233,7 +232,6 @@ function ProfileTab() {
                 </form>
             </div>
 
-            {/* EDIT MODAL */}
             {showEditModal && (
                 <div className="modal-overlay">
                     <div className="modal-content">

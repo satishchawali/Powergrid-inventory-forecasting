@@ -28,7 +28,6 @@ function Sidebar() {
 
     return (
         <div className="sidebar">
-            {/* HEADER */}
             <div className="sidebar-header">
                 <div className="logo">
                     <img src={logo} alt="Powergrid logo" />
@@ -39,7 +38,6 @@ function Sidebar() {
                 </div>
             </div>
 
-            {/* MENU */}
             <nav className="sidebar-menu">
                 <NavLink to="/dashboard" className="menu-item">📊 Dashboard</NavLink>
                 <NavLink to="/forecast" className="menu-item">🔮 Forecast</NavLink>
@@ -48,7 +46,6 @@ function Sidebar() {
                 <NavLink to="/settings" className="menu-item">⚙️ Settings</NavLink>
             </nav>
 
-            {/* USER PROFILE */}
             <div className="sidebar-profile">
                 <div className="profile-img">
                     <img
@@ -58,7 +55,7 @@ function Sidebar() {
                 </div>
                 <div className="profile-info">
                     <h4>{user.full_name}</h4>
-                    <p>{user.email}</p>
+                    <p>SYSTEM ADMINISTRATOR</p>
                 </div>
             </div>
         </div>

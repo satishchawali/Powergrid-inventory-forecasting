@@ -4,10 +4,10 @@ import './ForecastPage.css';
 
 const ForecastPage = () => {
     const [formData, setFormData] = useState({
-        budget: '10000000',
-        location: 'Southern Region',
-        towerType: 'Distribution Tower',
-        period: '1 Year'
+        budget: '',
+        location: '',
+        towerType: '',
+        period: ''
     });
 
     const [forecastData, setForecastData] = useState(null);
@@ -20,6 +20,11 @@ const ForecastPage = () => {
     };
 
     const handleGenerate = async () => {
+        if (!formData.budget || !formData.location || !formData.towerType || !formData.period) {
+            setError("Please fill in all parameters before generating the forecast.");
+            return;
+        }
+
         setLoading(true);
         setError(null);
         try {
@@ -33,7 +38,6 @@ const ForecastPage = () => {
         }
     };
 
-    // Refined SVG Chart Component (Dual Line)
     const SVGChart = ({ data }) => {
         if (!data) return null;
 
@@ -53,7 +57,7 @@ const ForecastPage = () => {
         }));
 
         const hPoints = getPoints(data.historical, 0);
-        const fPoints = getPoints(data.forecasted, data.historical.length - 1); // Start from last historical
+        const fPoints = getPoints(data.forecasted, data.historical.length - 1);
 
         const hPath = `M ${hPoints.map(p => `${p.x},${p.y}`).join(' L ')}`;
         const fPath = `M ${fPoints.map(p => `${p.x},${p.y}`).join(' L ')}`;
@@ -67,7 +71,6 @@ const ForecastPage = () => {
                         </filter>
                     </defs>
 
-                    {/* Y-Axis Grid & Labels */}
                     {[0, 5000, 10000, 15000, 20000, 25000].map(val => {
                         const y = height - padding - (val / maxDemand) * (height - padding * 2);
                         return (
@@ -78,11 +81,9 @@ const ForecastPage = () => {
                         );
                     })}
 
-                    {/* Paths */}
                     <path d={hPath} className="chart-line historical" />
                     <path d={fPath} className="chart-line forecasted" strokeDasharray="8 6" />
 
-                    {/* Points */}
                     {hPoints.map((p, i) => (
                         <circle key={`h-${i}`} cx={p.x} cy={p.y} r="6" className="point historical" />
                     ))}
@@ -90,12 +91,10 @@ const ForecastPage = () => {
                         <circle key={`f-${i}`} cx={p.y} cy={p.y} r="6" className="point forecasted" />
                     ))}
 
-                    {/* X-Axis Labels */}
                     {combined.map((d, i) => (
                         <text key={i} x={padding + i * xStep} y={height - 20} textAnchor="middle" className="axis-label x-axis">{d.label}</text>
                     ))}
 
-                    {/* Axis Titles */}
                     <text x={15} y={height / 2} transform={`rotate(-90, 15, ${height / 2})`} textAnchor="middle" className="axis-title">Demand (Metric Tons)</text>
                     <text x={width / 2} y={height - 5} textAnchor="middle" className="axis-title">Time Period</text>
                 </svg>
@@ -113,14 +112,15 @@ const ForecastPage = () => {
     };
 
     return (
-        <div className="forecast-container refinement">
-            <div className="forecast-header">
-                <h1>Material Demand Forecasting</h1>
-                <p className="subtitle">Generate accurate forecasts for power grid infrastructure materials</p>
+        <div className="forecast-container refinement page-container">
+            <div className="page-header">
+                <div className="header-info">
+                    <h1>Material Demand Forecasting</h1>
+                    <p className="subtitle">Generate accurate forecasts for power grid infrastructure materials</p>
+                </div>
             </div>
 
             <div className="forecast-main-grid">
-                {/* PARAMETERS CARD */}
                 <div className="params-card">
                     <div className="card-title-group">
                         <svg className="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -139,6 +139,7 @@ const ForecastPage = () => {
                     <div className="form-group">
                         <label>Project Location</label>
                         <select name="location" value={formData.location} onChange={handleInputChange}>
+                            <option value="">Select Region...</option>
                             <option value="Southern Region">Southern Region</option>
                             <option value="Northern Region">Northern Region</option>
                         </select>
@@ -147,6 +148,7 @@ const ForecastPage = () => {
                     <div className="form-group">
                         <label>Tower Type</label>
                         <select name="towerType" value={formData.towerType} onChange={handleInputChange}>
+                            <option value="">Select Tower Type...</option>
                             <option value="Distribution Tower">Distribution Tower</option>
                             <option value="Transmission Tower">Transmission Tower</option>
                         </select>
@@ -155,17 +157,18 @@ const ForecastPage = () => {
                     <div className="form-group">
                         <label>Forecast Period</label>
                         <select name="period" value={formData.period} onChange={handleInputChange}>
+                            <option value="">Select Period...</option>
                             <option value="1 Year">1 Year</option>
                             <option value="6 Months">6 Months</option>
                         </select>
                     </div>
 
-                    <button className="generate-btn active dark" onClick={handleGenerate} disabled={loading}>
+                    <button className={`generate-btn active dark ${loading ? 'loading' : ''}`} onClick={handleGenerate} disabled={loading}>
                         {loading ? 'Generating...' : 'Generate Forecast'}
                     </button>
+                    {error && <p className="error-message" style={{ color: '#ef4444', fontSize: '0.875rem', marginTop: '12px' }}>{error}</p>}
                 </div>
 
-                {/* CHART CARD */}
                 <div className="chart-card">
                     <div className="card-title-group">
                         <svg className="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -190,19 +193,18 @@ const ForecastPage = () => {
                 </div>
             </div>
 
-            {/* MATERIAL BREAKDOWN */}
-            {forecastData && (
-                <div className="breakdown-card">
-                    <div className="card-title-group">
-                        <svg className="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                            <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
-                            <path d="M22 12A10 10 0 0 0 12 2v10z" />
-                        </svg>
-                        <h3>Material Breakdown</h3>
-                    </div>
-                    <p className="card-subtitle">Detailed forecast of material requirements</p>
+            <div className="breakdown-card">
+                <div className="card-title-group">
+                    <svg className="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+                        <path d="M22 12A10 10 0 0 0 12 2v10z" />
+                    </svg>
+                    <h3>Material Breakdown</h3>
+                </div>
+                <p className="card-subtitle">Detailed forecast of material requirements</p>
 
-                    <div className="table-responsive">
+                <div className="table-responsive">
+                    {forecastData ? (
                         <table className="breakdown-table">
                             <thead>
                                 <tr>
@@ -229,9 +231,13 @@ const ForecastPage = () => {
                                 ))}
                             </tbody>
                         </table>
-                    </div>
+                    ) : (
+                        <div className="chart-placeholder">
+                            <p>Generate a forecast to view the material breakdown</p>
+                        </div>
+                    )}
                 </div>
-            )}
+            </div>
         </div>
     );
 };

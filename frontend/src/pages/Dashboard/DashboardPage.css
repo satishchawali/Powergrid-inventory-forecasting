@@ -1,126 +1,149 @@
 .dashboard-container {
-    padding: 24px;
-    background: #f7f9fc;
-    min-height: 100vh;
+    padding: 32px;
+    background: #f9fafb;
+    min-height: calc(100vh - 64px);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dashboard-container h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #111827;
+    margin: 0;
 }
 
 .subtitle {
-    color: #6b7280;
-    margin-bottom: 20px;
+    color: #64748b;
+    font-size: 1.125rem;
+    margin-top: 8px;
+    margin-bottom: 40px;
 }
 
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-bottom: 25px;
+    gap: 24px;
+    margin-bottom: 32px;
 }
 
 .stat-card {
     background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
 .stat-card:hover {
-    transform: scale(1.05);
-    box-shadow:
-        0 10px 24px rgba(37, 99, 235, 0.25),
-        0 0 14px rgba(37, 99, 235, 0.35);
-}
-
-.stat-card h4 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #111827;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-color: #6366f1;
 }
 
 .stat-card h4 {
     margin: 0;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #6b7280;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
     margin-bottom: 12px;
+}
+
+.stat-card h2 {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1;
 }
 
 .stat-card p {
     margin: 0;
-    font-size: 0.75rem;
-    color: #9ca3af;
+    font-size: 0.875rem;
+    color: #64748b;
     margin-top: 8px;
 }
 
 .stat-card .online {
-    color: #22c55e;
+    color: #10b981;
 }
-
-/* Specific color for Low Stock count if needed, adding a utility class in JS or just styling 2nd card children if fixed order, 
-   but for now generic is fine or depends on JS logic. 
-   Let's assume the user wants the exact look, so 'Low Stock' count usually orange. 
-*/
 
 .lower-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 24px;
     width: 100%;
 }
 
 .card {
     background: white;
-    padding: 24px;
-    width: 90%;
-    border-radius: 12px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    border: 1px solid #e5e7eb;
+    padding: 32px;
+    border-radius: 24px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+}
+
+.card {
+    width: 100% !important;
+    /* Overriding the 90% in previous version */
+    box-sizing: border-box;
 }
 
 .card-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    align-items: flex-start;
+    margin-bottom: 24px;
 }
 
 .card-header h3 {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
     color: #111827;
 }
 
 .card-header p {
     margin: 4px 0 0 0;
-    font-size: 0.85rem;
-    color: #6b7280;
+    font-size: 0.95rem;
+    color: #64748b;
 }
 
 .card-header button {
-    border: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     background: white;
-    padding: 6px 16px;
-    border-radius: 6px;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 600;
     cursor: pointer;
-    font-size: 0.85rem;
-    color: #374151;
     transition: all 0.2s;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .card-header button:hover {
-    background: #f9fafb;
-    border-color: #d1d5db;
+    background: #f8fafc;
+    border-color: #cbd5e1;
+    transform: translateY(-1px);
+    color: #6366f1;
 }
 
 .list-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0;
-    border-bottom: 1px solid #f3f4f6;
+    padding: 20px 0;
+    border-bottom: 1px solid #f1f5f9;
 }
 
 .list-row:last-child {
@@ -129,15 +152,16 @@
 
 .list-row strong {
     display: block;
-    color: #1f2937;
-    font-size: 0.95rem;
+    color: #0f172a;
+    font-size: 1rem;
+    font-weight: 700;
     margin-bottom: 4px;
 }
 
 .list-row p {
     margin: 0;
-    color: #6b7280;
-    font-size: 0.85rem;
+    color: #64748b;
+    font-size: 0.875rem;
 }
 
 .right {
@@ -145,38 +169,77 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 4px;
+    gap: 6px;
 }
 
 .badge {
-    padding: 4px 12px;
-    border-radius: 9999px;
+    padding: 6px 12px;
+    border-radius: 8px;
     font-size: 0.75rem;
-    font-weight: 600;
-    display: inline-block;
+    font-weight: 800;
 }
 
-.instock {
+.badge.instock,
+.badge.completed {
     background: #dcfce7;
     color: #166534;
 }
 
-.lowstock {
-    background: #fef9c3;
-    color: #854d0e;
+.badge.lowstock,
+.badge.nearthreshold {
+    background: #fee2e2;
+    color: #991b1b;
 }
 
-.completed {
-    background: #dcfce7;
-    color: #166534;
-}
-
-.inprogress {
-    background: #dbeafe;
-    color: #1e40af;
+.badge.inprogress {
+    background: #eff6ff;
+    color: #1d4ed8;
 }
 
 .right p {
-    font-size: 0.8rem;
-    color: #6b7280;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* Loading/Error States alignment */
+.loading-container,
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #f1f5f9;
+    border-top: 5px solid #6366f1;
+    border-radius: 50%;
+    animation: spin 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    margin-bottom: 24px;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1200px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .lower-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
 }

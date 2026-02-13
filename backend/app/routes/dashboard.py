@@ -8,39 +8,33 @@ router = APIRouter(prefix="/dashboard", tags=["Dashboard"])
 @router.get("/")
 def get_dashboard(db: Session = Depends(get_db)):
 
-    # 1️⃣ Total materials
     total_materials = db.query(InventoryItem).count()
 
-    # 2️⃣ Low stock items (ANY location below threshold)
     low_stock_items = (
-        db.query(InventoryStock)
-        .join(InventoryItem, InventoryStock.item_id == InventoryItem.item_id)
-        .filter(InventoryStock.quantity_available < InventoryItem.threshold)
+        db.query(InventoryItem)
+        .filter(InventoryItem.quantity < InventoryItem.threshold)
         .count()
     )
 
-    # 3️⃣ Material status list (limit for dashboard)
     results = (
-        db.query(InventoryItem, InventoryStock)
-        .join(InventoryStock, InventoryItem.item_id == InventoryStock.item_id)
+        db.query(InventoryItem)
         .limit(5)
         .all()
     )
 
     materials = []
-    for item, stock in results:
+    for item in results:
         materials.append({
             "name": item.name,
             "category": item.category,
-            "quantity": f"{stock.quantity_available} {item.unit}",
+            "quantity": f"{item.quantity} {item.unit}",
             "status": (
                 "Low Stock"
-                if stock.quantity_available < item.threshold
+                if item.quantity < item.threshold
                 else "In Stock"
             )
         })
 
-    # 4️⃣ Reports (can be DB later)
     reports = [
         {
             "title": "Inventory Status Report",

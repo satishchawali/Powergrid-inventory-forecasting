@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { getReports, getReportTypes, generateReport, getReportStatus } from "../../services/api";
 import "./ReportsPage.css";
 
@@ -8,12 +9,12 @@ export default function ReportsPage() {
     const [loading, setLoading] = useState(true);
     const [showModal, setShowModal] = useState(false);
     const [generating, setGenerating] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         document.title = "Reports - Forecasting System";
         fetchData();
 
-        // Polling for generating reports
         const interval = setInterval(() => {
             checkPendingReports();
         }, 5000);
@@ -41,7 +42,6 @@ export default function ReportsPage() {
             const pending = prev.filter(r => r.status === "Generating");
             if (pending.length === 0) return prev;
 
-            // Just refresh all if any are pending
             getReports().then(setReports).catch(console.error);
             return prev;
         });
@@ -63,15 +63,20 @@ export default function ReportsPage() {
     if (loading) return <div className="reports-loading">Loading Reports...</div>;
 
     return (
-        <div className="reports-container">
-            <div className="reports-header-section">
-                <div>
+        <div className="reports-container page-container">
+            <div className="page-header">
+                <div className="header-info">
+                    <button className="back-btn" onClick={() => navigate("/dashboard")}>
+                        ← Back to Dashboard
+                    </button>
                     <h1>Reports Center</h1>
-                    <p>Manage and download system-generated inventory reports</p>
+                    <p className="subtitle">Manage and download system-generated inventory reports</p>
                 </div>
-                <button className="create-report-btn" onClick={() => setShowModal(true)}>
-                    <span>+</span> Create New Report
-                </button>
+                <div className="header-actions">
+                    <button className="create-report-btn" onClick={() => setShowModal(true)}>
+                        <span>+</span> Create New Report
+                    </button>
+                </div>
             </div>
 
             <div className="reports-list-grid">
@@ -114,7 +119,6 @@ export default function ReportsPage() {
                 )}
             </div>
 
-            {/* GENERATE MODAL */}
             {showModal && (
                 <div className="report-modal-overlay">
                     <div className="report-modal">

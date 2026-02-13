@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { getDashboard } from "../../services/api";
 import "./DashboardPage.css";
 
@@ -8,13 +9,13 @@ function DashboardPage() {
     const [reports, setReports] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchDashboardData = async () => {
             try {
                 const data = await getDashboard();
 
-                // Map API response to the format expected by the UI
                 const statsData = [
                     { title: "Total Materials", value: data.total_materials, subtitle: "Active inventory items" },
                     { title: "Low Stock Items", value: data.low_stock_items, subtitle: "Require attention" },
@@ -56,13 +57,16 @@ function DashboardPage() {
     }
 
     return (
-        <div className="dashboard-container">
-            <h1>Dashboard Overview</h1>
-            <p className="subtitle">
-                Monitor system status and key metrics at a glance
-            </p>
+        <div className="dashboard-container page-container">
+            <div className="page-header">
+                <div className="header-info">
+                    <h1>Dashboard Overview</h1>
+                    <p className="subtitle">
+                        Monitor system status and key metrics at a glance
+                    </p>
+                </div>
+            </div>
 
-            {/* STAT CARDS */}
             <div className="stats-grid">
                 {stats.map((s, index) => (
                     <div className="stat-card" key={index}>
@@ -75,16 +79,14 @@ function DashboardPage() {
                 ))}
             </div>
 
-            {/* LOWER SECTION */}
             <div className="lower-grid">
-                {/* MATERIAL STATUS */}
                 <div className="card">
                     <div className="card-header">
                         <div>
                             <h3>Material Status</h3>
                             <p>Current inventory status overview</p>
                         </div>
-                        <button>View All</button>
+                        <button onClick={() => navigate("/materials")}>View All</button>
                     </div>
 
                     {materials.map((m, index) => (
@@ -103,14 +105,13 @@ function DashboardPage() {
                     ))}
                 </div>
 
-                {/* RECENT REPORTS */}
                 <div className="card">
                     <div className="card-header">
                         <div>
                             <h3>Recent Reports</h3>
                             <p>Latest generated reports and analytics</p>
                         </div>
-                        <button>View All</button>
+                        <button onClick={() => navigate("/reports")}>View All</button>
                     </div>
 
                     {reports.map((r, index) => (

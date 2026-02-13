@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { getInventory } from "../../services/api";
 import "./MaterialsPage.css";
 
@@ -8,6 +9,7 @@ export default function MaterialsPage() {
     const [searchTerm, setSearchTerm] = useState("");
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         document.title = "Materials Inventory - Forecasting System";
@@ -45,15 +47,20 @@ export default function MaterialsPage() {
     }
 
     return (
-        <div className="materials-container">
-            <div className="materials-header">
-                <div>
+        <div className="materials-container page-container">
+            <div className="page-header">
+                <div className="header-info">
+                    <button className="back-btn" onClick={() => navigate("/dashboard")}>
+                        ← Back to Dashboard
+                    </button>
                     <h1>Materials Inventory</h1>
                     <p className="subtitle">Real-time tracking of substation materials and power grid assets</p>
                 </div>
-                <button className="refresh-btn" onClick={loadInventory}>
-                    <span>🔄</span> Refresh
-                </button>
+                <div className="header-actions">
+                    <button className="refresh-btn" onClick={loadInventory}>
+                        <span>🔄</span> Refresh
+                    </button>
+                </div>
             </div>
 
             <div className="inventory-controls">

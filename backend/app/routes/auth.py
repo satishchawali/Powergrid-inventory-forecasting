@@ -8,7 +8,6 @@ from app.auth_utils import get_password_hash, verify_password, create_access_tok
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
-# Dependency
 def get_db():
     db = SessionLocal()
     try:
@@ -18,7 +17,6 @@ def get_db():
 
 @router.post("/register", status_code=status.HTTP_201_CREATED)
 def register(user_data: UserRegister, db: Session = Depends(get_db)):
-    # Check if user already exists
     db_user = db.query(User).filter(
         (User.username == user_data.username) | (User.email == user_data.email)
     ).first()
@@ -28,7 +26,6 @@ def register(user_data: UserRegister, db: Session = Depends(get_db)):
             detail="Username or email already registered"
         )
     
-    # Create new user
     new_user = User(
         username=user_data.username,
         email=user_data.email,
@@ -43,7 +40,6 @@ def register(user_data: UserRegister, db: Session = Depends(get_db)):
 
 @router.post("/login", response_model=Token)
 def login(user_data: UserLogin, db: Session = Depends(get_db)):
-    # Find user by username
     user = db.query(User).filter(User.username == user_data.username).first()
     if not user or not verify_password(user_data.password, user.password_hash):
         raise HTTPException(
@@ -52,12 +48,10 @@ def login(user_data: UserLogin, db: Session = Depends(get_db)):
             headers={"WWW-Authenticate": "Bearer"},
         )
     
-    # Update last login time
     from sqlalchemy.sql import func
     user.last_login_at = func.now()
     db.commit()
     
-    # Create access token
     access_token = create_access_token(data={"sub": str(user.user_id)})
     return {
         "access_token": access_token, 
