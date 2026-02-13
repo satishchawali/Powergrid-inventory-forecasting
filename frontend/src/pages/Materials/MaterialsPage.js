@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { getInventory } from "../../services/api";
 import "./MaterialsPage.css";
+import { Search } from "lucide-react";
 
 export default function MaterialsPage() {
     const [inventory, setInventory] = useState([]);
@@ -58,14 +59,16 @@ export default function MaterialsPage() {
                 </div>
                 <div className="header-actions">
                     <button className="refresh-btn" onClick={loadInventory}>
-                        <span>🔄</span> Refresh
+                        {/* <span>🔄</span>  */}
+                        Refresh
                     </button>
                 </div>
             </div>
 
             <div className="inventory-controls">
                 <div className="search-box">
-                    <span className="search-icon">🔍</span>
+                    {/* <span className="search-icon">🔍</span> */}
+                    <Search size={18} className="search-icon" />
                     <input
                         type="text"
                         placeholder="Search by material name or category..."

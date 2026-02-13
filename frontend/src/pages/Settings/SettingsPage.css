@@ -1,5 +1,7 @@
 .settings-container {
-    padding: 32px;
+    padding: 0;
+    max-width: 1400px;
+    margin: 0 auto;
     background: #f9fafb;
     min-height: calc(100vh - 64px);
     width: 100%;
