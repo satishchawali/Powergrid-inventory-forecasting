@@ -1,0 +1,37 @@
+project_budget,region,tower_type,month,year,weather_index,lead_time_days,material_name,quantity,season,budget_category
+12000000,Maharashtra,Transmission,1,2024,0.45,18,Power Transformer 220kV,5,Winter,Medium
+12000000,Maharashtra,Transmission,1,2024,0.45,18,Copper Cable 400mm,2200,Winter,Medium
+12000000,Maharashtra,Transmission,1,2024,0.45,18,Circuit Breaker,12,Winter,Medium
+8000000,Tamil Nadu,Distribution,2,2024,0.6,15,Insulator Disc,450,Winter,Medium
+8000000,Tamil Nadu,Distribution,2,2024,0.6,15,Steel Tower,25,Winter,Medium
+8000000,Tamil Nadu,Distribution,2,2024,0.6,15,Earthing Rod,500,Winter,Medium
+15000000,Delhi,Transmission,3,2024,0.4,20,Power Transformer 220kV,6,Summer,Medium
+15000000,Delhi,Transmission,3,2024,0.4,20,Copper Cable 400mm,2800,Summer,Medium
+15000000,Delhi,Transmission,3,2024,0.4,20,Relay Panel,14,Summer,Medium
+6000000,Karnataka,Distribution,4,2024,0.75,12,Insulator Disc,520,Summer,Medium
+6000000,Karnataka,Distribution,4,2024,0.75,12,Circuit Breaker,9,Summer,Medium
+6000000,Karnataka,Distribution,4,2024,0.75,12,High Voltage Fuse,90,Summer,Medium
+20000000,Gujarat,Transmission,5,2024,0.55,25,Power Transformer 220kV,8,Summer,Medium
+20000000,Gujarat,Transmission,5,2024,0.55,25,Copper Cable 400mm,3500,Summer,Medium
+20000000,Gujarat,Transmission,5,2024,0.55,25,Steel Tower,40,Summer,Medium
+9000000,Bihar,Distribution,6,2024,0.8,14,Insulator Disc,480,Monsoon,Medium
+9000000,Bihar,Distribution,6,2024,0.8,14,Earthing Rod,550,Monsoon,Medium
+9000000,Bihar,Distribution,6,2024,0.8,14,Relay Panel,10,Monsoon,Medium
+18000000,Rajasthan,Transmission,7,2024,0.5,22,Power Transformer 220kV,7,Monsoon,Medium
+18000000,Rajasthan,Transmission,7,2024,0.5,22,Copper Cable 400mm,3100,Monsoon,Medium
+18000000,Rajasthan,Transmission,7,2024,0.5,22,Circuit Breaker,16,Monsoon,Medium
+7000000,Uttar Pradesh,Distribution,8,2024,0.85,13,Insulator Disc,600,Monsoon,Medium
+7000000,Uttar Pradesh,Distribution,8,2024,0.85,13,High Voltage Fuse,110,Monsoon,Medium
+7000000,Uttar Pradesh,Distribution,8,2024,0.85,13,Earthing Rod,620,Monsoon,Medium
+16000000,West Bengal,Transmission,9,2024,0.48,21,Power Transformer 220kV,6,Monsoon,Medium
+16000000,West Bengal,Transmission,9,2024,0.48,21,Copper Cable 400mm,2700,Monsoon,Medium
+16000000,West Bengal,Transmission,9,2024,0.48,21,Relay Panel,15,Monsoon,Medium
+5000000,Madhya Pradesh,Distribution,10,2024,0.78,11,Insulator Disc,430,Monsoon,Low
+5000000,Madhya Pradesh,Distribution,10,2024,0.78,11,Steel Tower,20,Monsoon,Low
+5000000,Madhya Pradesh,Distribution,10,2024,0.78,11,Circuit Breaker,8,Monsoon,Low
+22000000,Maharashtra,Transmission,11,2024,0.52,28,Power Transformer 220kV,9,Monsoon,High
+22000000,Maharashtra,Transmission,11,2024,0.52,28,Copper Cable 400mm,4000,Monsoon,High
+22000000,Maharashtra,Transmission,11,2024,0.52,28,Steel Tower,50,Monsoon,High
+10000000,Tamil Nadu,Distribution,12,2024,0.65,16,Insulator Disc,500,Winter,Medium
+10000000,Tamil Nadu,Distribution,12,2024,0.65,16,Relay Panel,12,Winter,Medium
+10000000,Tamil Nadu,Distribution,12,2024,0.65,16,High Voltage Fuse,100,Winter,Medium

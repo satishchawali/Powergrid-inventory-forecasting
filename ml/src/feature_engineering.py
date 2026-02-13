@@ -1,24 +1,29 @@
 import pandas as pd
-from config import RAW_DATA_PATH, PROCESSED_DATA_PATH
 
 def engineer_features():
-    df = pd.read_csv(RAW_DATA_PATH)
+    df = pd.read_csv("data/processed/material_forecast_cleaned.csv")
 
-    df = df.sort_values(["material_id", "year", "month"])
+    # Create season feature
+    def get_season(month):
+        if month in [12, 1, 2]:
+            return "Winter"
+        elif month in [3, 4, 5]:
+            return "Summer"
+        else:
+            return "Monsoon"
 
-    # Lag feature
-    df["demand_lag_1"] = df.groupby("material_id")["historical_demand"].shift(1)
+    df["season"] = df["month"].apply(get_season)
 
-    # Stock coverage
-    df["stock_coverage_days"] = df["current_stock"] / df["avg_consumption_rate"]
+    # Budget category
+    df["budget_category"] = pd.cut(
+        df["project_budget"],
+        bins=[0, 5000000, 20000000, 100000000],
+        labels=["Low", "Medium", "High"]
+    )
 
-    # Lead time risk
-    df["lead_time_risk"] = df["lead_time_days"] * df["avg_consumption_rate"]
+    df.to_csv("data/processed/material_forecast_cleaned.csv", index=False)
 
-    df.dropna(inplace=True)
-    df.to_csv(PROCESSED_DATA_PATH, index=False)
-
-    print("Feature engineering completed")
+    print("Feature engineering completed.")
 
 if __name__ == "__main__":
     engineer_features()
