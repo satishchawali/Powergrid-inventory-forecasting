@@ -1,8 +1,31 @@
 import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "./Sidebar.css";
-import logo from "../../assets/logo.png"; // adjust path if needed
+import logo from "../../assets/logo.png";
 
 function Sidebar() {
+    const [user, setUser] = useState({
+        username: localStorage.getItem("username") || "User",
+        email: localStorage.getItem("email") || "user@powergrid.in",
+        full_name: localStorage.getItem("full_name") || "User",
+    });
+
+    useEffect(() => {
+        const handleProfileUpdate = () => {
+            setUser({
+                username: localStorage.getItem("username") || "User",
+                email: localStorage.getItem("email") || "user@powergrid.in",
+                full_name: localStorage.getItem("full_name") || "User",
+            });
+        };
+
+        window.addEventListener("profileUpdated", handleProfileUpdate);
+
+        return () => {
+            window.removeEventListener("profileUpdated", handleProfileUpdate);
+        };
+    }, []);
+
     return (
         <div className="sidebar">
             {/* HEADER */}
@@ -18,31 +41,24 @@ function Sidebar() {
 
             {/* MENU */}
             <nav className="sidebar-menu">
-                <NavLink to="/dashboard" className="menu-item">
-                    <span>📊</span> Dashboard
-                </NavLink>
-
-                <NavLink to="/forecast" className="menu-item">
-                    <span>🔮</span> Forecast
-                </NavLink>
-
-                <NavLink to="/materials" className="menu-item">
-                    <span>🧱</span> Materials
-                </NavLink>
-
-                <NavLink to="/reports" className="menu-item">
-                    <span>📑</span> Reports
-                </NavLink>
+                <NavLink to="/dashboard" className="menu-item">📊 Dashboard</NavLink>
+                <NavLink to="/forecast" className="menu-item">🔮 Forecast</NavLink>
+                <NavLink to="/materials" className="menu-item">🧱 Materials</NavLink>
+                <NavLink to="/reports" className="menu-item">📑 Reports</NavLink>
+                <NavLink to="/settings" className="menu-item">⚙️ Settings</NavLink>
             </nav>
 
-            {/* USER PROFILE (BOTTOM) */}
+            {/* USER PROFILE */}
             <div className="sidebar-profile">
                 <div className="profile-img">
-                    <img src={`https://ui-avatars.com/api/?name=${localStorage.getItem("username") || "User"}&background=random`} alt="User" />
+                    <img
+                        src={`https://ui-avatars.com/api/?name=${user.full_name}&background=random`}
+                        alt="User"
+                    />
                 </div>
                 <div className="profile-info">
-                    <h4>{localStorage.getItem("username") || "User"}</h4>
-                    <p>{localStorage.getItem("email") || "user@powergrid.in"}</p>
+                    <h4>{user.full_name}</h4>
+                    <p>{user.email}</p>
                 </div>
             </div>
         </div>

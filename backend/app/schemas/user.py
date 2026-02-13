@@ -10,8 +10,28 @@ class UserLogin(BaseModel):
     username: str
     password: str
 
+    class Config:
+        from_attributes = True
+
 class Token(BaseModel):
     access_token: str
     token_type: str
     username: str
     email: str
+
+class UserProfileResponse(BaseModel):
+    full_name: str
+    email: EmailStr
+    role: str
+
+    class Config:
+        orm_mode = True
+
+class UserProfileUpdate(BaseModel):
+    full_name: str
+    email: EmailStr
+
+class changePassword(BaseModel):
+    old_password: str
+    new_password: str
+
