@@ -57,7 +57,8 @@ def login(user_data: UserLogin, db: Session = Depends(get_db)):
         "access_token": access_token, 
         "token_type": "bearer",
         "username": user.username,
-        "email": user.email
+        "email": user.email,
+        "full_name": user.full_name
     }
 
 
@@ -76,7 +77,8 @@ def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db:
         "access_token": access_token, 
         "token_type": "bearer",
         "username": user.username,
-        "email": user.email
+        "email": user.email,
+        "full_name": user.full_name
     }
 
 

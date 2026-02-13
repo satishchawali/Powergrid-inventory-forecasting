@@ -1,37 +1,1001 @@
 project_budget,region,tower_type,month,year,weather_index,lead_time_days,material_name,quantity
-12000000,Maharashtra,Transmission,1,2024,0.45,18,Power Transformer 220kV,5
-12000000,Maharashtra,Transmission,1,2024,0.45,18,Copper Cable 400mm,2200
-12000000,Maharashtra,Transmission,1,2024,0.45,18,Circuit Breaker,12
-8000000,Tamil Nadu,Distribution,2,2024,0.60,15,Insulator Disc,450
-8000000,Tamil Nadu,Distribution,2,2024,0.60,15,Steel Tower,25
-8000000,Tamil Nadu,Distribution,2,2024,0.60,15,Earthing Rod,500
-15000000,Delhi,Transmission,3,2024,0.40,20,Power Transformer 220kV,6
-15000000,Delhi,Transmission,3,2024,0.40,20,Copper Cable 400mm,2800
-15000000,Delhi,Transmission,3,2024,0.40,20,Relay Panel,14
-6000000,Karnataka,Distribution,4,2024,0.75,12,Insulator Disc,520
-6000000,Karnataka,Distribution,4,2024,0.75,12,Circuit Breaker,9
-6000000,Karnataka,Distribution,4,2024,0.75,12,High Voltage Fuse,90
-20000000,Gujarat,Transmission,5,2024,0.55,25,Power Transformer 220kV,8
-20000000,Gujarat,Transmission,5,2024,0.55,25,Copper Cable 400mm,3500
-20000000,Gujarat,Transmission,5,2024,0.55,25,Steel Tower,40
-9000000,Bihar,Distribution,6,2024,0.80,14,Insulator Disc,480
-9000000,Bihar,Distribution,6,2024,0.80,14,Earthing Rod,550
-9000000,Bihar,Distribution,6,2024,0.80,14,Relay Panel,10
-18000000,Rajasthan,Transmission,7,2024,0.50,22,Power Transformer 220kV,7
-18000000,Rajasthan,Transmission,7,2024,0.50,22,Copper Cable 400mm,3100
-18000000,Rajasthan,Transmission,7,2024,0.50,22,Circuit Breaker,16
-7000000,Uttar Pradesh,Distribution,8,2024,0.85,13,Insulator Disc,600
-7000000,Uttar Pradesh,Distribution,8,2024,0.85,13,High Voltage Fuse,110
-7000000,Uttar Pradesh,Distribution,8,2024,0.85,13,Earthing Rod,620
-16000000,West Bengal,Transmission,9,2024,0.48,21,Power Transformer 220kV,6
-16000000,West Bengal,Transmission,9,2024,0.48,21,Copper Cable 400mm,2700
-16000000,West Bengal,Transmission,9,2024,0.48,21,Relay Panel,15
-5000000,Madhya Pradesh,Distribution,10,2024,0.78,11,Insulator Disc,430
-5000000,Madhya Pradesh,Distribution,10,2024,0.78,11,Steel Tower,20
-5000000,Madhya Pradesh,Distribution,10,2024,0.78,11,Circuit Breaker,8
-22000000,Maharashtra,Transmission,11,2024,0.52,28,Power Transformer 220kV,9
-22000000,Maharashtra,Transmission,11,2024,0.52,28,Copper Cable 400mm,4000
-22000000,Maharashtra,Transmission,11,2024,0.52,28,Steel Tower,50
-10000000,Tamil Nadu,Distribution,12,2024,0.65,16,Insulator Disc,500
-10000000,Tamil Nadu,Distribution,12,2024,0.65,16,Relay Panel,12
-10000000,Tamil Nadu,Distribution,12,2024,0.65,16,High Voltage Fuse,100
+16603966,Gujarat,Transmission,6,2024,0.44,17,Steel Tower,66
+24579696,Tamil Nadu,Transmission,8,2024,0.82,30,Circuit Breaker,18
+13040523,Uttar Pradesh,Substation,2,2024,0.38,26,Circuit Breaker,5
+5809076,Karnataka,Substation,2,2025,0.55,27,Power Transformer 220kV,3
+9471784,Tamil Nadu,Substation,7,2025,0.34,21,Copper Cable 400mm,2178
+22986353,West Bengal,Transmission,12,2025,0.36,30,Relay Panel,13
+18561306,West Bengal,Substation,7,2024,0.66,30,Insulator Disc,1095
+18685065,Uttar Pradesh,Substation,5,2024,0.58,16,Power Transformer 220kV,8
+17207752,Tamil Nadu,Distribution,7,2024,0.44,28,Galvanized Steel Wire,3458
+21059481,West Bengal,Transmission,10,2025,0.47,26,Circuit Breaker,15
+9445294,Karnataka,Transmission,12,2025,0.69,29,Power Transformer 220kV,3
+14235473,Madhya Pradesh,Transmission,11,2024,0.75,19,Insulator Disc,854
+11680755,Madhya Pradesh,Substation,10,2025,0.32,21,Relay Panel,6
+5593502,West Bengal,Transmission,10,2024,0.7,10,Circuit Breaker,3
+17708440,Rajasthan,Distribution,10,2025,0.87,12,High Voltage Fuse,9
+6583546,Rajasthan,Substation,12,2024,0.83,29,Galvanized Steel Wire,1507
+19230059,Gujarat,Transmission,9,2024,0.67,11,Circuit Breaker,10
+13870083,Madhya Pradesh,Transmission,7,2024,0.89,17,Relay Panel,8
+24329547,Karnataka,Transmission,2,2024,0.34,22,Relay Panel,7
+22348988,Madhya Pradesh,Transmission,1,2024,0.43,28,Circuit Breaker,12
+16056433,Madhya Pradesh,Substation,7,2024,0.33,13,Earthing Rod,867
+9489965,Bihar,Distribution,5,2024,0.39,23,Insulator Disc,446
+8735862,Delhi,Substation,12,2025,0.63,30,Circuit Breaker,6
+10492359,Uttar Pradesh,Transmission,9,2024,0.4,24,Galvanized Steel Wire,3042
+20891114,Karnataka,Transmission,5,2025,0.31,29,High Voltage Fuse,7
+18847641,Bihar,Substation,6,2025,0.83,28,Insulator Disc,1055
+20348366,Rajasthan,Substation,5,2025,0.59,11,ACSR Conductor,4842
+12411262,Bihar,Distribution,2,2024,0.75,28,Relay Panel,5
+24019533,Rajasthan,Transmission,11,2024,0.78,26,Insulator Disc,1321
+23732225,Uttar Pradesh,Substation,5,2025,0.39,19,Steel Tower,118
+23845787,Gujarat,Distribution,11,2025,0.85,26,Power Transformer 220kV,14
+6904796,Gujarat,Substation,1,2025,0.57,13,ACSR Conductor,2071
+6548275,Gujarat,Substation,4,2024,0.8,25,Power Transformer 220kV,3
+9186136,Madhya Pradesh,Transmission,12,2024,0.52,11,Relay Panel,7
+9297184,Bihar,Substation,11,2024,0.41,16,Galvanized Steel Wire,2482
+8080518,Madhya Pradesh,Transmission,9,2025,0.7,24,High Voltage Fuse,5
+24025243,Uttar Pradesh,Distribution,12,2024,0.64,30,Steel Tower,48
+7316950,Karnataka,Transmission,4,2024,0.42,25,Copper Cable 400mm,2085
+15814100,Gujarat,Transmission,5,2024,0.36,24,Circuit Breaker,7
+10855628,Delhi,Substation,12,2024,0.44,27,Circuit Breaker,5
+20787428,Maharashtra,Transmission,11,2025,0.49,11,Galvanized Steel Wire,3284
+21831594,Maharashtra,Distribution,8,2025,0.32,16,Earthing Rod,1091
+15820059,Madhya Pradesh,Distribution,12,2025,0.35,14,Earthing Rod,854
+14203290,Delhi,Substation,6,2025,0.55,21,Insulator Disc,624
+22457741,Madhya Pradesh,Distribution,10,2024,0.53,26,ACSR Conductor,6220
+11685449,Bihar,Distribution,1,2025,0.38,20,Galvanized Steel Wire,2769
+14072002,Delhi,Substation,12,2024,0.31,17,High Voltage Fuse,4
+21756579,Rajasthan,Distribution,10,2024,0.46,19,Steel Tower,108
+19877832,Delhi,Substation,3,2024,0.6,10,Insulator Disc,1172
+9623954,Bihar,Substation,9,2025,0.9,30,Relay Panel,5
+19509433,Karnataka,Substation,12,2024,0.3,14,Insulator Disc,1033
+13048322,Gujarat,Substation,1,2024,0.83,25,Relay Panel,4
+22740117,Gujarat,Substation,10,2025,0.5,23,Copper Cable 400mm,4093
+13071443,Delhi,Substation,1,2025,0.64,29,Power Transformer 220kV,9
+19088157,Karnataka,Distribution,1,2025,0.44,15,ACSR Conductor,3454
+13820423,Rajasthan,Substation,1,2024,0.87,10,Earthing Rod,552
+11561612,Delhi,Transmission,11,2025,0.55,12,High Voltage Fuse,6
+16271613,Karnataka,Substation,4,2025,0.73,13,Steel Tower,32
+9400948,Karnataka,Distribution,3,2024,0.6,11,Earthing Rod,413
+20560416,Bihar,Distribution,3,2024,0.55,13,Insulator Disc,925
+24835292,Madhya Pradesh,Distribution,11,2024,0.44,15,Steel Tower,99
+20318856,Gujarat,Distribution,1,2025,0.77,24,Galvanized Steel Wire,4470
+16463285,Uttar Pradesh,Distribution,1,2025,0.86,20,Earthing Rod,823
+17668367,Tamil Nadu,Substation,9,2024,0.8,17,Earthing Rod,865
+9705531,Karnataka,Distribution,12,2025,0.34,24,ACSR Conductor,1562
+10031887,West Bengal,Distribution,6,2024,0.52,12,Power Transformer 220kV,4
+20785440,Delhi,Distribution,7,2024,0.47,19,Power Transformer 220kV,8
+8596219,West Bengal,Distribution,1,2025,0.8,11,Steel Tower,42
+14955859,West Bengal,Substation,7,2024,0.71,19,Steel Tower,74
+7485875,Rajasthan,Distribution,1,2024,0.73,16,Steel Tower,37
+7192744,Madhya Pradesh,Distribution,11,2025,0.71,17,Insulator Disc,309
+19743758,Rajasthan,Distribution,2,2024,0.56,14,ACSR Conductor,5469
+9540807,Delhi,Substation,11,2025,0.62,23,ACSR Conductor,1755
+20067876,Delhi,Distribution,7,2025,0.85,29,ACSR Conductor,4856
+16554786,Gujarat,Substation,2,2024,0.6,20,Relay Panel,9
+17662243,Bihar,Substation,10,2024,0.9,15,Copper Cable 400mm,3461
+22174395,Bihar,Substation,3,2024,0.5,27,Copper Cable 400mm,4612
+14204802,Bihar,Distribution,9,2025,0.77,19,Power Transformer 220kV,9
+9093925,Tamil Nadu,Distribution,10,2024,0.74,21,Copper Cable 400mm,1445
+18922837,Tamil Nadu,Distribution,11,2024,0.36,30,ACSR Conductor,4825
+23499434,Gujarat,Transmission,3,2025,0.47,20,High Voltage Fuse,17
+8428700,Karnataka,Substation,5,2024,0.36,12,High Voltage Fuse,6
+24730772,Madhya Pradesh,Transmission,2,2025,0.59,30,ACSR Conductor,3734
+7016868,West Bengal,Substation,7,2025,0.5,13,Earthing Rod,308
+16872340,Madhya Pradesh,Substation,11,2025,0.56,28,Circuit Breaker,7
+19202025,Maharashtra,Distribution,6,2025,0.38,28,High Voltage Fuse,10
+12568072,Rajasthan,Distribution,1,2024,0.77,16,Copper Cable 400mm,1935
+7345203,Rajasthan,Transmission,12,2025,0.35,27,Circuit Breaker,3
+19064968,Delhi,Transmission,10,2025,0.6,24,Insulator Disc,800
+11979032,Bihar,Distribution,4,2024,0.43,18,ACSR Conductor,2431
+19967802,Rajasthan,Distribution,5,2025,0.31,10,Power Transformer 220kV,8
+15750146,Madhya Pradesh,Substation,5,2025,0.37,22,Steel Tower,78
+16709574,Maharashtra,Substation,4,2025,0.51,21,Steel Tower,66
+19424582,Uttar Pradesh,Distribution,1,2024,0.8,24,Earthing Rod,1107
+16593465,Bihar,Substation,12,2024,0.87,10,Earthing Rod,680
+6248796,Gujarat,Distribution,12,2025,0.57,26,Power Transformer 220kV,4
+6385521,Delhi,Substation,5,2024,0.61,24,High Voltage Fuse,3
+19863820,Madhya Pradesh,Transmission,5,2025,0.44,10,Insulator Disc,993
+12523990,Bihar,Transmission,8,2024,0.33,16,Relay Panel,7
+18607570,Tamil Nadu,Transmission,10,2025,0.38,20,Earthing Rod,762
+21790679,Tamil Nadu,Transmission,2,2024,0.48,20,Copper Cable 400mm,4793
+7354191,Rajasthan,Transmission,6,2025,0.75,12,Relay Panel,3
+16076198,Gujarat,Distribution,7,2025,0.71,17,Steel Tower,32
+7857952,Maharashtra,Transmission,10,2025,0.64,26,Power Transformer 220kV,4
+24697386,West Bengal,Substation,1,2024,0.46,21,Power Transformer 220kV,13
+24300273,Rajasthan,Distribution,3,2025,0.87,14,High Voltage Fuse,14
+10442046,Uttar Pradesh,Distribution,9,2024,0.65,16,Power Transformer 220kV,5
+16494698,Madhya Pradesh,Substation,9,2025,0.56,12,Earthing Rod,940
+14194744,Madhya Pradesh,Substation,6,2024,0.31,12,Earthing Rod,851
+24121241,Maharashtra,Distribution,6,2024,0.47,12,Earthing Rod,1181
+16326126,Bihar,Transmission,10,2025,0.86,26,Circuit Breaker,12
+9377364,Madhya Pradesh,Substation,7,2025,0.6,29,Copper Cable 400mm,2597
+14252024,Gujarat,Transmission,12,2025,0.63,13,ACSR Conductor,2750
+10187321,Madhya Pradesh,Transmission,4,2024,0.55,25,Insulator Disc,611
+7916654,Delhi,Substation,3,2024,0.76,13,Steel Tower,23
+9815380,Madhya Pradesh,Transmission,2,2024,0.5,11,Galvanized Steel Wire,2689
+18803615,Rajasthan,Distribution,3,2025,0.76,12,Earthing Rod,1071
+13446096,Madhya Pradesh,Substation,4,2024,0.74,17,ACSR Conductor,3993
+14282674,Karnataka,Transmission,3,2025,0.76,23,Copper Cable 400mm,2385
+24605115,Bihar,Substation,6,2025,0.57,10,Galvanized Steel Wire,6864
+16544458,Bihar,Substation,12,2025,0.39,29,High Voltage Fuse,5
+8565171,Uttar Pradesh,Substation,8,2024,0.39,15,High Voltage Fuse,6
+7706698,Maharashtra,Substation,1,2025,0.41,12,Steel Tower,23
+10087174,Tamil Nadu,Distribution,2,2024,0.62,18,Power Transformer 220kV,3
+21201894,Karnataka,Substation,4,2025,0.8,13,ACSR Conductor,4961
+22783893,Gujarat,Distribution,5,2025,0.63,15,Earthing Rod,1321
+7607942,Gujarat,Transmission,7,2025,0.8,30,Circuit Breaker,5
+6012488,Uttar Pradesh,Transmission,7,2024,0.5,10,High Voltage Fuse,4
+17634077,Tamil Nadu,Substation,4,2024,0.4,18,Earthing Rod,1005
+20418615,Madhya Pradesh,Substation,9,2025,0.48,19,Power Transformer 220kV,11
+13465830,Delhi,Distribution,12,2025,0.89,21,Galvanized Steel Wire,3339
+6518242,Karnataka,Distribution,8,2024,0.89,14,Insulator Disc,358
+6067610,Bihar,Distribution,10,2024,0.75,22,Galvanized Steel Wire,1504
+15732582,Delhi,Distribution,12,2024,0.63,10,High Voltage Fuse,10
+22051511,Gujarat,Transmission,10,2025,0.68,28,Copper Cable 400mm,6483
+20534986,Karnataka,Transmission,10,2024,0.46,10,Relay Panel,14
+17671536,Karnataka,Distribution,11,2024,0.85,21,ACSR Conductor,3092
+7361521,Madhya Pradesh,Substation,1,2024,0.63,16,Steel Tower,22
+14255517,Delhi,Distribution,8,2025,0.55,28,High Voltage Fuse,4
+21485487,Madhya Pradesh,Distribution,2,2025,0.57,28,Power Transformer 220kV,16
+18899932,West Bengal,Distribution,5,2025,0.63,19,Relay Panel,7
+14313685,Uttar Pradesh,Substation,3,2025,0.89,11,Earthing Rod,729
+5564855,Karnataka,Substation,10,2024,0.58,26,Relay Panel,2
+24098886,Bihar,Substation,4,2025,0.51,22,ACSR Conductor,4506
+16334342,West Bengal,Transmission,10,2025,0.89,24,Power Transformer 220kV,11
+9917628,Rajasthan,Substation,5,2025,0.9,20,Circuit Breaker,4
+12884563,Rajasthan,Substation,1,2025,0.35,21,ACSR Conductor,3272
+20396774,West Bengal,Distribution,3,2024,0.51,20,Earthing Rod,938
+16036540,Madhya Pradesh,Distribution,12,2024,0.4,10,Circuit Breaker,8
+17334570,Tamil Nadu,Substation,11,2024,0.44,17,Earthing Rod,693
+23660135,Karnataka,Substation,10,2025,0.73,18,Earthing Rod,1348
+18992646,Delhi,Transmission,10,2025,0.8,30,Steel Tower,94
+9345892,Delhi,Distribution,3,2025,0.62,13,Galvanized Steel Wire,1700
+19466126,West Bengal,Transmission,6,2025,0.67,21,Copper Cable 400mm,3387
+11831422,West Bengal,Substation,5,2024,0.51,19,Galvanized Steel Wire,3395
+13236258,Rajasthan,Substation,11,2025,0.58,20,Insulator Disc,648
+5355104,Gujarat,Distribution,11,2025,0.8,15,Power Transformer 220kV,2
+18369997,Delhi,Distribution,11,2025,0.84,18,Copper Cable 400mm,3049
+20767027,West Bengal,Distribution,5,2024,0.87,27,Copper Cable 400mm,3779
+11863255,Maharashtra,Transmission,12,2025,0.39,28,Circuit Breaker,5
+22952465,Madhya Pradesh,Substation,5,2024,0.54,26,Galvanized Steel Wire,5531
+14454870,Uttar Pradesh,Distribution,12,2024,0.65,11,Circuit Breaker,9
+19929056,Bihar,Distribution,2,2025,0.89,25,Steel Tower,39
+10655379,Bihar,Transmission,9,2024,0.9,26,Copper Cable 400mm,1726
+24722706,Rajasthan,Distribution,7,2025,0.32,11,Earthing Rod,1335
+18012585,Uttar Pradesh,Transmission,4,2025,0.33,28,Steel Tower,90
+7443366,Rajasthan,Transmission,1,2025,0.32,19,Earthing Rod,409
+9222359,Maharashtra,Substation,4,2025,0.68,22,Steel Tower,18
+23017163,Maharashtra,Substation,6,2024,0.6,12,Earthing Rod,966
+13314349,Bihar,Transmission,6,2025,0.8,18,Galvanized Steel Wire,3887
+20579060,West Bengal,Distribution,8,2025,0.52,17,ACSR Conductor,4383
+14887773,Uttar Pradesh,Transmission,10,2025,0.36,26,Power Transformer 220kV,7
+12262541,Madhya Pradesh,Substation,4,2024,0.53,14,Relay Panel,8
+9223990,Karnataka,Transmission,6,2025,0.32,23,Earthing Rod,553
+16908791,Delhi,Transmission,11,2025,0.68,15,Galvanized Steel Wire,4514
+7233178,Bihar,Transmission,6,2024,0.46,16,Insulator Disc,339
+22681664,Bihar,Substation,8,2025,0.8,28,High Voltage Fuse,16
+15784071,Gujarat,Transmission,3,2024,0.67,23,Insulator Disc,883
+18999394,Maharashtra,Distribution,9,2024,0.43,23,Steel Tower,94
+18609686,Delhi,Transmission,9,2024,0.35,25,Relay Panel,13
+17681850,Madhya Pradesh,Distribution,5,2024,0.32,21,Galvanized Steel Wire,3854
+5733056,Tamil Nadu,Substation,9,2025,0.47,27,ACSR Conductor,1301
+8944064,Gujarat,Transmission,3,2025,0.65,12,ACSR Conductor,1824
+14414705,Maharashtra,Transmission,6,2025,0.74,16,Earthing Rod,850
+19891551,Delhi,Transmission,11,2025,0.61,13,Galvanized Steel Wire,4018
+7745099,Karnataka,Substation,9,2024,0.77,23,Steel Tower,23
+21642449,Uttar Pradesh,Distribution,10,2025,0.8,22,Circuit Breaker,17
+20033885,Gujarat,Substation,7,2024,0.81,29,Insulator Disc,921
+10061147,Uttar Pradesh,Distribution,2,2024,0.6,14,High Voltage Fuse,6
+16021319,Madhya Pradesh,Transmission,9,2024,0.36,23,Circuit Breaker,8
+5546095,Rajasthan,Substation,12,2025,0.51,28,Insulator Disc,249
+21500316,Uttar Pradesh,Transmission,11,2024,0.36,10,Steel Tower,64
+5908590,Karnataka,Substation,6,2024,0.43,24,Galvanized Steel Wire,1228
+8987375,Maharashtra,Distribution,8,2024,0.77,16,Circuit Breaker,6
+8583109,Uttar Pradesh,Transmission,1,2024,0.47,10,ACSR Conductor,1639
+6221913,Maharashtra,Distribution,1,2025,0.83,30,Relay Panel,2
+20935970,Uttar Pradesh,Substation,5,2024,0.4,11,Relay Panel,7
+23473483,West Bengal,Substation,5,2025,0.75,10,Insulator Disc,985
+16449180,Madhya Pradesh,Transmission,3,2025,0.64,28,Power Transformer 220kV,12
+6546681,Tamil Nadu,Distribution,3,2025,0.48,15,Power Transformer 220kV,3
+10466560,Tamil Nadu,Transmission,9,2025,0.68,24,ACSR Conductor,2930
+23877200,Uttar Pradesh,Distribution,9,2024,0.36,15,Copper Cable 400mm,4035
+8699053,West Bengal,Distribution,4,2025,0.51,27,Copper Cable 400mm,2418
+9807400,West Bengal,Substation,5,2024,0.8,16,High Voltage Fuse,7
+16519159,Tamil Nadu,Distribution,6,2024,0.32,10,ACSR Conductor,2477
+7179020,Maharashtra,Distribution,9,2025,0.41,23,Steel Tower,28
+16327347,Bihar,Transmission,1,2025,0.76,18,Galvanized Steel Wire,4212
+13823217,West Bengal,Substation,1,2024,0.37,30,Steel Tower,69
+19987585,Delhi,Substation,10,2024,0.81,14,Relay Panel,13
+15943858,Rajasthan,Substation,1,2024,0.5,27,Earthing Rod,813
+5386020,Bihar,Distribution,8,2024,0.71,19,Circuit Breaker,3
+15830387,West Bengal,Distribution,4,2024,0.89,12,Steel Tower,47
+22260984,Delhi,Substation,2,2024,0.82,18,Power Transformer 220kV,8
+22930330,Rajasthan,Substation,3,2025,0.83,30,Power Transformer 220kV,10
+21067120,Rajasthan,Substation,11,2024,0.5,19,Earthing Rod,1137
+10924434,Bihar,Substation,2,2025,0.64,20,Steel Tower,43
+7764346,Uttar Pradesh,Transmission,4,2024,0.72,14,Steel Tower,23
+22832247,Rajasthan,Distribution,6,2025,0.83,16,ACSR Conductor,5776
+17492927,West Bengal,Substation,2,2024,0.6,17,High Voltage Fuse,5
+15541246,Tamil Nadu,Transmission,2,2025,0.65,11,Earthing Rod,885
+19321078,Gujarat,Distribution,8,2024,0.56,26,Steel Tower,96
+8628220,Delhi,Distribution,12,2024,0.87,25,High Voltage Fuse,3
+16805335,Uttar Pradesh,Distribution,5,2024,0.42,24,ACSR Conductor,4134
+24855346,West Bengal,Distribution,11,2025,0.83,23,Relay Panel,16
+19610047,Gujarat,Substation,11,2025,0.74,15,ACSR Conductor,5235
+8492769,West Bengal,Substation,3,2025,0.46,26,High Voltage Fuse,3
+11516211,Gujarat,Distribution,9,2025,0.59,25,Relay Panel,8
+22886555,Tamil Nadu,Distribution,8,2025,0.37,26,Circuit Breaker,12
+11859792,Maharashtra,Transmission,1,2024,0.76,26,Power Transformer 220kV,3
+10169441,Karnataka,Distribution,2,2024,0.5,10,High Voltage Fuse,3
+22912708,Madhya Pradesh,Substation,8,2024,0.57,20,Steel Tower,91
+14588595,Delhi,Substation,3,2025,0.58,17,Earthing Rod,773
+20517296,Rajasthan,Distribution,12,2024,0.83,25,High Voltage Fuse,6
+13083234,Maharashtra,Substation,6,2025,0.3,17,Steel Tower,26
+11293264,Delhi,Distribution,4,2024,0.64,22,Circuit Breaker,3
+5768390,Uttar Pradesh,Distribution,6,2025,0.4,23,Power Transformer 220kV,3
+7199414,Uttar Pradesh,Substation,8,2025,0.64,26,Copper Cable 400mm,1079
+14512354,Gujarat,Distribution,11,2024,0.38,19,Power Transformer 220kV,10
+8124526,Delhi,Distribution,7,2024,0.43,24,Insulator Disc,414
+18089116,Bihar,Substation,1,2025,0.69,29,Insulator Disc,958
+5400530,Gujarat,Distribution,4,2024,0.89,13,Power Transformer 220kV,1
+22530347,Delhi,Substation,3,2024,0.78,18,Galvanized Steel Wire,4258
+6751261,Madhya Pradesh,Substation,2,2024,0.84,18,Earthing Rod,270
+9700482,West Bengal,Distribution,10,2024,0.89,17,Relay Panel,5
+12720811,Rajasthan,Distribution,12,2024,0.81,28,ACSR Conductor,2378
+8559026,Rajasthan,Substation,7,2025,0.8,16,Galvanized Steel Wire,1378
+19534288,Karnataka,Distribution,8,2024,0.38,26,Steel Tower,58
+10946633,Delhi,Distribution,3,2024,0.49,23,Copper Cable 400mm,2353
+9277751,Tamil Nadu,Distribution,11,2024,0.45,10,Copper Cable 400mm,1549
+20277348,Uttar Pradesh,Transmission,6,2024,0.44,19,Steel Tower,40
+17865541,West Bengal,Transmission,6,2024,0.57,23,ACSR Conductor,4645
+12781992,Rajasthan,Distribution,2,2025,0.48,10,Relay Panel,4
+6565338,Tamil Nadu,Distribution,10,2025,0.85,30,Relay Panel,4
+10519930,Maharashtra,Transmission,3,2024,0.75,28,Copper Cable 400mm,2871
+22034461,Rajasthan,Transmission,8,2025,0.6,24,ACSR Conductor,3745
+14579843,Karnataka,Substation,10,2024,0.78,29,Insulator Disc,801
+24778796,Rajasthan,Transmission,11,2025,0.78,27,ACSR Conductor,6591
+21447499,Madhya Pradesh,Distribution,3,2025,0.49,30,Power Transformer 220kV,8
+16419281,Uttar Pradesh,Transmission,9,2024,0.58,11,Power Transformer 220kV,6
+18647827,Delhi,Transmission,9,2024,0.9,15,Circuit Breaker,10
+21468021,Delhi,Substation,11,2025,0.79,29,Circuit Breaker,7
+5749137,Madhya Pradesh,Distribution,11,2025,0.37,20,High Voltage Fuse,2
+20061751,West Bengal,Distribution,1,2025,0.84,24,ACSR Conductor,3711
+18854456,Gujarat,Substation,9,2025,0.55,28,Steel Tower,75
+22072988,West Bengal,Substation,5,2024,0.53,24,Relay Panel,8
+7692111,Uttar Pradesh,Substation,4,2025,0.51,19,Galvanized Steel Wire,2046
+20523626,Bihar,Distribution,4,2025,0.35,15,Galvanized Steel Wire,6033
+18647147,West Bengal,Distribution,2,2024,0.53,11,ACSR Conductor,3971
+23011109,Uttar Pradesh,Distribution,8,2024,0.37,29,Copper Cable 400mm,4556
+17260413,Bihar,Distribution,12,2025,0.71,21,High Voltage Fuse,12
+23679274,Madhya Pradesh,Substation,8,2025,0.85,13,High Voltage Fuse,12
+12417850,Tamil Nadu,Transmission,7,2025,0.78,21,Relay Panel,8
+15702268,Madhya Pradesh,Distribution,6,2025,0.84,13,Relay Panel,4
+23150753,Gujarat,Distribution,1,2024,0.66,30,ACSR Conductor,3935
+23824068,Tamil Nadu,Substation,6,2025,0.37,10,High Voltage Fuse,7
+5359953,West Bengal,Distribution,10,2024,0.57,17,ACSR Conductor,1270
+24734576,Rajasthan,Substation,10,2024,0.47,22,Steel Tower,49
+22458053,Rajasthan,Distribution,2,2024,0.75,29,Copper Cable 400mm,4132
+12825313,Uttar Pradesh,Distribution,1,2024,0.76,10,Steel Tower,51
+24540229,Bihar,Substation,1,2024,0.6,28,Copper Cable 400mm,6355
+5286410,Bihar,Distribution,1,2024,0.61,30,Copper Cable 400mm,1057
+18462117,Madhya Pradesh,Transmission,10,2024,0.39,18,Relay Panel,6
+15445568,Uttar Pradesh,Substation,11,2025,0.58,17,Galvanized Steel Wire,4540
+11733302,Maharashtra,Transmission,5,2024,0.44,24,Insulator Disc,563
+15222868,Uttar Pradesh,Substation,1,2024,0.44,25,Insulator Disc,608
+10906615,Delhi,Transmission,7,2025,0.4,23,Relay Panel,5
+19851730,Delhi,Distribution,5,2025,0.86,14,ACSR Conductor,3613
+14880518,Uttar Pradesh,Transmission,4,2025,0.78,21,Earthing Rod,595
+12293657,Rajasthan,Substation,2,2025,0.37,27,Power Transformer 220kV,4
+10402900,West Bengal,Distribution,10,2025,0.6,24,Insulator Disc,613
+22020704,Tamil Nadu,Distribution,11,2024,0.44,30,High Voltage Fuse,14
+13664816,Maharashtra,Distribution,7,2024,0.38,29,Relay Panel,8
+22407158,Karnataka,Transmission,4,2025,0.84,12,High Voltage Fuse,11
+12841922,Uttar Pradesh,Distribution,2,2025,0.48,26,Copper Cable 400mm,2517
+10484997,Maharashtra,Distribution,7,2024,0.33,28,Steel Tower,52
+7615289,West Bengal,Substation,5,2024,0.45,25,Earthing Rod,403
+19885530,Bihar,Substation,11,2024,0.35,27,Insulator Disc,954
+24735941,Maharashtra,Distribution,6,2024,0.78,11,Galvanized Steel Wire,6851
+16608176,Rajasthan,Substation,5,2025,0.7,12,Relay Panel,7
+14776452,Delhi,Transmission,2,2024,0.52,10,Circuit Breaker,9
+16679893,Maharashtra,Transmission,11,2025,0.31,14,Steel Tower,33
+23382474,Tamil Nadu,Distribution,11,2024,0.88,28,Steel Tower,70
+11754545,Tamil Nadu,Distribution,2,2025,0.45,26,Earthing Rod,658
+17527277,Madhya Pradesh,Substation,3,2025,0.72,17,Earthing Rod,753
+6140945,Rajasthan,Transmission,7,2025,0.32,16,Power Transformer 220kV,3
+12390711,Bihar,Transmission,1,2025,0.3,18,Galvanized Steel Wire,3593
+19782345,Rajasthan,Transmission,9,2024,0.46,25,Circuit Breaker,15
+7844593,Delhi,Transmission,10,2024,0.71,12,Steel Tower,15
+9414422,Tamil Nadu,Substation,3,2025,0.81,17,Earthing Rod,414
+16327286,Karnataka,Transmission,8,2024,0.55,27,Relay Panel,7
+22435621,Maharashtra,Transmission,5,2024,0.74,29,Galvanized Steel Wire,4419
+6916312,Tamil Nadu,Transmission,10,2025,0.71,17,Insulator Disc,297
+10697700,Karnataka,Transmission,3,2024,0.39,15,High Voltage Fuse,5
+14251195,Bihar,Substation,4,2025,0.48,10,Earthing Rod,726
+22692246,Karnataka,Transmission,11,2024,0.35,16,Steel Tower,45
+7279691,Bihar,Substation,9,2024,0.63,17,Insulator Disc,327
+8060066,Madhya Pradesh,Distribution,6,2024,0.81,22,Power Transformer 220kV,4
+21506078,Tamil Nadu,Distribution,7,2024,0.58,13,Copper Cable 400mm,5742
+15407949,Karnataka,Transmission,8,2024,0.8,27,Power Transformer 220kV,5
+17810541,West Bengal,Substation,2,2024,0.71,25,ACSR Conductor,5111
+19562440,Tamil Nadu,Substation,11,2024,0.53,28,ACSR Conductor,3169
+22882029,West Bengal,Distribution,12,2025,0.59,17,Steel Tower,91
+7084645,Uttar Pradesh,Distribution,5,2024,0.59,14,Copper Cable 400mm,1650
+23305930,Maharashtra,Transmission,8,2024,0.71,14,Earthing Rod,932
+12187300,West Bengal,Substation,2,2025,0.67,25,Earthing Rod,609
+8452572,Bihar,Substation,12,2025,0.76,21,Galvanized Steel Wire,1377
+10531347,Karnataka,Transmission,4,2024,0.62,13,ACSR Conductor,2759
+24605136,West Bengal,Transmission,9,2025,0.46,10,Insulator Disc,1058
+21429058,West Bengal,Transmission,10,2024,0.4,17,Power Transformer 220kV,16
+5136473,Maharashtra,Substation,12,2025,0.66,28,Copper Cable 400mm,1052
+16904787,Gujarat,Distribution,11,2025,0.33,30,Earthing Rod,929
+6119387,Delhi,Transmission,3,2025,0.7,17,Galvanized Steel Wire,1548
+15631557,Delhi,Distribution,6,2025,0.39,29,Power Transformer 220kV,9
+23035736,Rajasthan,Distribution,2,2024,0.59,30,High Voltage Fuse,10
+18885647,Uttar Pradesh,Transmission,6,2025,0.37,20,High Voltage Fuse,14
+14003664,Madhya Pradesh,Substation,5,2024,0.34,23,Steel Tower,70
+9783104,Uttar Pradesh,Transmission,7,2025,0.37,23,High Voltage Fuse,5
+9617442,Rajasthan,Distribution,5,2025,0.39,13,Earthing Rod,528
+12448331,Tamil Nadu,Substation,12,2025,0.9,23,Power Transformer 220kV,9
+20445335,Delhi,Substation,8,2025,0.47,21,Relay Panel,9
+15619697,Rajasthan,Transmission,8,2025,0.75,19,ACSR Conductor,4170
+9133495,Maharashtra,Transmission,2,2024,0.51,16,Circuit Breaker,4
+23411320,Tamil Nadu,Substation,8,2025,0.48,11,Power Transformer 220kV,8
+5721628,Uttar Pradesh,Transmission,5,2024,0.79,24,ACSR Conductor,921
+15452723,Karnataka,Transmission,3,2025,0.44,19,Circuit Breaker,7
+18520191,Bihar,Distribution,11,2024,0.75,17,Steel Tower,74
+21284463,Karnataka,Substation,7,2024,0.43,22,Insulator Disc,1213
+22406943,West Bengal,Substation,4,2024,0.72,12,Galvanized Steel Wire,3966
+15256630,Maharashtra,Transmission,2,2025,0.39,10,Earthing Rod,671
+23959112,Karnataka,Substation,10,2024,0.31,29,Insulator Disc,1126
+14627702,Karnataka,Distribution,6,2025,0.7,18,Steel Tower,43
+24390311,West Bengal,Transmission,4,2024,0.68,16,Power Transformer 220kV,12
+22819215,Rajasthan,Substation,9,2024,0.81,19,High Voltage Fuse,11
+9177917,Bihar,Substation,11,2024,0.54,30,Insulator Disc,367
+9878117,Uttar Pradesh,Substation,3,2025,0.78,15,Earthing Rod,474
+17121526,Tamil Nadu,Distribution,11,2025,0.46,26,Insulator Disc,719
+16875348,Karnataka,Distribution,9,2025,0.68,29,High Voltage Fuse,10
+19704294,Delhi,Transmission,12,2025,0.53,14,Power Transformer 220kV,9
+11583182,Madhya Pradesh,Distribution,9,2024,0.33,17,Earthing Rod,625
+11025415,Uttar Pradesh,Substation,8,2024,0.32,18,ACSR Conductor,3186
+7098542,Bihar,Distribution,1,2025,0.71,24,Power Transformer 220kV,2
+21201194,Tamil Nadu,Distribution,12,2024,0.73,16,Steel Tower,84
+16267385,Delhi,Distribution,9,2024,0.86,12,Galvanized Steel Wire,4522
+16752203,Uttar Pradesh,Substation,4,2024,0.74,21,Power Transformer 220kV,7
+14649979,Gujarat,Substation,6,2024,0.48,13,High Voltage Fuse,7
+12550355,Tamil Nadu,Distribution,2,2024,0.6,25,ACSR Conductor,2484
+19460505,Uttar Pradesh,Transmission,1,2025,0.47,17,Insulator Disc,1109
+23683167,Madhya Pradesh,Transmission,10,2024,0.77,29,Insulator Disc,1018
+18264397,Gujarat,Transmission,4,2025,0.73,16,Galvanized Steel Wire,3999
+12988794,Bihar,Transmission,12,2024,0.71,13,Steel Tower,64
+20731721,West Bengal,Transmission,2,2025,0.32,12,Steel Tower,103
+14259105,Tamil Nadu,Substation,12,2025,0.63,30,ACSR Conductor,3336
+21247792,Madhya Pradesh,Substation,11,2024,0.82,15,Steel Tower,63
+13932617,Madhya Pradesh,Transmission,8,2025,0.3,23,Relay Panel,4
+18558217,Uttar Pradesh,Distribution,6,2025,0.84,22,ACSR Conductor,2913
+9069907,Bihar,Substation,3,2025,0.86,22,Galvanized Steel Wire,2258
+11035746,Gujarat,Transmission,10,2024,0.65,25,Insulator Disc,540
+12802484,Maharashtra,Transmission,12,2024,0.74,17,High Voltage Fuse,9
+5683047,Delhi,Transmission,9,2025,0.55,24,Copper Cable 400mm,1017
+21067691,Rajasthan,Transmission,6,2025,0.84,15,ACSR Conductor,6130
+20627209,Tamil Nadu,Transmission,3,2024,0.31,16,Copper Cable 400mm,3630
+8932081,Madhya Pradesh,Substation,5,2025,0.58,13,Circuit Breaker,5
+23397695,Madhya Pradesh,Substation,3,2024,0.56,29,Circuit Breaker,8
+19895862,Gujarat,Distribution,10,2025,0.72,27,Steel Tower,79
+9342300,Maharashtra,Substation,6,2025,0.37,25,Relay Panel,6
+5316582,Maharashtra,Transmission,3,2025,0.53,25,Power Transformer 220kV,2
+14210373,Bihar,Substation,7,2024,0.54,14,Steel Tower,56
+13422350,Uttar Pradesh,Transmission,4,2025,0.83,23,Circuit Breaker,4
+7740935,Rajasthan,Substation,2,2024,0.67,25,ACSR Conductor,1215
+7418060,Bihar,Distribution,2,2025,0.81,29,Galvanized Steel Wire,1824
+12807242,Rajasthan,Substation,1,2024,0.53,15,Power Transformer 220kV,6
+22060115,Bihar,Substation,3,2024,0.72,23,Copper Cable 400mm,5029
+15269810,Gujarat,Distribution,2,2025,0.55,14,Earthing Rod,748
+22578372,Delhi,Substation,8,2025,0.66,23,Steel Tower,67
+5413291,Uttar Pradesh,Substation,2,2025,0.68,12,Relay Panel,1
+12449543,Rajasthan,Distribution,11,2024,0.52,11,Earthing Rod,572
+19719101,Maharashtra,Substation,2,2025,0.82,16,Circuit Breaker,11
+21280711,West Bengal,Distribution,3,2024,0.64,14,Earthing Rod,893
+14685455,Maharashtra,Transmission,10,2024,0.63,15,Power Transformer 220kV,5
+7361343,Rajasthan,Substation,2,2025,0.44,23,Copper Cable 400mm,2149
+8606129,Madhya Pradesh,Substation,8,2025,0.83,13,Circuit Breaker,5
+10617984,Maharashtra,Distribution,8,2024,0.41,24,High Voltage Fuse,7
+13570579,Bihar,Transmission,11,2024,0.67,17,Earthing Rod,678
+9780091,Uttar Pradesh,Distribution,3,2025,0.8,27,Steel Tower,48
+19102748,Uttar Pradesh,Substation,6,2024,0.39,15,Relay Panel,6
+14327103,West Bengal,Distribution,7,2024,0.88,27,Earthing Rod,816
+15767610,Madhya Pradesh,Substation,7,2024,0.69,25,Galvanized Steel Wire,4146
+17163056,Uttar Pradesh,Transmission,7,2025,0.52,21,Power Transformer 220kV,6
+8784915,Maharashtra,Substation,11,2025,0.44,14,Circuit Breaker,6
+19442789,Gujarat,Transmission,2,2025,0.51,23,Earthing Rod,1030
+20506306,Uttar Pradesh,Substation,3,2025,0.7,25,Circuit Breaker,8
+11962789,Delhi,Substation,1,2024,0.47,16,Relay Panel,6
+17344233,Madhya Pradesh,Distribution,5,2025,0.87,21,Circuit Breaker,7
+8249114,Gujarat,Substation,5,2024,0.88,22,Steel Tower,16
+20303947,Tamil Nadu,Distribution,11,2025,0.5,16,Earthing Rod,893
+10596532,Bihar,Transmission,2,2025,0.4,10,Copper Cable 400mm,2257
+6557334,Karnataka,Distribution,12,2025,0.4,14,Copper Cable 400mm,1075
+14979858,Bihar,Distribution,10,2025,0.79,24,Copper Cable 400mm,3804
+10653147,West Bengal,Substation,1,2025,0.64,14,Relay Panel,5
+11802300,Madhya Pradesh,Distribution,3,2024,0.78,11,High Voltage Fuse,5
+16471084,Madhya Pradesh,Transmission,6,2024,0.57,16,Circuit Breaker,6
+22685965,Delhi,Substation,1,2024,0.4,21,Steel Tower,68
+7083048,Gujarat,Transmission,10,2025,0.78,18,Galvanized Steel Wire,1962
+20260122,Karnataka,Distribution,8,2024,0.4,26,Insulator Disc,931
+17551052,Maharashtra,Transmission,12,2024,0.42,22,Circuit Breaker,7
+7527931,Bihar,Substation,10,2025,0.68,25,Insulator Disc,338
+20099461,Gujarat,Distribution,11,2024,0.78,15,Relay Panel,9
+9613747,Delhi,Distribution,3,2024,0.3,17,ACSR Conductor,2538
+16904829,Rajasthan,Substation,5,2024,0.79,29,High Voltage Fuse,13
+18943554,West Bengal,Distribution,4,2025,0.51,14,Relay Panel,9
+19990869,West Bengal,Transmission,7,2025,0.9,22,Insulator Disc,1159
+13289613,West Bengal,Substation,10,2024,0.65,15,Power Transformer 220kV,4
+16910006,Uttar Pradesh,Transmission,6,2025,0.42,25,Copper Cable 400mm,4126
+22151122,Delhi,Substation,6,2025,0.85,21,Copper Cable 400mm,4984
+8083044,Maharashtra,Distribution,4,2025,0.65,23,Circuit Breaker,6
+5989611,Madhya Pradesh,Distribution,10,2025,0.39,20,Relay Panel,4
+21892884,Gujarat,Substation,6,2024,0.65,19,High Voltage Fuse,8
+14445845,Delhi,Transmission,8,2024,0.53,17,Circuit Breaker,8
+12378819,Karnataka,Substation,9,2025,0.62,30,Circuit Breaker,7
+22288825,Uttar Pradesh,Distribution,1,2024,0.87,11,Circuit Breaker,17
+10734759,Tamil Nadu,Distribution,1,2025,0.64,22,Steel Tower,53
+15424465,West Bengal,Distribution,9,2024,0.31,27,Insulator Disc,632
+7907038,Uttar Pradesh,Distribution,2,2025,0.86,19,Galvanized Steel Wire,2269
+16515394,Madhya Pradesh,Distribution,1,2025,0.44,19,High Voltage Fuse,7
+13161147,Rajasthan,Distribution,7,2025,0.75,13,Copper Cable 400mm,2290
+20671003,Bihar,Substation,8,2025,0.35,24,Circuit Breaker,6
+7717852,Maharashtra,Substation,2,2024,0.56,30,Insulator Disc,370
+23067049,Bihar,Transmission,2,2024,0.43,10,High Voltage Fuse,18
+6475414,Karnataka,Distribution,4,2024,0.32,24,Circuit Breaker,3
+22887875,Delhi,Substation,8,2025,0.63,28,Galvanized Steel Wire,6568
+15623141,West Bengal,Substation,2,2024,0.44,13,ACSR Conductor,2843
+24384358,Tamil Nadu,Substation,1,2024,0.6,13,Steel Tower,97
+24757751,Uttar Pradesh,Substation,5,2025,0.34,15,Copper Cable 400mm,6189
+7194290,Madhya Pradesh,Transmission,7,2025,0.85,13,Copper Cable 400mm,1151
+14350551,Madhya Pradesh,Distribution,11,2024,0.87,13,ACSR Conductor,3601
+10593476,Gujarat,Substation,6,2024,0.66,10,Copper Cable 400mm,2997
+13438601,Karnataka,Transmission,10,2025,0.5,23,Steel Tower,67
+17925994,Uttar Pradesh,Transmission,3,2024,0.7,11,ACSR Conductor,5341
+16062555,Madhya Pradesh,Transmission,12,2025,0.72,20,Galvanized Steel Wire,2971
+10521562,Bihar,Distribution,5,2025,0.81,29,Insulator Disc,557
+17081511,Rajasthan,Substation,1,2025,0.77,21,Circuit Breaker,10
+14446489,Maharashtra,Substation,4,2025,0.6,12,Circuit Breaker,6
+18314023,West Bengal,Transmission,8,2024,0.31,15,Insulator Disc,897
+23702339,Gujarat,Substation,4,2025,0.36,20,Earthing Rod,1090
+24218515,Madhya Pradesh,Substation,12,2025,0.73,14,Power Transformer 220kV,12
+15335601,Karnataka,Transmission,3,2024,0.41,15,Copper Cable 400mm,2591
+24805459,Karnataka,Substation,11,2025,0.76,23,Relay Panel,12
+18779336,Gujarat,Substation,11,2024,0.67,29,ACSR Conductor,4732
+13017874,Tamil Nadu,Transmission,5,2024,0.6,16,Earthing Rod,650
+7252032,Tamil Nadu,Distribution,9,2024,0.74,11,Galvanized Steel Wire,1580
+10387668,Delhi,Transmission,6,2025,0.79,12,Copper Cable 400mm,1599
+18709839,Tamil Nadu,Transmission,8,2024,0.73,21,Copper Cable 400mm,5126
+15874506,Maharashtra,Substation,10,2025,0.31,10,Power Transformer 220kV,6
+21728708,West Bengal,Transmission,4,2024,0.46,17,Galvanized Steel Wire,6366
+24234065,West Bengal,Transmission,2,2024,0.55,17,Circuit Breaker,13
+22433130,Maharashtra,Distribution,8,2024,0.38,29,High Voltage Fuse,10
+5548189,Maharashtra,Transmission,7,2024,0.35,21,Earthing Rod,238
+5873228,Gujarat,Substation,3,2025,0.49,23,Power Transformer 220kV,4
+18566615,West Bengal,Distribution,2,2024,0.78,20,Power Transformer 220kV,8
+6710947,Maharashtra,Transmission,10,2025,0.89,17,Circuit Breaker,3
+13738537,Rajasthan,Distribution,12,2025,0.31,16,Copper Cable 400mm,2404
+8523250,West Bengal,Distribution,12,2024,0.76,25,ACSR Conductor,2147
+6861146,Madhya Pradesh,Substation,6,2025,0.79,17,ACSR Conductor,1914
+18520932,Delhi,Distribution,11,2025,0.5,10,Steel Tower,55
+21260273,Madhya Pradesh,Transmission,7,2024,0.68,19,Steel Tower,85
+22013624,Rajasthan,Transmission,6,2024,0.5,20,Earthing Rod,1034
+12062977,Delhi,Transmission,11,2024,0.72,30,Power Transformer 220kV,4
+15070991,Maharashtra,Transmission,1,2024,0.46,29,Relay Panel,8
+13443337,Maharashtra,Substation,10,2025,0.56,17,ACSR Conductor,2809
+10987277,Maharashtra,Distribution,7,2025,0.57,12,Relay Panel,8
+14707245,Uttar Pradesh,Transmission,1,2025,0.42,17,Galvanized Steel Wire,2647
+23872362,Maharashtra,Distribution,4,2025,0.42,25,Relay Panel,8
+20623497,Madhya Pradesh,Distribution,11,2025,0.46,23,ACSR Conductor,6166
+22608161,West Bengal,Distribution,8,2025,0.79,22,High Voltage Fuse,10
+10371727,Karnataka,Substation,9,2024,0.5,21,Circuit Breaker,6
+15417900,Karnataka,Distribution,8,2025,0.61,13,Galvanized Steel Wire,3191
+6541028,West Bengal,Substation,1,2024,0.34,11,Relay Panel,5
+17059953,Karnataka,Transmission,8,2025,0.87,11,ACSR Conductor,4043
+6380074,Uttar Pradesh,Distribution,10,2025,0.52,23,Power Transformer 220kV,2
+8557717,Uttar Pradesh,Distribution,5,2025,0.87,30,Relay Panel,5
+22276439,West Bengal,Transmission,9,2024,0.64,29,Power Transformer 220kV,12
+23593670,Tamil Nadu,Transmission,1,2024,0.59,20,Galvanized Steel Wire,4317
+13199473,Madhya Pradesh,Transmission,2,2024,0.82,29,Steel Tower,65
+18227836,Uttar Pradesh,Transmission,6,2024,0.71,29,Galvanized Steel Wire,3827
+23065635,Rajasthan,Distribution,9,2025,0.77,10,Copper Cable 400mm,4705
+10091788,West Bengal,Substation,6,2025,0.48,23,Relay Panel,7
+21385147,Karnataka,Transmission,7,2025,0.47,15,Relay Panel,9
+11107495,Karnataka,Substation,8,2025,0.41,11,ACSR Conductor,2932
+19810849,Karnataka,Substation,4,2025,0.42,20,Galvanized Steel Wire,5804
+11338929,Tamil Nadu,Distribution,8,2024,0.5,19,Power Transformer 220kV,7
+21326433,West Bengal,Transmission,1,2024,0.4,12,Copper Cable 400mm,6142
+9973844,Madhya Pradesh,Transmission,6,2024,0.41,16,Insulator Disc,398
+22828271,Madhya Pradesh,Distribution,2,2024,0.62,27,Galvanized Steel Wire,4246
+14733934,Delhi,Distribution,6,2025,0.42,15,High Voltage Fuse,9
+19442522,Uttar Pradesh,Substation,9,2024,0.49,15,ACSR Conductor,4063
+21696273,Karnataka,Substation,8,2025,0.61,23,Earthing Rod,976
+16104912,Tamil Nadu,Transmission,12,2024,0.56,21,ACSR Conductor,4428
+8072817,Karnataka,Transmission,4,2024,0.48,19,Circuit Breaker,4
+16987658,Delhi,Substation,8,2024,0.82,14,Steel Tower,33
+14411991,Madhya Pradesh,Distribution,1,2025,0.88,28,ACSR Conductor,3617
+12584770,Delhi,Substation,1,2024,0.43,26,Earthing Rod,566
+6284320,Rajasthan,Transmission,2,2025,0.33,10,Power Transformer 220kV,2
+14615784,Karnataka,Transmission,1,2024,0.37,21,Steel Tower,29
+12677043,Uttar Pradesh,Transmission,2,2024,0.41,12,Insulator Disc,545
+13305048,Rajasthan,Distribution,1,2025,0.43,27,Copper Cable 400mm,3060
+12928468,Delhi,Transmission,12,2024,0.34,26,High Voltage Fuse,6
+15453566,Karnataka,Transmission,3,2024,0.9,24,Insulator Disc,803
+21196742,Uttar Pradesh,Transmission,10,2025,0.34,13,High Voltage Fuse,7
+10230220,West Bengal,Substation,8,2025,0.87,24,Earthing Rod,409
+15631536,Tamil Nadu,Substation,4,2024,0.53,18,Circuit Breaker,6
+13600946,Gujarat,Distribution,11,2024,0.39,25,High Voltage Fuse,4
+17201920,Uttar Pradesh,Distribution,4,2025,0.7,18,Earthing Rod,894
+24253499,Delhi,Transmission,1,2024,0.87,27,High Voltage Fuse,12
+15163758,Karnataka,Distribution,1,2024,0.66,29,Earthing Rod,727
+21258875,West Bengal,Substation,3,2024,0.52,13,ACSR Conductor,4698
+13545007,Delhi,Substation,7,2025,0.43,14,Insulator Disc,609
+7143095,Karnataka,Distribution,3,2025,0.82,15,ACSR Conductor,1342
+23750232,Rajasthan,Substation,12,2025,0.65,22,Circuit Breaker,16
+8697259,Bihar,Transmission,8,2025,0.84,17,High Voltage Fuse,6
+6166111,Gujarat,Substation,7,2024,0.35,16,Copper Cable 400mm,1467
+23035494,Karnataka,Substation,7,2024,0.7,18,High Voltage Fuse,12
+9351111,Gujarat,Distribution,1,2024,0.43,10,Circuit Breaker,6
+16057199,Tamil Nadu,Substation,5,2025,0.49,28,Earthing Rod,738
+24796601,Tamil Nadu,Distribution,2,2024,0.48,12,Earthing Rod,1438
+14565495,Tamil Nadu,Transmission,5,2024,0.52,16,High Voltage Fuse,4
+18054627,Karnataka,Substation,3,2025,0.68,23,Insulator Disc,1065
+19813667,West Bengal,Transmission,11,2024,0.78,11,Galvanized Steel Wire,4101
+5865724,Rajasthan,Substation,7,2025,0.39,29,Insulator Disc,234
+9010126,Uttar Pradesh,Distribution,9,2025,0.77,28,Steel Tower,27
+12263439,Rajasthan,Distribution,7,2024,0.55,27,High Voltage Fuse,9
+22677721,Maharashtra,Distribution,6,2025,0.39,29,Copper Cable 400mm,6145
+8883077,Maharashtra,Substation,12,2024,0.85,12,Power Transformer 220kV,5
+19030236,Delhi,Transmission,5,2025,0.43,14,Galvanized Steel Wire,4491
+10713853,Rajasthan,Substation,11,2025,0.34,29,Steel Tower,21
+7210050,Karnataka,Transmission,3,2025,0.62,11,Power Transformer 220kV,4
+7363084,Gujarat,Transmission,3,2025,0.55,25,Steel Tower,36
+19272754,Tamil Nadu,Substation,2,2024,0.74,21,Power Transformer 220kV,11
+20949525,Madhya Pradesh,Distribution,11,2024,0.33,13,Circuit Breaker,7
+20084061,Karnataka,Distribution,8,2025,0.37,21,Copper Cable 400mm,3213
+6486197,Maharashtra,Substation,8,2024,0.53,12,Galvanized Steel Wire,1368
+8765049,West Bengal,Distribution,4,2025,0.36,17,Steel Tower,26
+17834467,Uttar Pradesh,Substation,10,2024,0.85,14,Galvanized Steel Wire,5118
+15040460,Tamil Nadu,Substation,9,2025,0.54,16,ACSR Conductor,2526
+8661498,Rajasthan,Transmission,12,2024,0.75,27,ACSR Conductor,1775
+7350358,Bihar,Substation,8,2024,0.58,22,Galvanized Steel Wire,1308
+11011322,West Bengal,Transmission,8,2025,0.44,17,Insulator Disc,506
+21811989,Madhya Pradesh,Distribution,1,2025,0.36,20,Relay Panel,11
+7389139,Bihar,Transmission,10,2025,0.6,21,Copper Cable 400mm,1337
+24786658,Delhi,Distribution,9,2025,0.79,24,ACSR Conductor,4858
+15401881,Rajasthan,Distribution,1,2025,0.88,11,Copper Cable 400mm,2556
+22009497,Maharashtra,Distribution,11,2025,0.66,24,Earthing Rod,1232
+24614439,Maharashtra,Distribution,6,2024,0.44,13,ACSR Conductor,6005
+16676767,Madhya Pradesh,Transmission,9,2025,0.68,20,Relay Panel,9
+18513424,Delhi,Distribution,8,2025,0.83,19,Insulator Disc,1092
+18738318,Uttar Pradesh,Transmission,9,2025,0.74,25,Copper Cable 400mm,3054
+5487334,Karnataka,Transmission,1,2025,0.68,27,ACSR Conductor,1174
+17492692,Karnataka,Transmission,9,2025,0.48,26,ACSR Conductor,2833
+9358849,Bihar,Transmission,8,2024,0.88,21,Earthing Rod,524
+24329078,West Bengal,Substation,5,2025,0.83,29,Insulator Disc,1094
+13893099,Maharashtra,Distribution,8,2024,0.72,12,Insulator Disc,680
+14835531,Rajasthan,Substation,5,2024,0.4,21,Circuit Breaker,4
+22033485,Uttar Pradesh,Transmission,9,2025,0.37,17,Galvanized Steel Wire,6323
+10071538,Maharashtra,Transmission,1,2024,0.45,29,High Voltage Fuse,4
+16911710,Delhi,Substation,9,2024,0.83,17,Copper Cable 400mm,3906
+21974066,Tamil Nadu,Transmission,6,2025,0.58,24,Insulator Disc,1274
+13258482,Gujarat,Substation,10,2024,0.5,27,Power Transformer 220kV,10
+21262352,Madhya Pradesh,Substation,4,2025,0.69,21,Power Transformer 220kV,16
+16723449,Uttar Pradesh,Transmission,12,2024,0.71,13,Circuit Breaker,5
+19669095,Rajasthan,Distribution,10,2024,0.6,18,Insulator Disc,1160
+17078410,Tamil Nadu,Distribution,11,2024,0.45,14,High Voltage Fuse,10
+15925610,Bihar,Distribution,6,2024,0.51,26,Galvanized Steel Wire,4666
+7779093,Maharashtra,Substation,2,2024,0.66,20,Steel Tower,15
+12946674,Maharashtra,Transmission,3,2024,0.78,29,Steel Tower,51
+15897352,Karnataka,Transmission,5,2025,0.52,22,Power Transformer 220kV,7
+5779549,Rajasthan,Substation,9,2024,0.41,14,Copper Cable 400mm,1710
+13964201,Uttar Pradesh,Transmission,11,2024,0.48,16,Steel Tower,41
+11399036,Bihar,Substation,5,2025,0.84,26,Earthing Rod,547
+19641031,West Bengal,Distribution,9,2024,0.5,30,ACSR Conductor,4222
+14468868,Gujarat,Substation,7,2024,0.74,12,Steel Tower,57
+13536075,Maharashtra,Distribution,9,2025,0.5,26,Power Transformer 220kV,9
+15588807,Madhya Pradesh,Transmission,5,2024,0.36,28,Insulator Disc,841
+19286440,West Bengal,Substation,7,2024,0.41,28,Insulator Disc,790
+18759620,Tamil Nadu,Distribution,12,2025,0.78,14,High Voltage Fuse,8
+12734676,Uttar Pradesh,Substation,12,2025,0.82,12,Copper Cable 400mm,3743
+23047949,Delhi,Transmission,10,2025,0.66,16,High Voltage Fuse,9
+17654612,Karnataka,Transmission,3,2025,0.9,21,Insulator Disc,882
+12831617,Uttar Pradesh,Substation,1,2024,0.43,15,Insulator Disc,577
+14326783,Maharashtra,Distribution,10,2024,0.45,16,Power Transformer 220kV,6
+23529900,West Bengal,Distribution,10,2024,0.56,18,Power Transformer 220kV,15
+6912618,Bihar,Substation,9,2024,0.76,27,Galvanized Steel Wire,1700
+13361819,Rajasthan,Transmission,10,2024,0.79,27,ACSR Conductor,2805
+8084992,Maharashtra,Transmission,4,2024,0.87,17,Circuit Breaker,2
+10973009,Delhi,Substation,4,2024,0.53,13,Circuit Breaker,6
+7740876,Madhya Pradesh,Distribution,1,2025,0.8,17,Relay Panel,4
+6363759,Maharashtra,Substation,11,2025,0.33,29,High Voltage Fuse,3
+10155555,Delhi,Substation,6,2025,0.63,26,Earthing Rod,477
+11335314,Tamil Nadu,Transmission,6,2025,0.76,23,Relay Panel,3
+9902956,Gujarat,Substation,11,2025,0.58,18,Steel Tower,29
+22555806,Uttar Pradesh,Transmission,11,2024,0.65,19,ACSR Conductor,3608
+9993239,Gujarat,Distribution,6,2024,0.58,27,High Voltage Fuse,6
+20021209,Bihar,Transmission,6,2024,0.35,26,Power Transformer 220kV,6
+6660327,Madhya Pradesh,Substation,10,2025,0.85,21,Earthing Rod,392
+16786046,Maharashtra,Substation,7,2025,0.42,20,Insulator Disc,822
+11802857,Karnataka,Transmission,7,2025,0.87,14,Circuit Breaker,4
+21226676,Bihar,Transmission,4,2025,0.33,25,Circuit Breaker,16
+16908339,Karnataka,Substation,12,2025,0.49,13,Circuit Breaker,6
+18167145,Gujarat,Substation,2,2025,0.78,23,Power Transformer 220kV,10
+24697537,Bihar,Substation,4,2025,0.74,10,Steel Tower,74
+18617930,West Bengal,Distribution,3,2024,0.73,29,Steel Tower,55
+15793118,West Bengal,Substation,9,2025,0.6,13,Galvanized Steel Wire,3806
+15464821,Gujarat,Distribution,1,2025,0.33,20,High Voltage Fuse,7
+19248039,Karnataka,Substation,10,2025,0.44,18,Galvanized Steel Wire,3156
+19347265,Karnataka,Distribution,5,2025,0.52,13,Relay Panel,10
+24129270,Gujarat,Substation,11,2025,0.78,30,Insulator Disc,965
+22863419,Bihar,Transmission,5,2025,0.76,27,Power Transformer 220kV,7
+15525025,Maharashtra,Transmission,9,2024,0.77,11,Copper Cable 400mm,2778
+18507108,Tamil Nadu,Substation,7,2025,0.6,27,Earthing Rod,943
+15571603,West Bengal,Transmission,1,2024,0.53,21,High Voltage Fuse,11
+22402451,Karnataka,Substation,3,2025,0.89,29,Steel Tower,67
+15348308,Tamil Nadu,Transmission,12,2024,0.75,17,Relay Panel,8
+15603931,Tamil Nadu,Substation,1,2024,0.56,16,High Voltage Fuse,8
+8923794,West Bengal,Distribution,8,2025,0.4,26,Copper Cable 400mm,2123
+15640362,Karnataka,Substation,5,2024,0.52,19,Power Transformer 220kV,7
+9587676,Gujarat,Distribution,9,2024,0.4,12,ACSR Conductor,2051
+19493351,Rajasthan,Transmission,2,2025,0.59,23,High Voltage Fuse,7
+24472765,Uttar Pradesh,Distribution,3,2024,0.68,11,High Voltage Fuse,15
+21824689,Rajasthan,Transmission,4,2024,0.33,17,Galvanized Steel Wire,5521
+12212093,Delhi,Substation,10,2025,0.36,11,Circuit Breaker,4
+7298107,Gujarat,Distribution,11,2025,0.57,13,Circuit Breaker,5
+5623843,Gujarat,Distribution,1,2025,0.47,21,High Voltage Fuse,2
+12268176,Bihar,Distribution,7,2025,0.84,22,High Voltage Fuse,6
+18799115,Maharashtra,Distribution,5,2025,0.45,11,Steel Tower,93
+22674564,Bihar,Transmission,10,2024,0.6,25,High Voltage Fuse,8
+17938548,Rajasthan,Substation,4,2024,0.73,15,Power Transformer 220kV,9
+9123780,Gujarat,Substation,4,2025,0.51,20,Galvanized Steel Wire,2144
+9142936,West Bengal,Transmission,10,2025,0.33,11,Insulator Disc,548
+5809851,Maharashtra,Transmission,10,2025,0.59,26,Power Transformer 220kV,3
+10032136,Madhya Pradesh,Distribution,6,2024,0.54,23,Earthing Rod,481
+20269685,West Bengal,Distribution,6,2025,0.85,28,High Voltage Fuse,14
+11511881,Tamil Nadu,Substation,7,2025,0.59,22,ACSR Conductor,3280
+20910899,Bihar,Transmission,5,2025,0.53,24,Steel Tower,83
+23114165,Karnataka,Transmission,2,2024,0.71,22,Relay Panel,8
+8624414,Madhya Pradesh,Substation,1,2024,0.64,20,ACSR Conductor,1974
+19963078,Madhya Pradesh,Distribution,8,2024,0.78,12,Circuit Breaker,7
+14620953,Madhya Pradesh,Distribution,3,2025,0.73,19,Steel Tower,29
+5146846,Madhya Pradesh,Substation,2,2024,0.6,15,ACSR Conductor,1240
+8514667,Delhi,Transmission,8,2025,0.33,25,ACSR Conductor,1651
+10987430,Tamil Nadu,Substation,3,2024,0.62,23,Steel Tower,43
+19373999,Tamil Nadu,Substation,1,2025,0.78,16,Relay Panel,14
+10171796,Maharashtra,Substation,5,2024,0.39,30,Circuit Breaker,4
+16794333,Karnataka,Distribution,6,2025,0.61,28,Copper Cable 400mm,4568
+12789462,Karnataka,Transmission,10,2024,0.79,16,Relay Panel,3
+6627404,Karnataka,Distribution,6,2025,0.73,29,Insulator Disc,384
+9135088,Madhya Pradesh,Distribution,12,2025,0.51,19,Relay Panel,6
+11333199,Gujarat,Distribution,7,2024,0.75,14,Circuit Breaker,6
+14976994,West Bengal,Transmission,5,2024,0.67,22,Circuit Breaker,5
+7580696,Bihar,Substation,1,2025,0.75,25,Galvanized Steel Wire,1614
+12394477,Karnataka,Transmission,1,2025,0.89,13,High Voltage Fuse,4
+12442695,Gujarat,Distribution,12,2025,0.82,29,Circuit Breaker,7
+15589242,Gujarat,Substation,9,2025,0.52,19,Galvanized Steel Wire,4302
+23761310,West Bengal,Transmission,2,2025,0.81,10,Copper Cable 400mm,6985
+21173052,Delhi,Transmission,11,2025,0.82,17,Relay Panel,11
+21515808,Delhi,Distribution,10,2024,0.5,17,Steel Tower,107
+7795150,Bihar,Substation,2,2024,0.73,13,Insulator Disc,459
+11132512,Gujarat,Transmission,3,2025,0.7,30,Steel Tower,44
+11392970,Madhya Pradesh,Transmission,7,2024,0.69,28,Steel Tower,56
+15454168,Delhi,Transmission,12,2025,0.56,29,Steel Tower,77
+23216679,Gujarat,Distribution,8,2025,0.9,19,High Voltage Fuse,7
+12076221,Rajasthan,Distribution,12,2024,0.69,14,Relay Panel,7
+22855845,Gujarat,Substation,10,2024,0.33,22,ACSR Conductor,6719
+16173287,West Bengal,Transmission,10,2025,0.35,13,Earthing Rod,727
+16438533,Bihar,Substation,1,2025,0.7,10,Copper Cable 400mm,4290
+20237982,Bihar,Substation,12,2025,0.4,21,Circuit Breaker,13
+22125168,Delhi,Transmission,11,2025,0.69,23,ACSR Conductor,4447
+18684384,Rajasthan,Transmission,4,2025,0.41,12,Insulator Disc,822
+24614677,Gujarat,Substation,12,2024,0.72,26,Copper Cable 400mm,6990
+8937302,West Bengal,Transmission,10,2025,0.74,29,Galvanized Steel Wire,1367
+5561778,Tamil Nadu,Distribution,1,2025,0.46,21,Insulator Disc,305
+17897366,Delhi,Substation,3,2024,0.62,11,Copper Cable 400mm,4975
+18852989,Delhi,Transmission,2,2024,0.76,12,Steel Tower,75
+7647273,Madhya Pradesh,Transmission,6,2025,0.6,25,ACSR Conductor,2011
+23440838,Gujarat,Substation,6,2024,0.57,16,Circuit Breaker,16
+17460975,Karnataka,Substation,12,2024,0.59,19,Earthing Rod,890
+9320517,Gujarat,Substation,3,2024,0.43,14,Earthing Rod,540
+22715584,Karnataka,Transmission,1,2025,0.4,14,Earthing Rod,1317
+7665532,Karnataka,Substation,4,2025,0.42,13,Earthing Rod,413
+16820550,Gujarat,Substation,7,2024,0.68,21,Earthing Rod,925
+21488939,Madhya Pradesh,Distribution,12,2025,0.35,19,Galvanized Steel Wire,3459
+20328909,Delhi,Transmission,12,2024,0.61,17,Steel Tower,101
+12310940,Maharashtra,Transmission,2,2024,0.32,13,Circuit Breaker,7
+9764250,West Bengal,Substation,1,2025,0.58,15,Insulator Disc,419
+7210679,Maharashtra,Substation,10,2025,0.38,23,Steel Tower,36
+24988062,Maharashtra,Distribution,8,2024,0.41,20,Copper Cable 400mm,6946
+12469282,Delhi,Transmission,6,2025,0.73,19,Galvanized Steel Wire,1957
+15441118,Uttar Pradesh,Substation,8,2025,0.5,18,Earthing Rod,864
+14709567,Madhya Pradesh,Distribution,1,2024,0.87,29,Power Transformer 220kV,7
+14005126,Madhya Pradesh,Transmission,7,2025,0.64,20,Power Transformer 220kV,9
+21877536,Bihar,Distribution,6,2024,0.51,21,Copper Cable 400mm,6410
+15528803,Tamil Nadu,Transmission,12,2024,0.31,22,Circuit Breaker,8
+9374812,West Bengal,Transmission,7,2024,0.34,14,Earthing Rod,403
+18986780,Gujarat,Distribution,5,2024,0.65,18,Power Transformer 220kV,6
+9276179,Karnataka,Substation,8,2024,0.87,19,Relay Panel,7
+20457055,Tamil Nadu,Substation,10,2024,0.42,10,Power Transformer 220kV,7
+23855969,Delhi,Substation,9,2024,0.67,13,Copper Cable 400mm,4914
+10926593,Madhya Pradesh,Substation,12,2024,0.59,25,Relay Panel,7
+20502189,Tamil Nadu,Substation,9,2025,0.8,12,Relay Panel,12
+7002766,Gujarat,Distribution,4,2025,0.36,12,Relay Panel,2
+24169863,Maharashtra,Distribution,4,2025,0.84,26,ACSR Conductor,5534
+13146002,Karnataka,Distribution,7,2025,0.57,13,Circuit Breaker,7
+9783881,Maharashtra,Substation,12,2024,0.84,20,ACSR Conductor,2582
+20046291,Karnataka,Distribution,3,2025,0.37,10,ACSR Conductor,4951
+9523705,Uttar Pradesh,Transmission,12,2025,0.53,11,Earthing Rod,419
+8780975,Maharashtra,Transmission,9,2025,0.88,27,Earthing Rod,447
+22181332,Madhya Pradesh,Substation,9,2024,0.68,21,Insulator Disc,1109
+15056502,Gujarat,Substation,4,2024,0.35,19,Copper Cable 400mm,3613
+14517286,Delhi,Distribution,6,2025,0.57,16,Relay Panel,4
+21108966,West Bengal,Distribution,2,2024,0.74,15,Power Transformer 220kV,15
+15711553,Delhi,Substation,11,2025,0.85,20,Power Transformer 220kV,6
+15127972,Uttar Pradesh,Substation,5,2024,0.71,11,Galvanized Steel Wire,2617
+9429863,Tamil Nadu,Transmission,5,2025,0.34,12,Copper Cable 400mm,1772
+18143372,Karnataka,Substation,9,2024,0.74,28,Earthing Rod,870
+8219568,Delhi,Substation,3,2025,0.52,28,Earthing Rod,410
+14654477,West Bengal,Transmission,5,2024,0.81,23,Relay Panel,5
+13020881,Rajasthan,Distribution,4,2024,0.43,22,Insulator Disc,716
+7114712,Maharashtra,Substation,6,2024,0.8,17,Relay Panel,5
+21330457,Bihar,Substation,5,2025,0.43,18,Insulator Disc,1109
+17807778,Karnataka,Transmission,8,2024,0.54,11,Relay Panel,11
+10358012,Maharashtra,Transmission,5,2024,0.8,30,Relay Panel,5
+15307579,Uttar Pradesh,Distribution,10,2025,0.79,18,Insulator Disc,918
+24256842,Tamil Nadu,Transmission,6,2024,0.81,13,Circuit Breaker,18
+18316234,Delhi,Substation,12,2024,0.32,29,Relay Panel,11
+21984199,Bihar,Substation,4,2025,0.58,21,Copper Cable 400mm,4682
+18264541,Karnataka,Distribution,10,2024,0.69,13,ACSR Conductor,3433
+8325360,Bihar,Distribution,12,2024,0.46,30,ACSR Conductor,1590
+20836632,Gujarat,Transmission,6,2025,0.71,17,Power Transformer 220kV,12
+15729975,Karnataka,Substation,4,2024,0.77,18,Power Transformer 220kV,8
+6632494,Tamil Nadu,Transmission,2,2024,0.87,26,High Voltage Fuse,2
+11346025,Rajasthan,Distribution,9,2025,0.88,14,Copper Cable 400mm,2893
+5965010,Uttar Pradesh,Substation,1,2024,0.9,23,Galvanized Steel Wire,1246
+17928917,Gujarat,Substation,4,2025,0.54,25,Circuit Breaker,9
+11971463,Rajasthan,Transmission,8,2024,0.55,29,Galvanized Steel Wire,3292
+21063597,Gujarat,Distribution,3,2025,0.45,30,ACSR Conductor,5602
+5137815,Maharashtra,Substation,11,2025,0.41,20,Insulator Disc,277
+18013385,Maharashtra,Substation,6,2024,0.79,17,Earthing Rod,720
+22070835,Bihar,Transmission,5,2025,0.88,13,Copper Cable 400mm,6599
+13961626,Bihar,Substation,11,2025,0.63,15,ACSR Conductor,2443
+17133950,Karnataka,Substation,10,2025,0.55,17,Steel Tower,51
+7217161,West Bengal,Transmission,11,2025,0.49,23,Earthing Rod,375
+10732962,Bihar,Distribution,4,2024,0.87,28,High Voltage Fuse,5
+21613587,Maharashtra,Distribution,4,2025,0.49,30,Power Transformer 220kV,12
+16548803,Delhi,Distribution,5,2024,0.78,19,Steel Tower,82
+21206004,Karnataka,Substation,8,2025,0.5,29,Steel Tower,63
+9854047,Karnataka,Substation,3,2024,0.52,20,Steel Tower,29
+11928679,Bihar,Transmission,9,2024,0.84,22,Earthing Rod,703
+24852179,Tamil Nadu,Distribution,3,2025,0.35,23,Insulator Disc,1366
+16016698,Rajasthan,Substation,6,2024,0.61,30,High Voltage Fuse,10
+21467485,Tamil Nadu,Transmission,7,2025,0.33,28,Power Transformer 220kV,12
+24219893,Rajasthan,Substation,12,2025,0.58,28,Earthing Rod,1380
+22989475,Maharashtra,Transmission,12,2024,0.78,11,Galvanized Steel Wire,6276
+8213874,Karnataka,Transmission,8,2025,0.71,30,Copper Cable 400mm,1535
+18466442,Delhi,Distribution,11,2024,0.51,15,Galvanized Steel Wire,3157
+16170433,Maharashtra,Distribution,6,2024,0.47,13,Galvanized Steel Wire,3913
+17417745,Karnataka,Transmission,4,2024,0.73,21,Relay Panel,8
+19571839,Tamil Nadu,Substation,6,2024,0.7,20,ACSR Conductor,5812
+5019056,Madhya Pradesh,Distribution,9,2025,0.41,14,Relay Panel,1
+19955696,Bihar,Distribution,10,2024,0.41,19,Relay Panel,13
+8483061,Delhi,Substation,6,2025,0.32,21,Galvanized Steel Wire,1543
+8854605,Gujarat,Transmission,5,2025,0.6,30,ACSR Conductor,1877
+8281953,Rajasthan,Transmission,6,2024,0.76,24,Earthing Rod,438
+10113247,Delhi,Substation,10,2025,0.31,14,High Voltage Fuse,5
+17285235,West Bengal,Distribution,7,2025,0.87,14,Galvanized Steel Wire,4926
+24452017,Tamil Nadu,Distribution,9,2024,0.78,12,Copper Cable 400mm,3692
+22677838,West Bengal,Distribution,4,2024,0.47,30,Earthing Rod,1088
+22102239,Madhya Pradesh,Substation,2,2025,0.85,22,ACSR Conductor,5834
+22548648,Delhi,Substation,4,2024,0.84,26,High Voltage Fuse,11
+22776166,Madhya Pradesh,Distribution,1,2024,0.36,10,Power Transformer 220kV,16
+13251095,West Bengal,Distribution,5,2025,0.55,27,Relay Panel,9
+9151484,Bihar,Transmission,6,2024,0.8,15,Steel Tower,18
+12028863,Tamil Nadu,Distribution,4,2025,0.64,15,Steel Tower,36
+24962200,Karnataka,Distribution,11,2024,0.77,11,ACSR Conductor,5716
+11811848,Bihar,Substation,2,2025,0.65,28,ACSR Conductor,2704
+12367867,Rajasthan,Distribution,4,2024,0.66,11,Copper Cable 400mm,2832
+9983952,Tamil Nadu,Transmission,8,2024,0.46,29,Galvanized Steel Wire,2895
+19807301,Tamil Nadu,Transmission,12,2024,0.33,12,Copper Cable 400mm,3545
+14169638,Madhya Pradesh,Distribution,1,2024,0.72,24,Relay Panel,6
+21143530,Karnataka,Substation,1,2024,0.41,26,Galvanized Steel Wire,3319
+11359770,Madhya Pradesh,Transmission,9,2025,0.89,25,Copper Cable 400mm,2544
+15454784,Bihar,Distribution,12,2024,0.42,24,Insulator Disc,865
+18585914,Gujarat,Distribution,7,2025,0.64,26,ACSR Conductor,4776
+9546917,Madhya Pradesh,Transmission,1,2024,0.49,18,ACSR Conductor,1775
+7123207,Gujarat,Transmission,2,2024,0.86,19,Steel Tower,21
+24969936,Maharashtra,Substation,9,2024,0.41,22,Earthing Rod,1298
+5544305,Bihar,Transmission,12,2025,0.88,26,Relay Panel,2
+17135227,Tamil Nadu,Transmission,6,2024,0.32,24,High Voltage Fuse,13
+18932388,Bihar,Distribution,11,2024,0.73,26,Steel Tower,56
+5736509,Bihar,Distribution,1,2025,0.55,11,Copper Cable 400mm,1474
+16916071,Tamil Nadu,Transmission,12,2024,0.61,10,Copper Cable 400mm,3180
+24197829,Gujarat,Transmission,4,2024,0.6,24,Insulator Disc,1427
+5997202,Delhi,Transmission,4,2024,0.75,14,Relay Panel,2
+12689166,Bihar,Transmission,4,2025,0.7,13,Steel Tower,50
+21721728,Madhya Pradesh,Substation,8,2025,0.51,13,Relay Panel,7
+8743885,Karnataka,Distribution,11,2024,0.65,30,High Voltage Fuse,2
+22739126,Uttar Pradesh,Substation,3,2025,0.44,28,Power Transformer 220kV,8
+18929879,Tamil Nadu,Substation,5,2025,0.61,12,Steel Tower,37
+11623826,Uttar Pradesh,Transmission,1,2025,0.83,10,Relay Panel,4
+7627768,Karnataka,Substation,4,2025,0.35,22,Copper Cable 400mm,1571
+8925253,Uttar Pradesh,Transmission,2,2025,0.52,23,Power Transformer 220kV,3
+19224317,Karnataka,Transmission,2,2025,0.37,17,Copper Cable 400mm,4863
+15007879,Tamil Nadu,Transmission,2,2025,0.79,30,Earthing Rod,810
+17201031,Karnataka,Substation,8,2025,0.41,24,Earthing Rod,705
+10389232,Madhya Pradesh,Transmission,3,2025,0.33,24,Earthing Rod,498
+16866647,Rajasthan,Transmission,6,2025,0.51,11,ACSR Conductor,3035
+22427491,Bihar,Substation,6,2025,0.76,11,ACSR Conductor,4328
+5100640,Uttar Pradesh,Transmission,5,2025,0.48,22,Power Transformer 220kV,4
+8241759,Maharashtra,Substation,10,2025,0.32,24,Circuit Breaker,4
+20028653,West Bengal,Substation,10,2024,0.54,16,Power Transformer 220kV,8
+24463256,West Bengal,Transmission,7,2024,0.69,21,ACSR Conductor,3816
+5820754,Karnataka,Distribution,10,2024,0.31,27,Relay Panel,1
+17055816,Delhi,Substation,4,2024,0.63,28,Power Transformer 220kV,5
+23687961,Tamil Nadu,Transmission,6,2024,0.88,20,Earthing Rod,1184
+9791769,Karnataka,Transmission,4,2024,0.33,14,High Voltage Fuse,5
+12968368,Karnataka,Substation,1,2024,0.67,14,Insulator Disc,674
+5319938,Uttar Pradesh,Distribution,10,2024,0.83,18,ACSR Conductor,1590
+11242133,Madhya Pradesh,Transmission,6,2025,0.47,16,Circuit Breaker,5
+19009368,West Bengal,Substation,8,2025,0.59,24,Insulator Disc,931
+24475797,Bihar,Distribution,11,2025,0.79,26,Power Transformer 220kV,18
+16208479,West Bengal,Distribution,1,2024,0.33,14,Earthing Rod,680
+9900685,Maharashtra,Distribution,6,2024,0.6,30,ACSR Conductor,1643
+24600489,Karnataka,Substation,1,2024,0.65,25,Steel Tower,73
+7730570,Maharashtra,Substation,6,2024,0.74,13,Earthing Rod,363
+17965434,Uttar Pradesh,Distribution,1,2025,0.54,23,Earthing Rod,1024
+18636967,Bihar,Substation,6,2024,0.85,24,Galvanized Steel Wire,5292
+13097087,Uttar Pradesh,Distribution,12,2025,0.59,30,Earthing Rod,589
+14930429,Gujarat,Transmission,2,2025,0.76,18,Copper Cable 400mm,3672
+16344018,Bihar,Transmission,12,2025,0.74,21,Galvanized Steel Wire,4527
+24915707,Bihar,Distribution,5,2025,0.68,27,Insulator Disc,1470
+17006715,Bihar,Substation,1,2024,0.56,24,ACSR Conductor,4081
+15152962,Karnataka,Substation,2,2025,0.41,22,Power Transformer 220kV,4
+5433230,West Bengal,Transmission,8,2025,0.68,15,Earthing Rod,298
+23352575,Madhya Pradesh,Substation,7,2025,0.75,23,Galvanized Steel Wire,4670
+12924045,Bihar,Transmission,8,2024,0.67,22,Copper Cable 400mm,2132
+10282131,West Bengal,Transmission,9,2025,0.44,19,ACSR Conductor,2046
+17724077,Bihar,Distribution,4,2024,0.3,22,High Voltage Fuse,7
+20502949,Gujarat,Distribution,6,2025,0.87,20,Galvanized Steel Wire,4121
+18452325,Maharashtra,Distribution,11,2025,0.66,14,Galvanized Steel Wire,4834
+6465361,Madhya Pradesh,Distribution,1,2024,0.65,29,ACSR Conductor,1286
+13841328,Rajasthan,Transmission,4,2025,0.41,14,Insulator Disc,609
+9491422,Uttar Pradesh,Substation,7,2025,0.74,28,Relay Panel,6
+20281359,West Bengal,Substation,3,2024,0.66,11,High Voltage Fuse,9
+21433965,Tamil Nadu,Substation,1,2025,0.79,11,Copper Cable 400mm,5680
+24366288,Karnataka,Substation,5,2024,0.44,29,High Voltage Fuse,10
+16677310,West Bengal,Substation,5,2025,0.8,26,ACSR Conductor,3902
+23179803,Karnataka,Substation,8,2024,0.74,26,High Voltage Fuse,11
+8752392,Rajasthan,Transmission,4,2024,0.79,29,Relay Panel,6
+6984734,Delhi,Transmission,4,2024,0.63,25,Relay Panel,4
+24460500,West Bengal,Transmission,10,2024,0.36,22,ACSR Conductor,6090
+8883285,Karnataka,Distribution,3,2025,0.84,22,Relay Panel,3
+9420935,Delhi,Distribution,12,2025,0.37,25,High Voltage Fuse,6
+13482524,West Bengal,Transmission,5,2025,0.81,15,Copper Cable 400mm,3249
+8960747,Madhya Pradesh,Transmission,3,2025,0.34,20,ACSR Conductor,2025
+7887340,Madhya Pradesh,Transmission,11,2025,0.71,19,Power Transformer 220kV,3
+21521913,Madhya Pradesh,Transmission,3,2024,0.55,13,Steel Tower,64
+8720695,Uttar Pradesh,Distribution,5,2025,0.69,19,Steel Tower,34
+7270709,Gujarat,Transmission,1,2024,0.84,13,Galvanized Steel Wire,1904
+14047844,Rajasthan,Transmission,5,2025,0.38,21,High Voltage Fuse,6
+9760528,Rajasthan,Substation,2,2024,0.34,14,High Voltage Fuse,4
+12133761,Maharashtra,Distribution,3,2025,0.58,16,Steel Tower,36
+18582435,Bihar,Transmission,7,2024,0.42,24,Galvanized Steel Wire,3679
+13556569,West Bengal,Transmission,1,2025,0.45,15,Earthing Rod,610
+24683694,Rajasthan,Distribution,2,2024,0.32,30,Copper Cable 400mm,6960
+18783836,Gujarat,Substation,8,2024,0.43,16,Insulator Disc,995
+9051135,West Bengal,Transmission,7,2024,0.83,26,Insulator Disc,425
+23644753,Karnataka,Transmission,5,2025,0.43,17,Circuit Breaker,14
+7129693,Gujarat,Transmission,7,2024,0.53,21,Steel Tower,14
+16218736,Gujarat,Substation,4,2025,0.58,30,Power Transformer 220kV,4
+5327634,Rajasthan,Substation,2,2024,0.42,11,Circuit Breaker,3
+10043889,Karnataka,Transmission,8,2024,0.53,28,Copper Cable 400mm,1767
+22084916,Maharashtra,Substation,11,2025,0.43,21,Earthing Rod,993
+5813754,Delhi,Transmission,12,2024,0.8,26,Galvanized Steel Wire,1697
+7591291,Uttar Pradesh,Distribution,4,2025,0.83,11,Circuit Breaker,2
+10158257,Gujarat,Transmission,10,2024,0.54,24,Relay Panel,4
+5368358,Tamil Nadu,Substation,8,2025,0.87,30,Earthing Rod,241
+11184109,Delhi,Distribution,11,2024,0.86,30,Power Transformer 220kV,6
+24262215,Delhi,Transmission,6,2024,0.81,18,Insulator Disc,1382
+13670891,Uttar Pradesh,Substation,8,2024,0.61,30,Power Transformer 220kV,7
+12619780,Maharashtra,Transmission,9,2024,0.71,11,ACSR Conductor,1993
+8220906,Uttar Pradesh,Distribution,12,2024,0.4,23,Galvanized Steel Wire,2400
+12661329,Karnataka,Transmission,3,2024,0.49,22,Relay Panel,5
+18439883,Uttar Pradesh,Distribution,10,2025,0.82,10,Circuit Breaker,8
+14884077,Tamil Nadu,Substation,11,2025,0.55,17,Insulator Disc,684
+18628772,Rajasthan,Distribution,6,2024,0.9,23,ACSR Conductor,3763
+7199126,Tamil Nadu,Distribution,9,2025,0.82,16,Galvanized Steel Wire,1936
+21454836,Delhi,Transmission,3,2025,0.78,22,Relay Panel,11
+9637591,Delhi,Distribution,6,2025,0.51,14,Insulator Disc,501
+19646251,Maharashtra,Distribution,4,2024,0.86,21,Galvanized Steel Wire,5618
+7255617,West Bengal,Substation,4,2025,0.89,22,Copper Cable 400mm,1676
+24390114,Delhi,Distribution,7,2025,0.67,23,ACSR Conductor,4707
+6725812,Maharashtra,Substation,4,2024,0.87,19,Copper Cable 400mm,1822
+14135327,Karnataka,Distribution,4,2025,0.31,22,Earthing Rod,678
+18468785,Bihar,Distribution,1,2025,0.52,14,Power Transformer 220kV,14
+15304200,Uttar Pradesh,Transmission,3,2024,0.37,29,Power Transformer 220kV,6
+6181910,Tamil Nadu,Distribution,10,2025,0.47,29,Relay Panel,3
+12930251,Uttar Pradesh,Distribution,10,2025,0.52,14,Relay Panel,5
+23157252,Karnataka,Distribution,5,2024,0.88,16,Circuit Breaker,18
+11843458,Karnataka,Distribution,2,2024,0.52,18,Galvanized Steel Wire,2830
+8374946,Delhi,Distribution,11,2024,0.58,26,Relay Panel,2
+7358632,West Bengal,Transmission,5,2025,0.77,12,Steel Tower,14
+8209677,Gujarat,Transmission,10,2024,0.5,30,Earthing Rod,418
+12104294,Bihar,Distribution,10,2025,0.48,10,Insulator Disc,568
+17692258,Tamil Nadu,Distribution,4,2024,0.56,22,Power Transformer 220kV,5
+6375194,Maharashtra,Substation,9,2024,0.63,28,ACSR Conductor,956
+8467851,Gujarat,Distribution,4,2024,0.71,28,Copper Cable 400mm,1270
+18643694,West Bengal,Distribution,9,2025,0.53,23,Copper Cable 400mm,5555
+22426246,Tamil Nadu,Substation,9,2025,0.88,20,Steel Tower,67
+11167912,Delhi,Distribution,12,2024,0.51,21,Power Transformer 220kV,4
+23103924,West Bengal,Transmission,3,2025,0.58,10,ACSR Conductor,4690
+20199769,Madhya Pradesh,Substation,8,2025,0.57,27,Steel Tower,40
+10041744,West Bengal,Distribution,11,2024,0.52,11,Copper Cable 400mm,2761
+20566868,Bihar,Distribution,6,2025,0.35,24,Relay Panel,15
+15993264,Rajasthan,Distribution,4,2024,0.79,21,Circuit Breaker,9
+15697726,Madhya Pradesh,Distribution,7,2024,0.57,30,Earthing Rod,737
+21298423,Madhya Pradesh,Transmission,8,2025,0.64,10,ACSR Conductor,4834
+16303298,Madhya Pradesh,Distribution,6,2025,0.46,10,Power Transformer 220kV,10
+12643444,West Bengal,Transmission,4,2024,0.53,27,Insulator Disc,657
+17355697,Madhya Pradesh,Transmission,4,2025,0.7,11,Relay Panel,6
+11521392,West Bengal,Distribution,6,2025,0.7,28,High Voltage Fuse,6
+7032078,Uttar Pradesh,Transmission,9,2025,0.57,11,Galvanized Steel Wire,1976
+8803576,Bihar,Transmission,4,2025,0.36,15,Insulator Disc,422
+22556842,Bihar,Transmission,1,2024,0.85,30,ACSR Conductor,3721
+18082908,Tamil Nadu,Distribution,12,2025,0.56,14,Relay Panel,5
+19768972,Rajasthan,Transmission,6,2024,0.57,15,Galvanized Steel Wire,3637
+20439268,Madhya Pradesh,Distribution,11,2025,0.33,27,High Voltage Fuse,10
+24371047,Bihar,Distribution,7,2025,0.65,30,Galvanized Steel Wire,4971
+10397813,Bihar,Distribution,1,2025,0.58,15,Circuit Breaker,7
+13968588,Rajasthan,Transmission,1,2025,0.36,26,Circuit Breaker,7
+17640311,West Bengal,Substation,11,2025,0.42,20,Relay Panel,6
+17345543,Rajasthan,Transmission,5,2024,0.31,13,Relay Panel,10
+17995642,Madhya Pradesh,Transmission,10,2025,0.53,11,Relay Panel,7
+8097853,Bihar,Transmission,2,2025,0.71,26,Copper Cable 400mm,1279
+24942064,Bihar,Transmission,2,2025,0.69,19,Circuit Breaker,18
+11082597,Uttar Pradesh,Transmission,3,2025,0.45,27,Galvanized Steel Wire,2338
+22841630,West Bengal,Substation,5,2024,0.32,19,High Voltage Fuse,14
+22908507,Rajasthan,Distribution,5,2024,0.58,13,Steel Tower,114
+10205606,Maharashtra,Substation,5,2024,0.88,22,Steel Tower,20
+16077563,Uttar Pradesh,Distribution,5,2025,0.7,11,High Voltage Fuse,12
+23872627,West Bengal,Substation,2,2024,0.75,30,Galvanized Steel Wire,6254
+9632472,Madhya Pradesh,Substation,1,2025,0.51,20,Steel Tower,28
+14213858,Rajasthan,Distribution,4,2025,0.78,19,Steel Tower,42
+24041612,Uttar Pradesh,Transmission,10,2025,0.45,12,Relay Panel,18
+8754277,West Bengal,Distribution,7,2025,0.86,26,Copper Cable 400mm,2591
+18588584,Tamil Nadu,Distribution,6,2024,0.39,25,Steel Tower,37
+7947884,Madhya Pradesh,Transmission,9,2025,0.64,21,Copper Cable 400mm,1382
+15460748,Bihar,Substation,12,2024,0.46,22,High Voltage Fuse,5
+14055950,West Bengal,Transmission,1,2025,0.45,28,Relay Panel,4
+20099077,Delhi,Distribution,12,2024,0.89,29,Galvanized Steel Wire,5406
+14433215,Madhya Pradesh,Substation,6,2025,0.55,19,Earthing Rod,663
+24807679,Bihar,Distribution,1,2024,0.9,24,Copper Cable 400mm,6102
+19864335,Bihar,Distribution,11,2025,0.67,27,Copper Cable 400mm,5144
+8348817,Uttar Pradesh,Transmission,8,2025,0.43,18,Earthing Rod,367
+12741133,Uttar Pradesh,Distribution,6,2024,0.58,14,Steel Tower,25
+13828407,Maharashtra,Substation,5,2024,0.58,12,Relay Panel,10
+24149288,Uttar Pradesh,Substation,2,2025,0.85,12,Steel Tower,72
+11991884,Bihar,Distribution,11,2025,0.58,15,Insulator Disc,587
+10900571,Uttar Pradesh,Distribution,7,2025,0.36,12,Circuit Breaker,8
+20121444,Rajasthan,Distribution,8,2025,0.36,25,Copper Cable 400mm,3561
+14078113,Gujarat,Distribution,9,2024,0.87,14,Earthing Rod,760
+22140771,Bihar,Distribution,8,2024,0.46,23,Steel Tower,66
+9529453,Madhya Pradesh,Distribution,11,2024,0.75,30,Relay Panel,3
+19733503,Rajasthan,Transmission,12,2025,0.34,14,Steel Tower,78
+5662470,Gujarat,Substation,4,2025,0.57,28,Circuit Breaker,3
+9921225,Uttar Pradesh,Substation,1,2024,0.71,27,ACSR Conductor,2896
+23341869,Rajasthan,Substation,2,2025,0.86,14,Galvanized Steel Wire,5765
+9066747,Uttar Pradesh,Transmission,8,2025,0.56,25,High Voltage Fuse,4
+23702179,Tamil Nadu,Transmission,1,2024,0.36,27,ACSR Conductor,5475
+12397359,Gujarat,Distribution,10,2024,0.48,11,Insulator Disc,582
+12386232,Gujarat,Substation,6,2024,0.53,29,Steel Tower,24
+8286869,West Bengal,Substation,10,2024,0.79,13,Power Transformer 220kV,5
+13616489,Karnataka,Distribution,5,2025,0.59,15,Steel Tower,40
+21675706,Karnataka,Substation,12,2025,0.83,14,Insulator Disc,1300
+19253878,Uttar Pradesh,Distribution,6,2024,0.38,13,Insulator Disc,1135

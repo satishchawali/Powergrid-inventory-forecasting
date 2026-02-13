@@ -28,6 +28,7 @@ export default function LoginPage() {
             localStorage.setItem("token", res.access_token);
             localStorage.setItem("username", res.username);
             localStorage.setItem("email", res.email);
+            localStorage.setItem("full_name", res.full_name);
             navigate("/dashboard");
         } catch {
             alert("Login failed ❌");

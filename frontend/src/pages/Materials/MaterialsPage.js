@@ -6,31 +6,44 @@ import { Search } from "lucide-react";
 
 export default function MaterialsPage() {
     const [inventory, setInventory] = useState([]);
-    const [filteredItems, setFilteredItems] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
+    const [page, setPage] = useState(1);
+    const [totalPages, setTotalPages] = useState(1);
+    const [totalItemsCount, setTotalItemsCount] = useState(0);
+    const [lowStockCount, setLowStockCount] = useState(0);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [pageSize] = useState(50);
     const navigate = useNavigate();
 
     useEffect(() => {
         document.title = "Materials Inventory - Forecasting System";
-        loadInventory();
     }, []);
 
     useEffect(() => {
-        const filtered = inventory.filter(item =>
-            item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            item.category.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-        setFilteredItems(filtered);
-    }, [searchTerm, inventory]);
+        const timeoutId = setTimeout(() => {
+            setPage(1);
+            loadInventory(1, searchTerm);
+        }, 500);
+        return () => clearTimeout(timeoutId);
+    }, [searchTerm]);
 
-    const loadInventory = async () => {
+    useEffect(() => {
+        loadInventory(page, searchTerm);
+    }, [page]);
+
+    const loadInventory = async (currentPage, search) => {
         try {
             setLoading(true);
-            const data = await getInventory();
-            setInventory(data);
-            setFilteredItems(data);
+            const response = await getInventory({
+                page: currentPage,
+                page_size: pageSize,
+                search: search
+            });
+            setInventory(response.items);
+            setTotalPages(Math.ceil(response.total / pageSize));
+            setTotalItemsCount(response.total_all);
+            setLowStockCount(response.low_stock_all);
         } catch (err) {
             setError("Failed to load inventory data from server.");
         } finally {
@@ -38,7 +51,14 @@ export default function MaterialsPage() {
         }
     };
 
-    if (loading) {
+    const handlePageChange = (newPage) => {
+        if (newPage >= 1 && newPage <= totalPages) {
+            setPage(newPage);
+            window.scrollTo(0, 0);
+        }
+    };
+
+    if (loading && inventory.length === 0) {
         return (
             <div className="materials-container loading">
                 <div className="loader"></div>
@@ -58,8 +78,7 @@ export default function MaterialsPage() {
                     <p className="subtitle">Real-time tracking of substation materials and power grid assets</p>
                 </div>
                 <div className="header-actions">
-                    <button className="refresh-btn" onClick={loadInventory}>
-                        {/* <span>🔄</span>  */}
+                    <button className="refresh-btn" onClick={() => loadInventory(page, searchTerm)}>
                         Refresh
                     </button>
                 </div>
@@ -67,7 +86,6 @@ export default function MaterialsPage() {
 
             <div className="inventory-controls">
                 <div className="search-box">
-                    {/* <span className="search-icon">🔍</span> */}
                     <Search size={18} className="search-icon" />
                     <input
                         type="text"
@@ -79,11 +97,11 @@ export default function MaterialsPage() {
                 <div className="inventory-stats">
                     <div className="mini-stat">
                         <span className="label">Total Items</span>
-                        <span className="value">{inventory.length}</span>
+                        <span className="value">{totalItemsCount}</span>
                     </div>
                     <div className="mini-stat">
-                        <span className="label">Low Stock</span>
-                        <span className="value critical">{inventory.filter(i => i.status === "Low Stock").length}</span>
+                        <span className="label">Critical Alert</span>
+                        <span className="value critical">{lowStockCount}</span>
                     </div>
                 </div>
             </div>
@@ -93,51 +111,77 @@ export default function MaterialsPage() {
                     <div className="error-icon">⚠️</div>
                     <h3>Connection Error</h3>
                     <p>{error}</p>
-                    <button onClick={loadInventory}>Try Again</button>
+                    <button onClick={() => loadInventory(page, searchTerm)}>Try Again</button>
                 </div>
             ) : (
-                <div className="materials-table-wrapper">
-                    <table className="materials-table">
-                        <thead>
-                            <tr>
-                                <th>Item Name</th>
-                                <th>Category</th>
-                                <th>Current Stock</th>
-                                <th>Unit</th>
-                                <th>Min Threshold</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {filteredItems.length > 0 ? (
-                                filteredItems.map((item) => (
-                                    <tr key={item.item_id}>
-                                        <td className="item-name">{item.name}</td>
-                                        <td><span className="category-tag">{item.category}</span></td>
-                                        <td className="stock-level">
-                                            <span className={item.quantity < item.threshold ? "text-danger" : ""}>
-                                                {item.quantity}
-                                            </span>
-                                        </td>
-                                        <td>{item.unit}</td>
-                                        <td>{item.threshold}</td>
-                                        <td>
-                                            <span className={`status-badge ${item.status === "Low Stock" ? "low" : "ok"}`}>
-                                                {item.status}
-                                            </span>
+                <>
+                    <div className="materials-table-wrapper">
+                        {loading && <div className="table-loading-overlay">Updating...</div>}
+                        <table className="materials-table">
+                            <thead>
+                                <tr>
+                                    <th>Item Name</th>
+                                    <th>Category</th>
+                                    <th>Current Stock</th>
+                                    <th>Unit</th>
+                                    <th>Min Threshold</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {inventory.length > 0 ? (
+                                    inventory.map((item) => (
+                                        <tr key={item.item_id}>
+                                            <td className="item-name">{item.name}</td>
+                                            <td><span className="category-tag">{item.category}</span></td>
+                                            <td className="stock-level">
+                                                <span className={item.status === "Critical" ? "text-danger" : ""}>
+                                                    {item.quantity}
+                                                </span>
+                                            </td>
+                                            <td>{item.unit}</td>
+                                            <td>{item.threshold}</td>
+                                            <td>
+                                                <span className={`status-badge ${item.status === "Critical" ? "low" : "ok"}`}>
+                                                    {item.status}
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    ))
+                                ) : (
+                                    <tr>
+                                        <td colSpan="6" className="no-results">
+                                            No materials found matching "{searchTerm}"
                                         </td>
                                     </tr>
-                                ))
-                            ) : (
-                                <tr>
-                                    <td colSpan="6" className="no-results">
-                                        No materials found matching "{searchTerm}"
-                                    </td>
-                                </tr>
-                            )}
-                        </tbody>
-                    </table>
-                </div>
+                                )}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {totalPages > 1 && (
+                        <div className="pagination-controls">
+                            <button
+                                disabled={page === 1}
+                                onClick={() => handlePageChange(page - 1)}
+                                className="page-btn"
+                            >
+                                Previous
+                            </button>
+                            <div className="page-info">
+                                Page <strong>{page}</strong> of <strong>{totalPages}</strong>
+                                <span className="item-count">({(page - 1) * pageSize + 1}-{Math.min(page * pageSize, (page - 1) * pageSize + inventory.length)} of {totalItemsCount} items)</span>
+                            </div>
+                            <button
+                                disabled={page === totalPages}
+                                onClick={() => handlePageChange(page + 1)}
+                                className="page-btn"
+                            >
+                                Next
+                            </button>
+                        </div>
+                    )}
+                </>
             )}
         </div>
     );
