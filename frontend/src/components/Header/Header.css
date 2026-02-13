@@ -1,25 +1,55 @@
-.header {
+.top-header {
+    height: 70px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.header-title h2 {
+    font-size: 1.25rem;
+    color: #1a1a1a;
+    margin: 0;
+    font-weight: 600;
+}
+
+.header-actions {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #f5f5f5;
-    /* light background */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 24px;
 }
 
-.logo-container {
+.last-updated {
     display: flex;
     align-items: center;
+    gap: 8px;
+    color: #6b7280;
+    font-size: 0.85rem;
 }
 
-.logo {
-    height: 50px;
-    /* adjust size */
-    margin-right: 15px;
+.logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    color: #374151;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
-.site-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
+.logout-btn:hover {
+    background: #f9fafb;
+    border-color: #d1d5db;
+}
+
+.clock-icon,
+.logout-icon {
+    font-size: 1rem;
 }
