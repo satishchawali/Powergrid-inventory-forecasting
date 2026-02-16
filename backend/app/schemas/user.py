@@ -18,6 +18,7 @@ class Token(BaseModel):
     token_type: str
     username: str
     email: str
+    full_name: str
 
 class UserProfileResponse(BaseModel):
     full_name: str

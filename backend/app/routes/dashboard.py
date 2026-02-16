@@ -29,9 +29,9 @@ def get_dashboard(db: Session = Depends(get_db)):
             "category": item.category,
             "quantity": f"{item.quantity} {item.unit}",
             "status": (
-                "Low Stock"
+                "Critical"
                 if item.quantity < item.threshold
-                else "In Stock"
+                else "Sufficient"
             )
         })
 

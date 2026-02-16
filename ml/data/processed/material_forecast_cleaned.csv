@@ -1,37 +1,1001 @@
 project_budget,region,tower_type,month,year,weather_index,lead_time_days,material_name,quantity,season,budget_category
-12000000,Maharashtra,Transmission,1,2024,0.45,18,Power Transformer 220kV,5,Winter,Medium
-12000000,Maharashtra,Transmission,1,2024,0.45,18,Copper Cable 400mm,2200,Winter,Medium
-12000000,Maharashtra,Transmission,1,2024,0.45,18,Circuit Breaker,12,Winter,Medium
-8000000,Tamil Nadu,Distribution,2,2024,0.6,15,Insulator Disc,450,Winter,Medium
-8000000,Tamil Nadu,Distribution,2,2024,0.6,15,Steel Tower,25,Winter,Medium
-8000000,Tamil Nadu,Distribution,2,2024,0.6,15,Earthing Rod,500,Winter,Medium
-15000000,Delhi,Transmission,3,2024,0.4,20,Power Transformer 220kV,6,Summer,Medium
-15000000,Delhi,Transmission,3,2024,0.4,20,Copper Cable 400mm,2800,Summer,Medium
-15000000,Delhi,Transmission,3,2024,0.4,20,Relay Panel,14,Summer,Medium
-6000000,Karnataka,Distribution,4,2024,0.75,12,Insulator Disc,520,Summer,Medium
-6000000,Karnataka,Distribution,4,2024,0.75,12,Circuit Breaker,9,Summer,Medium
-6000000,Karnataka,Distribution,4,2024,0.75,12,High Voltage Fuse,90,Summer,Medium
-20000000,Gujarat,Transmission,5,2024,0.55,25,Power Transformer 220kV,8,Summer,Medium
-20000000,Gujarat,Transmission,5,2024,0.55,25,Copper Cable 400mm,3500,Summer,Medium
-20000000,Gujarat,Transmission,5,2024,0.55,25,Steel Tower,40,Summer,Medium
-9000000,Bihar,Distribution,6,2024,0.8,14,Insulator Disc,480,Monsoon,Medium
-9000000,Bihar,Distribution,6,2024,0.8,14,Earthing Rod,550,Monsoon,Medium
-9000000,Bihar,Distribution,6,2024,0.8,14,Relay Panel,10,Monsoon,Medium
-18000000,Rajasthan,Transmission,7,2024,0.5,22,Power Transformer 220kV,7,Monsoon,Medium
-18000000,Rajasthan,Transmission,7,2024,0.5,22,Copper Cable 400mm,3100,Monsoon,Medium
-18000000,Rajasthan,Transmission,7,2024,0.5,22,Circuit Breaker,16,Monsoon,Medium
-7000000,Uttar Pradesh,Distribution,8,2024,0.85,13,Insulator Disc,600,Monsoon,Medium
-7000000,Uttar Pradesh,Distribution,8,2024,0.85,13,High Voltage Fuse,110,Monsoon,Medium
-7000000,Uttar Pradesh,Distribution,8,2024,0.85,13,Earthing Rod,620,Monsoon,Medium
-16000000,West Bengal,Transmission,9,2024,0.48,21,Power Transformer 220kV,6,Monsoon,Medium
-16000000,West Bengal,Transmission,9,2024,0.48,21,Copper Cable 400mm,2700,Monsoon,Medium
-16000000,West Bengal,Transmission,9,2024,0.48,21,Relay Panel,15,Monsoon,Medium
-5000000,Madhya Pradesh,Distribution,10,2024,0.78,11,Insulator Disc,430,Monsoon,Low
-5000000,Madhya Pradesh,Distribution,10,2024,0.78,11,Steel Tower,20,Monsoon,Low
-5000000,Madhya Pradesh,Distribution,10,2024,0.78,11,Circuit Breaker,8,Monsoon,Low
-22000000,Maharashtra,Transmission,11,2024,0.52,28,Power Transformer 220kV,9,Monsoon,High
-22000000,Maharashtra,Transmission,11,2024,0.52,28,Copper Cable 400mm,4000,Monsoon,High
-22000000,Maharashtra,Transmission,11,2024,0.52,28,Steel Tower,50,Monsoon,High
-10000000,Tamil Nadu,Distribution,12,2024,0.65,16,Insulator Disc,500,Winter,Medium
-10000000,Tamil Nadu,Distribution,12,2024,0.65,16,Relay Panel,12,Winter,Medium
-10000000,Tamil Nadu,Distribution,12,2024,0.65,16,High Voltage Fuse,100,Winter,Medium
+16603966,Gujarat,Transmission,6,2024,0.44,17,Steel Tower,66,Monsoon,Medium
+24579696,Tamil Nadu,Transmission,8,2024,0.82,30,Circuit Breaker,18,Monsoon,High
+13040523,Uttar Pradesh,Substation,2,2024,0.38,26,Circuit Breaker,5,Winter,Medium
+5809076,Karnataka,Substation,2,2025,0.55,27,Power Transformer 220kV,3,Winter,Medium
+9471784,Tamil Nadu,Substation,7,2025,0.34,21,Copper Cable 400mm,2178,Monsoon,Medium
+22986353,West Bengal,Transmission,12,2025,0.36,30,Relay Panel,13,Winter,High
+18561306,West Bengal,Substation,7,2024,0.66,30,Insulator Disc,1095,Monsoon,Medium
+18685065,Uttar Pradesh,Substation,5,2024,0.58,16,Power Transformer 220kV,8,Summer,Medium
+17207752,Tamil Nadu,Distribution,7,2024,0.44,28,Galvanized Steel Wire,3458,Monsoon,Medium
+21059481,West Bengal,Transmission,10,2025,0.47,26,Circuit Breaker,15,Monsoon,High
+9445294,Karnataka,Transmission,12,2025,0.69,29,Power Transformer 220kV,3,Winter,Medium
+14235473,Madhya Pradesh,Transmission,11,2024,0.75,19,Insulator Disc,854,Monsoon,Medium
+11680755,Madhya Pradesh,Substation,10,2025,0.32,21,Relay Panel,6,Monsoon,Medium
+5593502,West Bengal,Transmission,10,2024,0.7,10,Circuit Breaker,3,Monsoon,Medium
+17708440,Rajasthan,Distribution,10,2025,0.87,12,High Voltage Fuse,9,Monsoon,Medium
+6583546,Rajasthan,Substation,12,2024,0.83,29,Galvanized Steel Wire,1507,Winter,Medium
+19230059,Gujarat,Transmission,9,2024,0.67,11,Circuit Breaker,10,Monsoon,Medium
+13870083,Madhya Pradesh,Transmission,7,2024,0.89,17,Relay Panel,8,Monsoon,Medium
+24329547,Karnataka,Transmission,2,2024,0.34,22,Relay Panel,7,Winter,High
+22348988,Madhya Pradesh,Transmission,1,2024,0.43,28,Circuit Breaker,12,Winter,High
+16056433,Madhya Pradesh,Substation,7,2024,0.33,13,Earthing Rod,867,Monsoon,Medium
+9489965,Bihar,Distribution,5,2024,0.39,23,Insulator Disc,446,Summer,Medium
+8735862,Delhi,Substation,12,2025,0.63,30,Circuit Breaker,6,Winter,Medium
+10492359,Uttar Pradesh,Transmission,9,2024,0.4,24,Galvanized Steel Wire,3042,Monsoon,Medium
+20891114,Karnataka,Transmission,5,2025,0.31,29,High Voltage Fuse,7,Summer,High
+18847641,Bihar,Substation,6,2025,0.83,28,Insulator Disc,1055,Monsoon,Medium
+20348366,Rajasthan,Substation,5,2025,0.59,11,ACSR Conductor,4842,Summer,High
+12411262,Bihar,Distribution,2,2024,0.75,28,Relay Panel,5,Winter,Medium
+24019533,Rajasthan,Transmission,11,2024,0.78,26,Insulator Disc,1321,Monsoon,High
+23732225,Uttar Pradesh,Substation,5,2025,0.39,19,Steel Tower,118,Summer,High
+23845787,Gujarat,Distribution,11,2025,0.85,26,Power Transformer 220kV,14,Monsoon,High
+6904796,Gujarat,Substation,1,2025,0.57,13,ACSR Conductor,2071,Winter,Medium
+6548275,Gujarat,Substation,4,2024,0.8,25,Power Transformer 220kV,3,Summer,Medium
+9186136,Madhya Pradesh,Transmission,12,2024,0.52,11,Relay Panel,7,Winter,Medium
+9297184,Bihar,Substation,11,2024,0.41,16,Galvanized Steel Wire,2482,Monsoon,Medium
+8080518,Madhya Pradesh,Transmission,9,2025,0.7,24,High Voltage Fuse,5,Monsoon,Medium
+24025243,Uttar Pradesh,Distribution,12,2024,0.64,30,Steel Tower,48,Winter,High
+7316950,Karnataka,Transmission,4,2024,0.42,25,Copper Cable 400mm,2085,Summer,Medium
+15814100,Gujarat,Transmission,5,2024,0.36,24,Circuit Breaker,7,Summer,Medium
+10855628,Delhi,Substation,12,2024,0.44,27,Circuit Breaker,5,Winter,Medium
+20787428,Maharashtra,Transmission,11,2025,0.49,11,Galvanized Steel Wire,3284,Monsoon,High
+21831594,Maharashtra,Distribution,8,2025,0.32,16,Earthing Rod,1091,Monsoon,High
+15820059,Madhya Pradesh,Distribution,12,2025,0.35,14,Earthing Rod,854,Winter,Medium
+14203290,Delhi,Substation,6,2025,0.55,21,Insulator Disc,624,Monsoon,Medium
+22457741,Madhya Pradesh,Distribution,10,2024,0.53,26,ACSR Conductor,6220,Monsoon,High
+11685449,Bihar,Distribution,1,2025,0.38,20,Galvanized Steel Wire,2769,Winter,Medium
+14072002,Delhi,Substation,12,2024,0.31,17,High Voltage Fuse,4,Winter,Medium
+21756579,Rajasthan,Distribution,10,2024,0.46,19,Steel Tower,108,Monsoon,High
+19877832,Delhi,Substation,3,2024,0.6,10,Insulator Disc,1172,Summer,Medium
+9623954,Bihar,Substation,9,2025,0.9,30,Relay Panel,5,Monsoon,Medium
+19509433,Karnataka,Substation,12,2024,0.3,14,Insulator Disc,1033,Winter,Medium
+13048322,Gujarat,Substation,1,2024,0.83,25,Relay Panel,4,Winter,Medium
+22740117,Gujarat,Substation,10,2025,0.5,23,Copper Cable 400mm,4093,Monsoon,High
+13071443,Delhi,Substation,1,2025,0.64,29,Power Transformer 220kV,9,Winter,Medium
+19088157,Karnataka,Distribution,1,2025,0.44,15,ACSR Conductor,3454,Winter,Medium
+13820423,Rajasthan,Substation,1,2024,0.87,10,Earthing Rod,552,Winter,Medium
+11561612,Delhi,Transmission,11,2025,0.55,12,High Voltage Fuse,6,Monsoon,Medium
+16271613,Karnataka,Substation,4,2025,0.73,13,Steel Tower,32,Summer,Medium
+9400948,Karnataka,Distribution,3,2024,0.6,11,Earthing Rod,413,Summer,Medium
+20560416,Bihar,Distribution,3,2024,0.55,13,Insulator Disc,925,Summer,High
+24835292,Madhya Pradesh,Distribution,11,2024,0.44,15,Steel Tower,99,Monsoon,High
+20318856,Gujarat,Distribution,1,2025,0.77,24,Galvanized Steel Wire,4470,Winter,High
+16463285,Uttar Pradesh,Distribution,1,2025,0.86,20,Earthing Rod,823,Winter,Medium
+17668367,Tamil Nadu,Substation,9,2024,0.8,17,Earthing Rod,865,Monsoon,Medium
+9705531,Karnataka,Distribution,12,2025,0.34,24,ACSR Conductor,1562,Winter,Medium
+10031887,West Bengal,Distribution,6,2024,0.52,12,Power Transformer 220kV,4,Monsoon,Medium
+20785440,Delhi,Distribution,7,2024,0.47,19,Power Transformer 220kV,8,Monsoon,High
+8596219,West Bengal,Distribution,1,2025,0.8,11,Steel Tower,42,Winter,Medium
+14955859,West Bengal,Substation,7,2024,0.71,19,Steel Tower,74,Monsoon,Medium
+7485875,Rajasthan,Distribution,1,2024,0.73,16,Steel Tower,37,Winter,Medium
+7192744,Madhya Pradesh,Distribution,11,2025,0.71,17,Insulator Disc,309,Monsoon,Medium
+19743758,Rajasthan,Distribution,2,2024,0.56,14,ACSR Conductor,5469,Winter,Medium
+9540807,Delhi,Substation,11,2025,0.62,23,ACSR Conductor,1755,Monsoon,Medium
+20067876,Delhi,Distribution,7,2025,0.85,29,ACSR Conductor,4856,Monsoon,High
+16554786,Gujarat,Substation,2,2024,0.6,20,Relay Panel,9,Winter,Medium
+17662243,Bihar,Substation,10,2024,0.9,15,Copper Cable 400mm,3461,Monsoon,Medium
+22174395,Bihar,Substation,3,2024,0.5,27,Copper Cable 400mm,4612,Summer,High
+14204802,Bihar,Distribution,9,2025,0.77,19,Power Transformer 220kV,9,Monsoon,Medium
+9093925,Tamil Nadu,Distribution,10,2024,0.74,21,Copper Cable 400mm,1445,Monsoon,Medium
+18922837,Tamil Nadu,Distribution,11,2024,0.36,30,ACSR Conductor,4825,Monsoon,Medium
+23499434,Gujarat,Transmission,3,2025,0.47,20,High Voltage Fuse,17,Summer,High
+8428700,Karnataka,Substation,5,2024,0.36,12,High Voltage Fuse,6,Summer,Medium
+24730772,Madhya Pradesh,Transmission,2,2025,0.59,30,ACSR Conductor,3734,Winter,High
+7016868,West Bengal,Substation,7,2025,0.5,13,Earthing Rod,308,Monsoon,Medium
+16872340,Madhya Pradesh,Substation,11,2025,0.56,28,Circuit Breaker,7,Monsoon,Medium
+19202025,Maharashtra,Distribution,6,2025,0.38,28,High Voltage Fuse,10,Monsoon,Medium
+12568072,Rajasthan,Distribution,1,2024,0.77,16,Copper Cable 400mm,1935,Winter,Medium
+7345203,Rajasthan,Transmission,12,2025,0.35,27,Circuit Breaker,3,Winter,Medium
+19064968,Delhi,Transmission,10,2025,0.6,24,Insulator Disc,800,Monsoon,Medium
+11979032,Bihar,Distribution,4,2024,0.43,18,ACSR Conductor,2431,Summer,Medium
+19967802,Rajasthan,Distribution,5,2025,0.31,10,Power Transformer 220kV,8,Summer,Medium
+15750146,Madhya Pradesh,Substation,5,2025,0.37,22,Steel Tower,78,Summer,Medium
+16709574,Maharashtra,Substation,4,2025,0.51,21,Steel Tower,66,Summer,Medium
+19424582,Uttar Pradesh,Distribution,1,2024,0.8,24,Earthing Rod,1107,Winter,Medium
+16593465,Bihar,Substation,12,2024,0.87,10,Earthing Rod,680,Winter,Medium
+6248796,Gujarat,Distribution,12,2025,0.57,26,Power Transformer 220kV,4,Winter,Medium
+6385521,Delhi,Substation,5,2024,0.61,24,High Voltage Fuse,3,Summer,Medium
+19863820,Madhya Pradesh,Transmission,5,2025,0.44,10,Insulator Disc,993,Summer,Medium
+12523990,Bihar,Transmission,8,2024,0.33,16,Relay Panel,7,Monsoon,Medium
+18607570,Tamil Nadu,Transmission,10,2025,0.38,20,Earthing Rod,762,Monsoon,Medium
+21790679,Tamil Nadu,Transmission,2,2024,0.48,20,Copper Cable 400mm,4793,Winter,High
+7354191,Rajasthan,Transmission,6,2025,0.75,12,Relay Panel,3,Monsoon,Medium
+16076198,Gujarat,Distribution,7,2025,0.71,17,Steel Tower,32,Monsoon,Medium
+7857952,Maharashtra,Transmission,10,2025,0.64,26,Power Transformer 220kV,4,Monsoon,Medium
+24697386,West Bengal,Substation,1,2024,0.46,21,Power Transformer 220kV,13,Winter,High
+24300273,Rajasthan,Distribution,3,2025,0.87,14,High Voltage Fuse,14,Summer,High
+10442046,Uttar Pradesh,Distribution,9,2024,0.65,16,Power Transformer 220kV,5,Monsoon,Medium
+16494698,Madhya Pradesh,Substation,9,2025,0.56,12,Earthing Rod,940,Monsoon,Medium
+14194744,Madhya Pradesh,Substation,6,2024,0.31,12,Earthing Rod,851,Monsoon,Medium
+24121241,Maharashtra,Distribution,6,2024,0.47,12,Earthing Rod,1181,Monsoon,High
+16326126,Bihar,Transmission,10,2025,0.86,26,Circuit Breaker,12,Monsoon,Medium
+9377364,Madhya Pradesh,Substation,7,2025,0.6,29,Copper Cable 400mm,2597,Monsoon,Medium
+14252024,Gujarat,Transmission,12,2025,0.63,13,ACSR Conductor,2750,Winter,Medium
+10187321,Madhya Pradesh,Transmission,4,2024,0.55,25,Insulator Disc,611,Summer,Medium
+7916654,Delhi,Substation,3,2024,0.76,13,Steel Tower,23,Summer,Medium
+9815380,Madhya Pradesh,Transmission,2,2024,0.5,11,Galvanized Steel Wire,2689,Winter,Medium
+18803615,Rajasthan,Distribution,3,2025,0.76,12,Earthing Rod,1071,Summer,Medium
+13446096,Madhya Pradesh,Substation,4,2024,0.74,17,ACSR Conductor,3993,Summer,Medium
+14282674,Karnataka,Transmission,3,2025,0.76,23,Copper Cable 400mm,2385,Summer,Medium
+24605115,Bihar,Substation,6,2025,0.57,10,Galvanized Steel Wire,6864,Monsoon,High
+16544458,Bihar,Substation,12,2025,0.39,29,High Voltage Fuse,5,Winter,Medium
+8565171,Uttar Pradesh,Substation,8,2024,0.39,15,High Voltage Fuse,6,Monsoon,Medium
+7706698,Maharashtra,Substation,1,2025,0.41,12,Steel Tower,23,Winter,Medium
+10087174,Tamil Nadu,Distribution,2,2024,0.62,18,Power Transformer 220kV,3,Winter,Medium
+21201894,Karnataka,Substation,4,2025,0.8,13,ACSR Conductor,4961,Summer,High
+22783893,Gujarat,Distribution,5,2025,0.63,15,Earthing Rod,1321,Summer,High
+7607942,Gujarat,Transmission,7,2025,0.8,30,Circuit Breaker,5,Monsoon,Medium
+6012488,Uttar Pradesh,Transmission,7,2024,0.5,10,High Voltage Fuse,4,Monsoon,Medium
+17634077,Tamil Nadu,Substation,4,2024,0.4,18,Earthing Rod,1005,Summer,Medium
+20418615,Madhya Pradesh,Substation,9,2025,0.48,19,Power Transformer 220kV,11,Monsoon,High
+13465830,Delhi,Distribution,12,2025,0.89,21,Galvanized Steel Wire,3339,Winter,Medium
+6518242,Karnataka,Distribution,8,2024,0.89,14,Insulator Disc,358,Monsoon,Medium
+6067610,Bihar,Distribution,10,2024,0.75,22,Galvanized Steel Wire,1504,Monsoon,Medium
+15732582,Delhi,Distribution,12,2024,0.63,10,High Voltage Fuse,10,Winter,Medium
+22051511,Gujarat,Transmission,10,2025,0.68,28,Copper Cable 400mm,6483,Monsoon,High
+20534986,Karnataka,Transmission,10,2024,0.46,10,Relay Panel,14,Monsoon,High
+17671536,Karnataka,Distribution,11,2024,0.85,21,ACSR Conductor,3092,Monsoon,Medium
+7361521,Madhya Pradesh,Substation,1,2024,0.63,16,Steel Tower,22,Winter,Medium
+14255517,Delhi,Distribution,8,2025,0.55,28,High Voltage Fuse,4,Monsoon,Medium
+21485487,Madhya Pradesh,Distribution,2,2025,0.57,28,Power Transformer 220kV,16,Winter,High
+18899932,West Bengal,Distribution,5,2025,0.63,19,Relay Panel,7,Summer,Medium
+14313685,Uttar Pradesh,Substation,3,2025,0.89,11,Earthing Rod,729,Summer,Medium
+5564855,Karnataka,Substation,10,2024,0.58,26,Relay Panel,2,Monsoon,Medium
+24098886,Bihar,Substation,4,2025,0.51,22,ACSR Conductor,4506,Summer,High
+16334342,West Bengal,Transmission,10,2025,0.89,24,Power Transformer 220kV,11,Monsoon,Medium
+9917628,Rajasthan,Substation,5,2025,0.9,20,Circuit Breaker,4,Summer,Medium
+12884563,Rajasthan,Substation,1,2025,0.35,21,ACSR Conductor,3272,Winter,Medium
+20396774,West Bengal,Distribution,3,2024,0.51,20,Earthing Rod,938,Summer,High
+16036540,Madhya Pradesh,Distribution,12,2024,0.4,10,Circuit Breaker,8,Winter,Medium
+17334570,Tamil Nadu,Substation,11,2024,0.44,17,Earthing Rod,693,Monsoon,Medium
+23660135,Karnataka,Substation,10,2025,0.73,18,Earthing Rod,1348,Monsoon,High
+18992646,Delhi,Transmission,10,2025,0.8,30,Steel Tower,94,Monsoon,Medium
+9345892,Delhi,Distribution,3,2025,0.62,13,Galvanized Steel Wire,1700,Summer,Medium
+19466126,West Bengal,Transmission,6,2025,0.67,21,Copper Cable 400mm,3387,Monsoon,Medium
+11831422,West Bengal,Substation,5,2024,0.51,19,Galvanized Steel Wire,3395,Summer,Medium
+13236258,Rajasthan,Substation,11,2025,0.58,20,Insulator Disc,648,Monsoon,Medium
+5355104,Gujarat,Distribution,11,2025,0.8,15,Power Transformer 220kV,2,Monsoon,Medium
+18369997,Delhi,Distribution,11,2025,0.84,18,Copper Cable 400mm,3049,Monsoon,Medium
+20767027,West Bengal,Distribution,5,2024,0.87,27,Copper Cable 400mm,3779,Summer,High
+11863255,Maharashtra,Transmission,12,2025,0.39,28,Circuit Breaker,5,Winter,Medium
+22952465,Madhya Pradesh,Substation,5,2024,0.54,26,Galvanized Steel Wire,5531,Summer,High
+14454870,Uttar Pradesh,Distribution,12,2024,0.65,11,Circuit Breaker,9,Winter,Medium
+19929056,Bihar,Distribution,2,2025,0.89,25,Steel Tower,39,Winter,Medium
+10655379,Bihar,Transmission,9,2024,0.9,26,Copper Cable 400mm,1726,Monsoon,Medium
+24722706,Rajasthan,Distribution,7,2025,0.32,11,Earthing Rod,1335,Monsoon,High
+18012585,Uttar Pradesh,Transmission,4,2025,0.33,28,Steel Tower,90,Summer,Medium
+7443366,Rajasthan,Transmission,1,2025,0.32,19,Earthing Rod,409,Winter,Medium
+9222359,Maharashtra,Substation,4,2025,0.68,22,Steel Tower,18,Summer,Medium
+23017163,Maharashtra,Substation,6,2024,0.6,12,Earthing Rod,966,Monsoon,High
+13314349,Bihar,Transmission,6,2025,0.8,18,Galvanized Steel Wire,3887,Monsoon,Medium
+20579060,West Bengal,Distribution,8,2025,0.52,17,ACSR Conductor,4383,Monsoon,High
+14887773,Uttar Pradesh,Transmission,10,2025,0.36,26,Power Transformer 220kV,7,Monsoon,Medium
+12262541,Madhya Pradesh,Substation,4,2024,0.53,14,Relay Panel,8,Summer,Medium
+9223990,Karnataka,Transmission,6,2025,0.32,23,Earthing Rod,553,Monsoon,Medium
+16908791,Delhi,Transmission,11,2025,0.68,15,Galvanized Steel Wire,4514,Monsoon,Medium
+7233178,Bihar,Transmission,6,2024,0.46,16,Insulator Disc,339,Monsoon,Medium
+22681664,Bihar,Substation,8,2025,0.8,28,High Voltage Fuse,16,Monsoon,High
+15784071,Gujarat,Transmission,3,2024,0.67,23,Insulator Disc,883,Summer,Medium
+18999394,Maharashtra,Distribution,9,2024,0.43,23,Steel Tower,94,Monsoon,Medium
+18609686,Delhi,Transmission,9,2024,0.35,25,Relay Panel,13,Monsoon,Medium
+17681850,Madhya Pradesh,Distribution,5,2024,0.32,21,Galvanized Steel Wire,3854,Summer,Medium
+5733056,Tamil Nadu,Substation,9,2025,0.47,27,ACSR Conductor,1301,Monsoon,Medium
+8944064,Gujarat,Transmission,3,2025,0.65,12,ACSR Conductor,1824,Summer,Medium
+14414705,Maharashtra,Transmission,6,2025,0.74,16,Earthing Rod,850,Monsoon,Medium
+19891551,Delhi,Transmission,11,2025,0.61,13,Galvanized Steel Wire,4018,Monsoon,Medium
+7745099,Karnataka,Substation,9,2024,0.77,23,Steel Tower,23,Monsoon,Medium
+21642449,Uttar Pradesh,Distribution,10,2025,0.8,22,Circuit Breaker,17,Monsoon,High
+20033885,Gujarat,Substation,7,2024,0.81,29,Insulator Disc,921,Monsoon,High
+10061147,Uttar Pradesh,Distribution,2,2024,0.6,14,High Voltage Fuse,6,Winter,Medium
+16021319,Madhya Pradesh,Transmission,9,2024,0.36,23,Circuit Breaker,8,Monsoon,Medium
+5546095,Rajasthan,Substation,12,2025,0.51,28,Insulator Disc,249,Winter,Medium
+21500316,Uttar Pradesh,Transmission,11,2024,0.36,10,Steel Tower,64,Monsoon,High
+5908590,Karnataka,Substation,6,2024,0.43,24,Galvanized Steel Wire,1228,Monsoon,Medium
+8987375,Maharashtra,Distribution,8,2024,0.77,16,Circuit Breaker,6,Monsoon,Medium
+8583109,Uttar Pradesh,Transmission,1,2024,0.47,10,ACSR Conductor,1639,Winter,Medium
+6221913,Maharashtra,Distribution,1,2025,0.83,30,Relay Panel,2,Winter,Medium
+20935970,Uttar Pradesh,Substation,5,2024,0.4,11,Relay Panel,7,Summer,High
+23473483,West Bengal,Substation,5,2025,0.75,10,Insulator Disc,985,Summer,High
+16449180,Madhya Pradesh,Transmission,3,2025,0.64,28,Power Transformer 220kV,12,Summer,Medium
+6546681,Tamil Nadu,Distribution,3,2025,0.48,15,Power Transformer 220kV,3,Summer,Medium
+10466560,Tamil Nadu,Transmission,9,2025,0.68,24,ACSR Conductor,2930,Monsoon,Medium
+23877200,Uttar Pradesh,Distribution,9,2024,0.36,15,Copper Cable 400mm,4035,Monsoon,High
+8699053,West Bengal,Distribution,4,2025,0.51,27,Copper Cable 400mm,2418,Summer,Medium
+9807400,West Bengal,Substation,5,2024,0.8,16,High Voltage Fuse,7,Summer,Medium
+16519159,Tamil Nadu,Distribution,6,2024,0.32,10,ACSR Conductor,2477,Monsoon,Medium
+7179020,Maharashtra,Distribution,9,2025,0.41,23,Steel Tower,28,Monsoon,Medium
+16327347,Bihar,Transmission,1,2025,0.76,18,Galvanized Steel Wire,4212,Winter,Medium
+13823217,West Bengal,Substation,1,2024,0.37,30,Steel Tower,69,Winter,Medium
+19987585,Delhi,Substation,10,2024,0.81,14,Relay Panel,13,Monsoon,Medium
+15943858,Rajasthan,Substation,1,2024,0.5,27,Earthing Rod,813,Winter,Medium
+5386020,Bihar,Distribution,8,2024,0.71,19,Circuit Breaker,3,Monsoon,Medium
+15830387,West Bengal,Distribution,4,2024,0.89,12,Steel Tower,47,Summer,Medium
+22260984,Delhi,Substation,2,2024,0.82,18,Power Transformer 220kV,8,Winter,High
+22930330,Rajasthan,Substation,3,2025,0.83,30,Power Transformer 220kV,10,Summer,High
+21067120,Rajasthan,Substation,11,2024,0.5,19,Earthing Rod,1137,Monsoon,High
+10924434,Bihar,Substation,2,2025,0.64,20,Steel Tower,43,Winter,Medium
+7764346,Uttar Pradesh,Transmission,4,2024,0.72,14,Steel Tower,23,Summer,Medium
+22832247,Rajasthan,Distribution,6,2025,0.83,16,ACSR Conductor,5776,Monsoon,High
+17492927,West Bengal,Substation,2,2024,0.6,17,High Voltage Fuse,5,Winter,Medium
+15541246,Tamil Nadu,Transmission,2,2025,0.65,11,Earthing Rod,885,Winter,Medium
+19321078,Gujarat,Distribution,8,2024,0.56,26,Steel Tower,96,Monsoon,Medium
+8628220,Delhi,Distribution,12,2024,0.87,25,High Voltage Fuse,3,Winter,Medium
+16805335,Uttar Pradesh,Distribution,5,2024,0.42,24,ACSR Conductor,4134,Summer,Medium
+24855346,West Bengal,Distribution,11,2025,0.83,23,Relay Panel,16,Monsoon,High
+19610047,Gujarat,Substation,11,2025,0.74,15,ACSR Conductor,5235,Monsoon,Medium
+8492769,West Bengal,Substation,3,2025,0.46,26,High Voltage Fuse,3,Summer,Medium
+11516211,Gujarat,Distribution,9,2025,0.59,25,Relay Panel,8,Monsoon,Medium
+22886555,Tamil Nadu,Distribution,8,2025,0.37,26,Circuit Breaker,12,Monsoon,High
+11859792,Maharashtra,Transmission,1,2024,0.76,26,Power Transformer 220kV,3,Winter,Medium
+10169441,Karnataka,Distribution,2,2024,0.5,10,High Voltage Fuse,3,Winter,Medium
+22912708,Madhya Pradesh,Substation,8,2024,0.57,20,Steel Tower,91,Monsoon,High
+14588595,Delhi,Substation,3,2025,0.58,17,Earthing Rod,773,Summer,Medium
+20517296,Rajasthan,Distribution,12,2024,0.83,25,High Voltage Fuse,6,Winter,High
+13083234,Maharashtra,Substation,6,2025,0.3,17,Steel Tower,26,Monsoon,Medium
+11293264,Delhi,Distribution,4,2024,0.64,22,Circuit Breaker,3,Summer,Medium
+5768390,Uttar Pradesh,Distribution,6,2025,0.4,23,Power Transformer 220kV,3,Monsoon,Medium
+7199414,Uttar Pradesh,Substation,8,2025,0.64,26,Copper Cable 400mm,1079,Monsoon,Medium
+14512354,Gujarat,Distribution,11,2024,0.38,19,Power Transformer 220kV,10,Monsoon,Medium
+8124526,Delhi,Distribution,7,2024,0.43,24,Insulator Disc,414,Monsoon,Medium
+18089116,Bihar,Substation,1,2025,0.69,29,Insulator Disc,958,Winter,Medium
+5400530,Gujarat,Distribution,4,2024,0.89,13,Power Transformer 220kV,1,Summer,Medium
+22530347,Delhi,Substation,3,2024,0.78,18,Galvanized Steel Wire,4258,Summer,High
+6751261,Madhya Pradesh,Substation,2,2024,0.84,18,Earthing Rod,270,Winter,Medium
+9700482,West Bengal,Distribution,10,2024,0.89,17,Relay Panel,5,Monsoon,Medium
+12720811,Rajasthan,Distribution,12,2024,0.81,28,ACSR Conductor,2378,Winter,Medium
+8559026,Rajasthan,Substation,7,2025,0.8,16,Galvanized Steel Wire,1378,Monsoon,Medium
+19534288,Karnataka,Distribution,8,2024,0.38,26,Steel Tower,58,Monsoon,Medium
+10946633,Delhi,Distribution,3,2024,0.49,23,Copper Cable 400mm,2353,Summer,Medium
+9277751,Tamil Nadu,Distribution,11,2024,0.45,10,Copper Cable 400mm,1549,Monsoon,Medium
+20277348,Uttar Pradesh,Transmission,6,2024,0.44,19,Steel Tower,40,Monsoon,High
+17865541,West Bengal,Transmission,6,2024,0.57,23,ACSR Conductor,4645,Monsoon,Medium
+12781992,Rajasthan,Distribution,2,2025,0.48,10,Relay Panel,4,Winter,Medium
+6565338,Tamil Nadu,Distribution,10,2025,0.85,30,Relay Panel,4,Monsoon,Medium
+10519930,Maharashtra,Transmission,3,2024,0.75,28,Copper Cable 400mm,2871,Summer,Medium
+22034461,Rajasthan,Transmission,8,2025,0.6,24,ACSR Conductor,3745,Monsoon,High
+14579843,Karnataka,Substation,10,2024,0.78,29,Insulator Disc,801,Monsoon,Medium
+24778796,Rajasthan,Transmission,11,2025,0.78,27,ACSR Conductor,6591,Monsoon,High
+21447499,Madhya Pradesh,Distribution,3,2025,0.49,30,Power Transformer 220kV,8,Summer,High
+16419281,Uttar Pradesh,Transmission,9,2024,0.58,11,Power Transformer 220kV,6,Monsoon,Medium
+18647827,Delhi,Transmission,9,2024,0.9,15,Circuit Breaker,10,Monsoon,Medium
+21468021,Delhi,Substation,11,2025,0.79,29,Circuit Breaker,7,Monsoon,High
+5749137,Madhya Pradesh,Distribution,11,2025,0.37,20,High Voltage Fuse,2,Monsoon,Medium
+20061751,West Bengal,Distribution,1,2025,0.84,24,ACSR Conductor,3711,Winter,High
+18854456,Gujarat,Substation,9,2025,0.55,28,Steel Tower,75,Monsoon,Medium
+22072988,West Bengal,Substation,5,2024,0.53,24,Relay Panel,8,Summer,High
+7692111,Uttar Pradesh,Substation,4,2025,0.51,19,Galvanized Steel Wire,2046,Summer,Medium
+20523626,Bihar,Distribution,4,2025,0.35,15,Galvanized Steel Wire,6033,Summer,High
+18647147,West Bengal,Distribution,2,2024,0.53,11,ACSR Conductor,3971,Winter,Medium
+23011109,Uttar Pradesh,Distribution,8,2024,0.37,29,Copper Cable 400mm,4556,Monsoon,High
+17260413,Bihar,Distribution,12,2025,0.71,21,High Voltage Fuse,12,Winter,Medium
+23679274,Madhya Pradesh,Substation,8,2025,0.85,13,High Voltage Fuse,12,Monsoon,High
+12417850,Tamil Nadu,Transmission,7,2025,0.78,21,Relay Panel,8,Monsoon,Medium
+15702268,Madhya Pradesh,Distribution,6,2025,0.84,13,Relay Panel,4,Monsoon,Medium
+23150753,Gujarat,Distribution,1,2024,0.66,30,ACSR Conductor,3935,Winter,High
+23824068,Tamil Nadu,Substation,6,2025,0.37,10,High Voltage Fuse,7,Monsoon,High
+5359953,West Bengal,Distribution,10,2024,0.57,17,ACSR Conductor,1270,Monsoon,Medium
+24734576,Rajasthan,Substation,10,2024,0.47,22,Steel Tower,49,Monsoon,High
+22458053,Rajasthan,Distribution,2,2024,0.75,29,Copper Cable 400mm,4132,Winter,High
+12825313,Uttar Pradesh,Distribution,1,2024,0.76,10,Steel Tower,51,Winter,Medium
+24540229,Bihar,Substation,1,2024,0.6,28,Copper Cable 400mm,6355,Winter,High
+5286410,Bihar,Distribution,1,2024,0.61,30,Copper Cable 400mm,1057,Winter,Medium
+18462117,Madhya Pradesh,Transmission,10,2024,0.39,18,Relay Panel,6,Monsoon,Medium
+15445568,Uttar Pradesh,Substation,11,2025,0.58,17,Galvanized Steel Wire,4540,Monsoon,Medium
+11733302,Maharashtra,Transmission,5,2024,0.44,24,Insulator Disc,563,Summer,Medium
+15222868,Uttar Pradesh,Substation,1,2024,0.44,25,Insulator Disc,608,Winter,Medium
+10906615,Delhi,Transmission,7,2025,0.4,23,Relay Panel,5,Monsoon,Medium
+19851730,Delhi,Distribution,5,2025,0.86,14,ACSR Conductor,3613,Summer,Medium
+14880518,Uttar Pradesh,Transmission,4,2025,0.78,21,Earthing Rod,595,Summer,Medium
+12293657,Rajasthan,Substation,2,2025,0.37,27,Power Transformer 220kV,4,Winter,Medium
+10402900,West Bengal,Distribution,10,2025,0.6,24,Insulator Disc,613,Monsoon,Medium
+22020704,Tamil Nadu,Distribution,11,2024,0.44,30,High Voltage Fuse,14,Monsoon,High
+13664816,Maharashtra,Distribution,7,2024,0.38,29,Relay Panel,8,Monsoon,Medium
+22407158,Karnataka,Transmission,4,2025,0.84,12,High Voltage Fuse,11,Summer,High
+12841922,Uttar Pradesh,Distribution,2,2025,0.48,26,Copper Cable 400mm,2517,Winter,Medium
+10484997,Maharashtra,Distribution,7,2024,0.33,28,Steel Tower,52,Monsoon,Medium
+7615289,West Bengal,Substation,5,2024,0.45,25,Earthing Rod,403,Summer,Medium
+19885530,Bihar,Substation,11,2024,0.35,27,Insulator Disc,954,Monsoon,Medium
+24735941,Maharashtra,Distribution,6,2024,0.78,11,Galvanized Steel Wire,6851,Monsoon,High
+16608176,Rajasthan,Substation,5,2025,0.7,12,Relay Panel,7,Summer,Medium
+14776452,Delhi,Transmission,2,2024,0.52,10,Circuit Breaker,9,Winter,Medium
+16679893,Maharashtra,Transmission,11,2025,0.31,14,Steel Tower,33,Monsoon,Medium
+23382474,Tamil Nadu,Distribution,11,2024,0.88,28,Steel Tower,70,Monsoon,High
+11754545,Tamil Nadu,Distribution,2,2025,0.45,26,Earthing Rod,658,Winter,Medium
+17527277,Madhya Pradesh,Substation,3,2025,0.72,17,Earthing Rod,753,Summer,Medium
+6140945,Rajasthan,Transmission,7,2025,0.32,16,Power Transformer 220kV,3,Monsoon,Medium
+12390711,Bihar,Transmission,1,2025,0.3,18,Galvanized Steel Wire,3593,Winter,Medium
+19782345,Rajasthan,Transmission,9,2024,0.46,25,Circuit Breaker,15,Monsoon,Medium
+7844593,Delhi,Transmission,10,2024,0.71,12,Steel Tower,15,Monsoon,Medium
+9414422,Tamil Nadu,Substation,3,2025,0.81,17,Earthing Rod,414,Summer,Medium
+16327286,Karnataka,Transmission,8,2024,0.55,27,Relay Panel,7,Monsoon,Medium
+22435621,Maharashtra,Transmission,5,2024,0.74,29,Galvanized Steel Wire,4419,Summer,High
+6916312,Tamil Nadu,Transmission,10,2025,0.71,17,Insulator Disc,297,Monsoon,Medium
+10697700,Karnataka,Transmission,3,2024,0.39,15,High Voltage Fuse,5,Summer,Medium
+14251195,Bihar,Substation,4,2025,0.48,10,Earthing Rod,726,Summer,Medium
+22692246,Karnataka,Transmission,11,2024,0.35,16,Steel Tower,45,Monsoon,High
+7279691,Bihar,Substation,9,2024,0.63,17,Insulator Disc,327,Monsoon,Medium
+8060066,Madhya Pradesh,Distribution,6,2024,0.81,22,Power Transformer 220kV,4,Monsoon,Medium
+21506078,Tamil Nadu,Distribution,7,2024,0.58,13,Copper Cable 400mm,5742,Monsoon,High
+15407949,Karnataka,Transmission,8,2024,0.8,27,Power Transformer 220kV,5,Monsoon,Medium
+17810541,West Bengal,Substation,2,2024,0.71,25,ACSR Conductor,5111,Winter,Medium
+19562440,Tamil Nadu,Substation,11,2024,0.53,28,ACSR Conductor,3169,Monsoon,Medium
+22882029,West Bengal,Distribution,12,2025,0.59,17,Steel Tower,91,Winter,High
+7084645,Uttar Pradesh,Distribution,5,2024,0.59,14,Copper Cable 400mm,1650,Summer,Medium
+23305930,Maharashtra,Transmission,8,2024,0.71,14,Earthing Rod,932,Monsoon,High
+12187300,West Bengal,Substation,2,2025,0.67,25,Earthing Rod,609,Winter,Medium
+8452572,Bihar,Substation,12,2025,0.76,21,Galvanized Steel Wire,1377,Winter,Medium
+10531347,Karnataka,Transmission,4,2024,0.62,13,ACSR Conductor,2759,Summer,Medium
+24605136,West Bengal,Transmission,9,2025,0.46,10,Insulator Disc,1058,Monsoon,High
+21429058,West Bengal,Transmission,10,2024,0.4,17,Power Transformer 220kV,16,Monsoon,High
+5136473,Maharashtra,Substation,12,2025,0.66,28,Copper Cable 400mm,1052,Winter,Medium
+16904787,Gujarat,Distribution,11,2025,0.33,30,Earthing Rod,929,Monsoon,Medium
+6119387,Delhi,Transmission,3,2025,0.7,17,Galvanized Steel Wire,1548,Summer,Medium
+15631557,Delhi,Distribution,6,2025,0.39,29,Power Transformer 220kV,9,Monsoon,Medium
+23035736,Rajasthan,Distribution,2,2024,0.59,30,High Voltage Fuse,10,Winter,High
+18885647,Uttar Pradesh,Transmission,6,2025,0.37,20,High Voltage Fuse,14,Monsoon,Medium
+14003664,Madhya Pradesh,Substation,5,2024,0.34,23,Steel Tower,70,Summer,Medium
+9783104,Uttar Pradesh,Transmission,7,2025,0.37,23,High Voltage Fuse,5,Monsoon,Medium
+9617442,Rajasthan,Distribution,5,2025,0.39,13,Earthing Rod,528,Summer,Medium
+12448331,Tamil Nadu,Substation,12,2025,0.9,23,Power Transformer 220kV,9,Winter,Medium
+20445335,Delhi,Substation,8,2025,0.47,21,Relay Panel,9,Monsoon,High
+15619697,Rajasthan,Transmission,8,2025,0.75,19,ACSR Conductor,4170,Monsoon,Medium
+9133495,Maharashtra,Transmission,2,2024,0.51,16,Circuit Breaker,4,Winter,Medium
+23411320,Tamil Nadu,Substation,8,2025,0.48,11,Power Transformer 220kV,8,Monsoon,High
+5721628,Uttar Pradesh,Transmission,5,2024,0.79,24,ACSR Conductor,921,Summer,Medium
+15452723,Karnataka,Transmission,3,2025,0.44,19,Circuit Breaker,7,Summer,Medium
+18520191,Bihar,Distribution,11,2024,0.75,17,Steel Tower,74,Monsoon,Medium
+21284463,Karnataka,Substation,7,2024,0.43,22,Insulator Disc,1213,Monsoon,High
+22406943,West Bengal,Substation,4,2024,0.72,12,Galvanized Steel Wire,3966,Summer,High
+15256630,Maharashtra,Transmission,2,2025,0.39,10,Earthing Rod,671,Winter,Medium
+23959112,Karnataka,Substation,10,2024,0.31,29,Insulator Disc,1126,Monsoon,High
+14627702,Karnataka,Distribution,6,2025,0.7,18,Steel Tower,43,Monsoon,Medium
+24390311,West Bengal,Transmission,4,2024,0.68,16,Power Transformer 220kV,12,Summer,High
+22819215,Rajasthan,Substation,9,2024,0.81,19,High Voltage Fuse,11,Monsoon,High
+9177917,Bihar,Substation,11,2024,0.54,30,Insulator Disc,367,Monsoon,Medium
+9878117,Uttar Pradesh,Substation,3,2025,0.78,15,Earthing Rod,474,Summer,Medium
+17121526,Tamil Nadu,Distribution,11,2025,0.46,26,Insulator Disc,719,Monsoon,Medium
+16875348,Karnataka,Distribution,9,2025,0.68,29,High Voltage Fuse,10,Monsoon,Medium
+19704294,Delhi,Transmission,12,2025,0.53,14,Power Transformer 220kV,9,Winter,Medium
+11583182,Madhya Pradesh,Distribution,9,2024,0.33,17,Earthing Rod,625,Monsoon,Medium
+11025415,Uttar Pradesh,Substation,8,2024,0.32,18,ACSR Conductor,3186,Monsoon,Medium
+7098542,Bihar,Distribution,1,2025,0.71,24,Power Transformer 220kV,2,Winter,Medium
+21201194,Tamil Nadu,Distribution,12,2024,0.73,16,Steel Tower,84,Winter,High
+16267385,Delhi,Distribution,9,2024,0.86,12,Galvanized Steel Wire,4522,Monsoon,Medium
+16752203,Uttar Pradesh,Substation,4,2024,0.74,21,Power Transformer 220kV,7,Summer,Medium
+14649979,Gujarat,Substation,6,2024,0.48,13,High Voltage Fuse,7,Monsoon,Medium
+12550355,Tamil Nadu,Distribution,2,2024,0.6,25,ACSR Conductor,2484,Winter,Medium
+19460505,Uttar Pradesh,Transmission,1,2025,0.47,17,Insulator Disc,1109,Winter,Medium
+23683167,Madhya Pradesh,Transmission,10,2024,0.77,29,Insulator Disc,1018,Monsoon,High
+18264397,Gujarat,Transmission,4,2025,0.73,16,Galvanized Steel Wire,3999,Summer,Medium
+12988794,Bihar,Transmission,12,2024,0.71,13,Steel Tower,64,Winter,Medium
+20731721,West Bengal,Transmission,2,2025,0.32,12,Steel Tower,103,Winter,High
+14259105,Tamil Nadu,Substation,12,2025,0.63,30,ACSR Conductor,3336,Winter,Medium
+21247792,Madhya Pradesh,Substation,11,2024,0.82,15,Steel Tower,63,Monsoon,High
+13932617,Madhya Pradesh,Transmission,8,2025,0.3,23,Relay Panel,4,Monsoon,Medium
+18558217,Uttar Pradesh,Distribution,6,2025,0.84,22,ACSR Conductor,2913,Monsoon,Medium
+9069907,Bihar,Substation,3,2025,0.86,22,Galvanized Steel Wire,2258,Summer,Medium
+11035746,Gujarat,Transmission,10,2024,0.65,25,Insulator Disc,540,Monsoon,Medium
+12802484,Maharashtra,Transmission,12,2024,0.74,17,High Voltage Fuse,9,Winter,Medium
+5683047,Delhi,Transmission,9,2025,0.55,24,Copper Cable 400mm,1017,Monsoon,Medium
+21067691,Rajasthan,Transmission,6,2025,0.84,15,ACSR Conductor,6130,Monsoon,High
+20627209,Tamil Nadu,Transmission,3,2024,0.31,16,Copper Cable 400mm,3630,Summer,High
+8932081,Madhya Pradesh,Substation,5,2025,0.58,13,Circuit Breaker,5,Summer,Medium
+23397695,Madhya Pradesh,Substation,3,2024,0.56,29,Circuit Breaker,8,Summer,High
+19895862,Gujarat,Distribution,10,2025,0.72,27,Steel Tower,79,Monsoon,Medium
+9342300,Maharashtra,Substation,6,2025,0.37,25,Relay Panel,6,Monsoon,Medium
+5316582,Maharashtra,Transmission,3,2025,0.53,25,Power Transformer 220kV,2,Summer,Medium
+14210373,Bihar,Substation,7,2024,0.54,14,Steel Tower,56,Monsoon,Medium
+13422350,Uttar Pradesh,Transmission,4,2025,0.83,23,Circuit Breaker,4,Summer,Medium
+7740935,Rajasthan,Substation,2,2024,0.67,25,ACSR Conductor,1215,Winter,Medium
+7418060,Bihar,Distribution,2,2025,0.81,29,Galvanized Steel Wire,1824,Winter,Medium
+12807242,Rajasthan,Substation,1,2024,0.53,15,Power Transformer 220kV,6,Winter,Medium
+22060115,Bihar,Substation,3,2024,0.72,23,Copper Cable 400mm,5029,Summer,High
+15269810,Gujarat,Distribution,2,2025,0.55,14,Earthing Rod,748,Winter,Medium
+22578372,Delhi,Substation,8,2025,0.66,23,Steel Tower,67,Monsoon,High
+5413291,Uttar Pradesh,Substation,2,2025,0.68,12,Relay Panel,1,Winter,Medium
+12449543,Rajasthan,Distribution,11,2024,0.52,11,Earthing Rod,572,Monsoon,Medium
+19719101,Maharashtra,Substation,2,2025,0.82,16,Circuit Breaker,11,Winter,Medium
+21280711,West Bengal,Distribution,3,2024,0.64,14,Earthing Rod,893,Summer,High
+14685455,Maharashtra,Transmission,10,2024,0.63,15,Power Transformer 220kV,5,Monsoon,Medium
+7361343,Rajasthan,Substation,2,2025,0.44,23,Copper Cable 400mm,2149,Winter,Medium
+8606129,Madhya Pradesh,Substation,8,2025,0.83,13,Circuit Breaker,5,Monsoon,Medium
+10617984,Maharashtra,Distribution,8,2024,0.41,24,High Voltage Fuse,7,Monsoon,Medium
+13570579,Bihar,Transmission,11,2024,0.67,17,Earthing Rod,678,Monsoon,Medium
+9780091,Uttar Pradesh,Distribution,3,2025,0.8,27,Steel Tower,48,Summer,Medium
+19102748,Uttar Pradesh,Substation,6,2024,0.39,15,Relay Panel,6,Monsoon,Medium
+14327103,West Bengal,Distribution,7,2024,0.88,27,Earthing Rod,816,Monsoon,Medium
+15767610,Madhya Pradesh,Substation,7,2024,0.69,25,Galvanized Steel Wire,4146,Monsoon,Medium
+17163056,Uttar Pradesh,Transmission,7,2025,0.52,21,Power Transformer 220kV,6,Monsoon,Medium
+8784915,Maharashtra,Substation,11,2025,0.44,14,Circuit Breaker,6,Monsoon,Medium
+19442789,Gujarat,Transmission,2,2025,0.51,23,Earthing Rod,1030,Winter,Medium
+20506306,Uttar Pradesh,Substation,3,2025,0.7,25,Circuit Breaker,8,Summer,High
+11962789,Delhi,Substation,1,2024,0.47,16,Relay Panel,6,Winter,Medium
+17344233,Madhya Pradesh,Distribution,5,2025,0.87,21,Circuit Breaker,7,Summer,Medium
+8249114,Gujarat,Substation,5,2024,0.88,22,Steel Tower,16,Summer,Medium
+20303947,Tamil Nadu,Distribution,11,2025,0.5,16,Earthing Rod,893,Monsoon,High
+10596532,Bihar,Transmission,2,2025,0.4,10,Copper Cable 400mm,2257,Winter,Medium
+6557334,Karnataka,Distribution,12,2025,0.4,14,Copper Cable 400mm,1075,Winter,Medium
+14979858,Bihar,Distribution,10,2025,0.79,24,Copper Cable 400mm,3804,Monsoon,Medium
+10653147,West Bengal,Substation,1,2025,0.64,14,Relay Panel,5,Winter,Medium
+11802300,Madhya Pradesh,Distribution,3,2024,0.78,11,High Voltage Fuse,5,Summer,Medium
+16471084,Madhya Pradesh,Transmission,6,2024,0.57,16,Circuit Breaker,6,Monsoon,Medium
+22685965,Delhi,Substation,1,2024,0.4,21,Steel Tower,68,Winter,High
+7083048,Gujarat,Transmission,10,2025,0.78,18,Galvanized Steel Wire,1962,Monsoon,Medium
+20260122,Karnataka,Distribution,8,2024,0.4,26,Insulator Disc,931,Monsoon,High
+17551052,Maharashtra,Transmission,12,2024,0.42,22,Circuit Breaker,7,Winter,Medium
+7527931,Bihar,Substation,10,2025,0.68,25,Insulator Disc,338,Monsoon,Medium
+20099461,Gujarat,Distribution,11,2024,0.78,15,Relay Panel,9,Monsoon,High
+9613747,Delhi,Distribution,3,2024,0.3,17,ACSR Conductor,2538,Summer,Medium
+16904829,Rajasthan,Substation,5,2024,0.79,29,High Voltage Fuse,13,Summer,Medium
+18943554,West Bengal,Distribution,4,2025,0.51,14,Relay Panel,9,Summer,Medium
+19990869,West Bengal,Transmission,7,2025,0.9,22,Insulator Disc,1159,Monsoon,Medium
+13289613,West Bengal,Substation,10,2024,0.65,15,Power Transformer 220kV,4,Monsoon,Medium
+16910006,Uttar Pradesh,Transmission,6,2025,0.42,25,Copper Cable 400mm,4126,Monsoon,Medium
+22151122,Delhi,Substation,6,2025,0.85,21,Copper Cable 400mm,4984,Monsoon,High
+8083044,Maharashtra,Distribution,4,2025,0.65,23,Circuit Breaker,6,Summer,Medium
+5989611,Madhya Pradesh,Distribution,10,2025,0.39,20,Relay Panel,4,Monsoon,Medium
+21892884,Gujarat,Substation,6,2024,0.65,19,High Voltage Fuse,8,Monsoon,High
+14445845,Delhi,Transmission,8,2024,0.53,17,Circuit Breaker,8,Monsoon,Medium
+12378819,Karnataka,Substation,9,2025,0.62,30,Circuit Breaker,7,Monsoon,Medium
+22288825,Uttar Pradesh,Distribution,1,2024,0.87,11,Circuit Breaker,17,Winter,High
+10734759,Tamil Nadu,Distribution,1,2025,0.64,22,Steel Tower,53,Winter,Medium
+15424465,West Bengal,Distribution,9,2024,0.31,27,Insulator Disc,632,Monsoon,Medium
+7907038,Uttar Pradesh,Distribution,2,2025,0.86,19,Galvanized Steel Wire,2269,Winter,Medium
+16515394,Madhya Pradesh,Distribution,1,2025,0.44,19,High Voltage Fuse,7,Winter,Medium
+13161147,Rajasthan,Distribution,7,2025,0.75,13,Copper Cable 400mm,2290,Monsoon,Medium
+20671003,Bihar,Substation,8,2025,0.35,24,Circuit Breaker,6,Monsoon,High
+7717852,Maharashtra,Substation,2,2024,0.56,30,Insulator Disc,370,Winter,Medium
+23067049,Bihar,Transmission,2,2024,0.43,10,High Voltage Fuse,18,Winter,High
+6475414,Karnataka,Distribution,4,2024,0.32,24,Circuit Breaker,3,Summer,Medium
+22887875,Delhi,Substation,8,2025,0.63,28,Galvanized Steel Wire,6568,Monsoon,High
+15623141,West Bengal,Substation,2,2024,0.44,13,ACSR Conductor,2843,Winter,Medium
+24384358,Tamil Nadu,Substation,1,2024,0.6,13,Steel Tower,97,Winter,High
+24757751,Uttar Pradesh,Substation,5,2025,0.34,15,Copper Cable 400mm,6189,Summer,High
+7194290,Madhya Pradesh,Transmission,7,2025,0.85,13,Copper Cable 400mm,1151,Monsoon,Medium
+14350551,Madhya Pradesh,Distribution,11,2024,0.87,13,ACSR Conductor,3601,Monsoon,Medium
+10593476,Gujarat,Substation,6,2024,0.66,10,Copper Cable 400mm,2997,Monsoon,Medium
+13438601,Karnataka,Transmission,10,2025,0.5,23,Steel Tower,67,Monsoon,Medium
+17925994,Uttar Pradesh,Transmission,3,2024,0.7,11,ACSR Conductor,5341,Summer,Medium
+16062555,Madhya Pradesh,Transmission,12,2025,0.72,20,Galvanized Steel Wire,2971,Winter,Medium
+10521562,Bihar,Distribution,5,2025,0.81,29,Insulator Disc,557,Summer,Medium
+17081511,Rajasthan,Substation,1,2025,0.77,21,Circuit Breaker,10,Winter,Medium
+14446489,Maharashtra,Substation,4,2025,0.6,12,Circuit Breaker,6,Summer,Medium
+18314023,West Bengal,Transmission,8,2024,0.31,15,Insulator Disc,897,Monsoon,Medium
+23702339,Gujarat,Substation,4,2025,0.36,20,Earthing Rod,1090,Summer,High
+24218515,Madhya Pradesh,Substation,12,2025,0.73,14,Power Transformer 220kV,12,Winter,High
+15335601,Karnataka,Transmission,3,2024,0.41,15,Copper Cable 400mm,2591,Summer,Medium
+24805459,Karnataka,Substation,11,2025,0.76,23,Relay Panel,12,Monsoon,High
+18779336,Gujarat,Substation,11,2024,0.67,29,ACSR Conductor,4732,Monsoon,Medium
+13017874,Tamil Nadu,Transmission,5,2024,0.6,16,Earthing Rod,650,Summer,Medium
+7252032,Tamil Nadu,Distribution,9,2024,0.74,11,Galvanized Steel Wire,1580,Monsoon,Medium
+10387668,Delhi,Transmission,6,2025,0.79,12,Copper Cable 400mm,1599,Monsoon,Medium
+18709839,Tamil Nadu,Transmission,8,2024,0.73,21,Copper Cable 400mm,5126,Monsoon,Medium
+15874506,Maharashtra,Substation,10,2025,0.31,10,Power Transformer 220kV,6,Monsoon,Medium
+21728708,West Bengal,Transmission,4,2024,0.46,17,Galvanized Steel Wire,6366,Summer,High
+24234065,West Bengal,Transmission,2,2024,0.55,17,Circuit Breaker,13,Winter,High
+22433130,Maharashtra,Distribution,8,2024,0.38,29,High Voltage Fuse,10,Monsoon,High
+5548189,Maharashtra,Transmission,7,2024,0.35,21,Earthing Rod,238,Monsoon,Medium
+5873228,Gujarat,Substation,3,2025,0.49,23,Power Transformer 220kV,4,Summer,Medium
+18566615,West Bengal,Distribution,2,2024,0.78,20,Power Transformer 220kV,8,Winter,Medium
+6710947,Maharashtra,Transmission,10,2025,0.89,17,Circuit Breaker,3,Monsoon,Medium
+13738537,Rajasthan,Distribution,12,2025,0.31,16,Copper Cable 400mm,2404,Winter,Medium
+8523250,West Bengal,Distribution,12,2024,0.76,25,ACSR Conductor,2147,Winter,Medium
+6861146,Madhya Pradesh,Substation,6,2025,0.79,17,ACSR Conductor,1914,Monsoon,Medium
+18520932,Delhi,Distribution,11,2025,0.5,10,Steel Tower,55,Monsoon,Medium
+21260273,Madhya Pradesh,Transmission,7,2024,0.68,19,Steel Tower,85,Monsoon,High
+22013624,Rajasthan,Transmission,6,2024,0.5,20,Earthing Rod,1034,Monsoon,High
+12062977,Delhi,Transmission,11,2024,0.72,30,Power Transformer 220kV,4,Monsoon,Medium
+15070991,Maharashtra,Transmission,1,2024,0.46,29,Relay Panel,8,Winter,Medium
+13443337,Maharashtra,Substation,10,2025,0.56,17,ACSR Conductor,2809,Monsoon,Medium
+10987277,Maharashtra,Distribution,7,2025,0.57,12,Relay Panel,8,Monsoon,Medium
+14707245,Uttar Pradesh,Transmission,1,2025,0.42,17,Galvanized Steel Wire,2647,Winter,Medium
+23872362,Maharashtra,Distribution,4,2025,0.42,25,Relay Panel,8,Summer,High
+20623497,Madhya Pradesh,Distribution,11,2025,0.46,23,ACSR Conductor,6166,Monsoon,High
+22608161,West Bengal,Distribution,8,2025,0.79,22,High Voltage Fuse,10,Monsoon,High
+10371727,Karnataka,Substation,9,2024,0.5,21,Circuit Breaker,6,Monsoon,Medium
+15417900,Karnataka,Distribution,8,2025,0.61,13,Galvanized Steel Wire,3191,Monsoon,Medium
+6541028,West Bengal,Substation,1,2024,0.34,11,Relay Panel,5,Winter,Medium
+17059953,Karnataka,Transmission,8,2025,0.87,11,ACSR Conductor,4043,Monsoon,Medium
+6380074,Uttar Pradesh,Distribution,10,2025,0.52,23,Power Transformer 220kV,2,Monsoon,Medium
+8557717,Uttar Pradesh,Distribution,5,2025,0.87,30,Relay Panel,5,Summer,Medium
+22276439,West Bengal,Transmission,9,2024,0.64,29,Power Transformer 220kV,12,Monsoon,High
+23593670,Tamil Nadu,Transmission,1,2024,0.59,20,Galvanized Steel Wire,4317,Winter,High
+13199473,Madhya Pradesh,Transmission,2,2024,0.82,29,Steel Tower,65,Winter,Medium
+18227836,Uttar Pradesh,Transmission,6,2024,0.71,29,Galvanized Steel Wire,3827,Monsoon,Medium
+23065635,Rajasthan,Distribution,9,2025,0.77,10,Copper Cable 400mm,4705,Monsoon,High
+10091788,West Bengal,Substation,6,2025,0.48,23,Relay Panel,7,Monsoon,Medium
+21385147,Karnataka,Transmission,7,2025,0.47,15,Relay Panel,9,Monsoon,High
+11107495,Karnataka,Substation,8,2025,0.41,11,ACSR Conductor,2932,Monsoon,Medium
+19810849,Karnataka,Substation,4,2025,0.42,20,Galvanized Steel Wire,5804,Summer,Medium
+11338929,Tamil Nadu,Distribution,8,2024,0.5,19,Power Transformer 220kV,7,Monsoon,Medium
+21326433,West Bengal,Transmission,1,2024,0.4,12,Copper Cable 400mm,6142,Winter,High
+9973844,Madhya Pradesh,Transmission,6,2024,0.41,16,Insulator Disc,398,Monsoon,Medium
+22828271,Madhya Pradesh,Distribution,2,2024,0.62,27,Galvanized Steel Wire,4246,Winter,High
+14733934,Delhi,Distribution,6,2025,0.42,15,High Voltage Fuse,9,Monsoon,Medium
+19442522,Uttar Pradesh,Substation,9,2024,0.49,15,ACSR Conductor,4063,Monsoon,Medium
+21696273,Karnataka,Substation,8,2025,0.61,23,Earthing Rod,976,Monsoon,High
+16104912,Tamil Nadu,Transmission,12,2024,0.56,21,ACSR Conductor,4428,Winter,Medium
+8072817,Karnataka,Transmission,4,2024,0.48,19,Circuit Breaker,4,Summer,Medium
+16987658,Delhi,Substation,8,2024,0.82,14,Steel Tower,33,Monsoon,Medium
+14411991,Madhya Pradesh,Distribution,1,2025,0.88,28,ACSR Conductor,3617,Winter,Medium
+12584770,Delhi,Substation,1,2024,0.43,26,Earthing Rod,566,Winter,Medium
+6284320,Rajasthan,Transmission,2,2025,0.33,10,Power Transformer 220kV,2,Winter,Medium
+14615784,Karnataka,Transmission,1,2024,0.37,21,Steel Tower,29,Winter,Medium
+12677043,Uttar Pradesh,Transmission,2,2024,0.41,12,Insulator Disc,545,Winter,Medium
+13305048,Rajasthan,Distribution,1,2025,0.43,27,Copper Cable 400mm,3060,Winter,Medium
+12928468,Delhi,Transmission,12,2024,0.34,26,High Voltage Fuse,6,Winter,Medium
+15453566,Karnataka,Transmission,3,2024,0.9,24,Insulator Disc,803,Summer,Medium
+21196742,Uttar Pradesh,Transmission,10,2025,0.34,13,High Voltage Fuse,7,Monsoon,High
+10230220,West Bengal,Substation,8,2025,0.87,24,Earthing Rod,409,Monsoon,Medium
+15631536,Tamil Nadu,Substation,4,2024,0.53,18,Circuit Breaker,6,Summer,Medium
+13600946,Gujarat,Distribution,11,2024,0.39,25,High Voltage Fuse,4,Monsoon,Medium
+17201920,Uttar Pradesh,Distribution,4,2025,0.7,18,Earthing Rod,894,Summer,Medium
+24253499,Delhi,Transmission,1,2024,0.87,27,High Voltage Fuse,12,Winter,High
+15163758,Karnataka,Distribution,1,2024,0.66,29,Earthing Rod,727,Winter,Medium
+21258875,West Bengal,Substation,3,2024,0.52,13,ACSR Conductor,4698,Summer,High
+13545007,Delhi,Substation,7,2025,0.43,14,Insulator Disc,609,Monsoon,Medium
+7143095,Karnataka,Distribution,3,2025,0.82,15,ACSR Conductor,1342,Summer,Medium
+23750232,Rajasthan,Substation,12,2025,0.65,22,Circuit Breaker,16,Winter,High
+8697259,Bihar,Transmission,8,2025,0.84,17,High Voltage Fuse,6,Monsoon,Medium
+6166111,Gujarat,Substation,7,2024,0.35,16,Copper Cable 400mm,1467,Monsoon,Medium
+23035494,Karnataka,Substation,7,2024,0.7,18,High Voltage Fuse,12,Monsoon,High
+9351111,Gujarat,Distribution,1,2024,0.43,10,Circuit Breaker,6,Winter,Medium
+16057199,Tamil Nadu,Substation,5,2025,0.49,28,Earthing Rod,738,Summer,Medium
+24796601,Tamil Nadu,Distribution,2,2024,0.48,12,Earthing Rod,1438,Winter,High
+14565495,Tamil Nadu,Transmission,5,2024,0.52,16,High Voltage Fuse,4,Summer,Medium
+18054627,Karnataka,Substation,3,2025,0.68,23,Insulator Disc,1065,Summer,Medium
+19813667,West Bengal,Transmission,11,2024,0.78,11,Galvanized Steel Wire,4101,Monsoon,Medium
+5865724,Rajasthan,Substation,7,2025,0.39,29,Insulator Disc,234,Monsoon,Medium
+9010126,Uttar Pradesh,Distribution,9,2025,0.77,28,Steel Tower,27,Monsoon,Medium
+12263439,Rajasthan,Distribution,7,2024,0.55,27,High Voltage Fuse,9,Monsoon,Medium
+22677721,Maharashtra,Distribution,6,2025,0.39,29,Copper Cable 400mm,6145,Monsoon,High
+8883077,Maharashtra,Substation,12,2024,0.85,12,Power Transformer 220kV,5,Winter,Medium
+19030236,Delhi,Transmission,5,2025,0.43,14,Galvanized Steel Wire,4491,Summer,Medium
+10713853,Rajasthan,Substation,11,2025,0.34,29,Steel Tower,21,Monsoon,Medium
+7210050,Karnataka,Transmission,3,2025,0.62,11,Power Transformer 220kV,4,Summer,Medium
+7363084,Gujarat,Transmission,3,2025,0.55,25,Steel Tower,36,Summer,Medium
+19272754,Tamil Nadu,Substation,2,2024,0.74,21,Power Transformer 220kV,11,Winter,Medium
+20949525,Madhya Pradesh,Distribution,11,2024,0.33,13,Circuit Breaker,7,Monsoon,High
+20084061,Karnataka,Distribution,8,2025,0.37,21,Copper Cable 400mm,3213,Monsoon,High
+6486197,Maharashtra,Substation,8,2024,0.53,12,Galvanized Steel Wire,1368,Monsoon,Medium
+8765049,West Bengal,Distribution,4,2025,0.36,17,Steel Tower,26,Summer,Medium
+17834467,Uttar Pradesh,Substation,10,2024,0.85,14,Galvanized Steel Wire,5118,Monsoon,Medium
+15040460,Tamil Nadu,Substation,9,2025,0.54,16,ACSR Conductor,2526,Monsoon,Medium
+8661498,Rajasthan,Transmission,12,2024,0.75,27,ACSR Conductor,1775,Winter,Medium
+7350358,Bihar,Substation,8,2024,0.58,22,Galvanized Steel Wire,1308,Monsoon,Medium
+11011322,West Bengal,Transmission,8,2025,0.44,17,Insulator Disc,506,Monsoon,Medium
+21811989,Madhya Pradesh,Distribution,1,2025,0.36,20,Relay Panel,11,Winter,High
+7389139,Bihar,Transmission,10,2025,0.6,21,Copper Cable 400mm,1337,Monsoon,Medium
+24786658,Delhi,Distribution,9,2025,0.79,24,ACSR Conductor,4858,Monsoon,High
+15401881,Rajasthan,Distribution,1,2025,0.88,11,Copper Cable 400mm,2556,Winter,Medium
+22009497,Maharashtra,Distribution,11,2025,0.66,24,Earthing Rod,1232,Monsoon,High
+24614439,Maharashtra,Distribution,6,2024,0.44,13,ACSR Conductor,6005,Monsoon,High
+16676767,Madhya Pradesh,Transmission,9,2025,0.68,20,Relay Panel,9,Monsoon,Medium
+18513424,Delhi,Distribution,8,2025,0.83,19,Insulator Disc,1092,Monsoon,Medium
+18738318,Uttar Pradesh,Transmission,9,2025,0.74,25,Copper Cable 400mm,3054,Monsoon,Medium
+5487334,Karnataka,Transmission,1,2025,0.68,27,ACSR Conductor,1174,Winter,Medium
+17492692,Karnataka,Transmission,9,2025,0.48,26,ACSR Conductor,2833,Monsoon,Medium
+9358849,Bihar,Transmission,8,2024,0.88,21,Earthing Rod,524,Monsoon,Medium
+24329078,West Bengal,Substation,5,2025,0.83,29,Insulator Disc,1094,Summer,High
+13893099,Maharashtra,Distribution,8,2024,0.72,12,Insulator Disc,680,Monsoon,Medium
+14835531,Rajasthan,Substation,5,2024,0.4,21,Circuit Breaker,4,Summer,Medium
+22033485,Uttar Pradesh,Transmission,9,2025,0.37,17,Galvanized Steel Wire,6323,Monsoon,High
+10071538,Maharashtra,Transmission,1,2024,0.45,29,High Voltage Fuse,4,Winter,Medium
+16911710,Delhi,Substation,9,2024,0.83,17,Copper Cable 400mm,3906,Monsoon,Medium
+21974066,Tamil Nadu,Transmission,6,2025,0.58,24,Insulator Disc,1274,Monsoon,High
+13258482,Gujarat,Substation,10,2024,0.5,27,Power Transformer 220kV,10,Monsoon,Medium
+21262352,Madhya Pradesh,Substation,4,2025,0.69,21,Power Transformer 220kV,16,Summer,High
+16723449,Uttar Pradesh,Transmission,12,2024,0.71,13,Circuit Breaker,5,Winter,Medium
+19669095,Rajasthan,Distribution,10,2024,0.6,18,Insulator Disc,1160,Monsoon,Medium
+17078410,Tamil Nadu,Distribution,11,2024,0.45,14,High Voltage Fuse,10,Monsoon,Medium
+15925610,Bihar,Distribution,6,2024,0.51,26,Galvanized Steel Wire,4666,Monsoon,Medium
+7779093,Maharashtra,Substation,2,2024,0.66,20,Steel Tower,15,Winter,Medium
+12946674,Maharashtra,Transmission,3,2024,0.78,29,Steel Tower,51,Summer,Medium
+15897352,Karnataka,Transmission,5,2025,0.52,22,Power Transformer 220kV,7,Summer,Medium
+5779549,Rajasthan,Substation,9,2024,0.41,14,Copper Cable 400mm,1710,Monsoon,Medium
+13964201,Uttar Pradesh,Transmission,11,2024,0.48,16,Steel Tower,41,Monsoon,Medium
+11399036,Bihar,Substation,5,2025,0.84,26,Earthing Rod,547,Summer,Medium
+19641031,West Bengal,Distribution,9,2024,0.5,30,ACSR Conductor,4222,Monsoon,Medium
+14468868,Gujarat,Substation,7,2024,0.74,12,Steel Tower,57,Monsoon,Medium
+13536075,Maharashtra,Distribution,9,2025,0.5,26,Power Transformer 220kV,9,Monsoon,Medium
+15588807,Madhya Pradesh,Transmission,5,2024,0.36,28,Insulator Disc,841,Summer,Medium
+19286440,West Bengal,Substation,7,2024,0.41,28,Insulator Disc,790,Monsoon,Medium
+18759620,Tamil Nadu,Distribution,12,2025,0.78,14,High Voltage Fuse,8,Winter,Medium
+12734676,Uttar Pradesh,Substation,12,2025,0.82,12,Copper Cable 400mm,3743,Winter,Medium
+23047949,Delhi,Transmission,10,2025,0.66,16,High Voltage Fuse,9,Monsoon,High
+17654612,Karnataka,Transmission,3,2025,0.9,21,Insulator Disc,882,Summer,Medium
+12831617,Uttar Pradesh,Substation,1,2024,0.43,15,Insulator Disc,577,Winter,Medium
+14326783,Maharashtra,Distribution,10,2024,0.45,16,Power Transformer 220kV,6,Monsoon,Medium
+23529900,West Bengal,Distribution,10,2024,0.56,18,Power Transformer 220kV,15,Monsoon,High
+6912618,Bihar,Substation,9,2024,0.76,27,Galvanized Steel Wire,1700,Monsoon,Medium
+13361819,Rajasthan,Transmission,10,2024,0.79,27,ACSR Conductor,2805,Monsoon,Medium
+8084992,Maharashtra,Transmission,4,2024,0.87,17,Circuit Breaker,2,Summer,Medium
+10973009,Delhi,Substation,4,2024,0.53,13,Circuit Breaker,6,Summer,Medium
+7740876,Madhya Pradesh,Distribution,1,2025,0.8,17,Relay Panel,4,Winter,Medium
+6363759,Maharashtra,Substation,11,2025,0.33,29,High Voltage Fuse,3,Monsoon,Medium
+10155555,Delhi,Substation,6,2025,0.63,26,Earthing Rod,477,Monsoon,Medium
+11335314,Tamil Nadu,Transmission,6,2025,0.76,23,Relay Panel,3,Monsoon,Medium
+9902956,Gujarat,Substation,11,2025,0.58,18,Steel Tower,29,Monsoon,Medium
+22555806,Uttar Pradesh,Transmission,11,2024,0.65,19,ACSR Conductor,3608,Monsoon,High
+9993239,Gujarat,Distribution,6,2024,0.58,27,High Voltage Fuse,6,Monsoon,Medium
+20021209,Bihar,Transmission,6,2024,0.35,26,Power Transformer 220kV,6,Monsoon,High
+6660327,Madhya Pradesh,Substation,10,2025,0.85,21,Earthing Rod,392,Monsoon,Medium
+16786046,Maharashtra,Substation,7,2025,0.42,20,Insulator Disc,822,Monsoon,Medium
+11802857,Karnataka,Transmission,7,2025,0.87,14,Circuit Breaker,4,Monsoon,Medium
+21226676,Bihar,Transmission,4,2025,0.33,25,Circuit Breaker,16,Summer,High
+16908339,Karnataka,Substation,12,2025,0.49,13,Circuit Breaker,6,Winter,Medium
+18167145,Gujarat,Substation,2,2025,0.78,23,Power Transformer 220kV,10,Winter,Medium
+24697537,Bihar,Substation,4,2025,0.74,10,Steel Tower,74,Summer,High
+18617930,West Bengal,Distribution,3,2024,0.73,29,Steel Tower,55,Summer,Medium
+15793118,West Bengal,Substation,9,2025,0.6,13,Galvanized Steel Wire,3806,Monsoon,Medium
+15464821,Gujarat,Distribution,1,2025,0.33,20,High Voltage Fuse,7,Winter,Medium
+19248039,Karnataka,Substation,10,2025,0.44,18,Galvanized Steel Wire,3156,Monsoon,Medium
+19347265,Karnataka,Distribution,5,2025,0.52,13,Relay Panel,10,Summer,Medium
+24129270,Gujarat,Substation,11,2025,0.78,30,Insulator Disc,965,Monsoon,High
+22863419,Bihar,Transmission,5,2025,0.76,27,Power Transformer 220kV,7,Summer,High
+15525025,Maharashtra,Transmission,9,2024,0.77,11,Copper Cable 400mm,2778,Monsoon,Medium
+18507108,Tamil Nadu,Substation,7,2025,0.6,27,Earthing Rod,943,Monsoon,Medium
+15571603,West Bengal,Transmission,1,2024,0.53,21,High Voltage Fuse,11,Winter,Medium
+22402451,Karnataka,Substation,3,2025,0.89,29,Steel Tower,67,Summer,High
+15348308,Tamil Nadu,Transmission,12,2024,0.75,17,Relay Panel,8,Winter,Medium
+15603931,Tamil Nadu,Substation,1,2024,0.56,16,High Voltage Fuse,8,Winter,Medium
+8923794,West Bengal,Distribution,8,2025,0.4,26,Copper Cable 400mm,2123,Monsoon,Medium
+15640362,Karnataka,Substation,5,2024,0.52,19,Power Transformer 220kV,7,Summer,Medium
+9587676,Gujarat,Distribution,9,2024,0.4,12,ACSR Conductor,2051,Monsoon,Medium
+19493351,Rajasthan,Transmission,2,2025,0.59,23,High Voltage Fuse,7,Winter,Medium
+24472765,Uttar Pradesh,Distribution,3,2024,0.68,11,High Voltage Fuse,15,Summer,High
+21824689,Rajasthan,Transmission,4,2024,0.33,17,Galvanized Steel Wire,5521,Summer,High
+12212093,Delhi,Substation,10,2025,0.36,11,Circuit Breaker,4,Monsoon,Medium
+7298107,Gujarat,Distribution,11,2025,0.57,13,Circuit Breaker,5,Monsoon,Medium
+5623843,Gujarat,Distribution,1,2025,0.47,21,High Voltage Fuse,2,Winter,Medium
+12268176,Bihar,Distribution,7,2025,0.84,22,High Voltage Fuse,6,Monsoon,Medium
+18799115,Maharashtra,Distribution,5,2025,0.45,11,Steel Tower,93,Summer,Medium
+22674564,Bihar,Transmission,10,2024,0.6,25,High Voltage Fuse,8,Monsoon,High
+17938548,Rajasthan,Substation,4,2024,0.73,15,Power Transformer 220kV,9,Summer,Medium
+9123780,Gujarat,Substation,4,2025,0.51,20,Galvanized Steel Wire,2144,Summer,Medium
+9142936,West Bengal,Transmission,10,2025,0.33,11,Insulator Disc,548,Monsoon,Medium
+5809851,Maharashtra,Transmission,10,2025,0.59,26,Power Transformer 220kV,3,Monsoon,Medium
+10032136,Madhya Pradesh,Distribution,6,2024,0.54,23,Earthing Rod,481,Monsoon,Medium
+20269685,West Bengal,Distribution,6,2025,0.85,28,High Voltage Fuse,14,Monsoon,High
+11511881,Tamil Nadu,Substation,7,2025,0.59,22,ACSR Conductor,3280,Monsoon,Medium
+20910899,Bihar,Transmission,5,2025,0.53,24,Steel Tower,83,Summer,High
+23114165,Karnataka,Transmission,2,2024,0.71,22,Relay Panel,8,Winter,High
+8624414,Madhya Pradesh,Substation,1,2024,0.64,20,ACSR Conductor,1974,Winter,Medium
+19963078,Madhya Pradesh,Distribution,8,2024,0.78,12,Circuit Breaker,7,Monsoon,Medium
+14620953,Madhya Pradesh,Distribution,3,2025,0.73,19,Steel Tower,29,Summer,Medium
+5146846,Madhya Pradesh,Substation,2,2024,0.6,15,ACSR Conductor,1240,Winter,Medium
+8514667,Delhi,Transmission,8,2025,0.33,25,ACSR Conductor,1651,Monsoon,Medium
+10987430,Tamil Nadu,Substation,3,2024,0.62,23,Steel Tower,43,Summer,Medium
+19373999,Tamil Nadu,Substation,1,2025,0.78,16,Relay Panel,14,Winter,Medium
+10171796,Maharashtra,Substation,5,2024,0.39,30,Circuit Breaker,4,Summer,Medium
+16794333,Karnataka,Distribution,6,2025,0.61,28,Copper Cable 400mm,4568,Monsoon,Medium
+12789462,Karnataka,Transmission,10,2024,0.79,16,Relay Panel,3,Monsoon,Medium
+6627404,Karnataka,Distribution,6,2025,0.73,29,Insulator Disc,384,Monsoon,Medium
+9135088,Madhya Pradesh,Distribution,12,2025,0.51,19,Relay Panel,6,Winter,Medium
+11333199,Gujarat,Distribution,7,2024,0.75,14,Circuit Breaker,6,Monsoon,Medium
+14976994,West Bengal,Transmission,5,2024,0.67,22,Circuit Breaker,5,Summer,Medium
+7580696,Bihar,Substation,1,2025,0.75,25,Galvanized Steel Wire,1614,Winter,Medium
+12394477,Karnataka,Transmission,1,2025,0.89,13,High Voltage Fuse,4,Winter,Medium
+12442695,Gujarat,Distribution,12,2025,0.82,29,Circuit Breaker,7,Winter,Medium
+15589242,Gujarat,Substation,9,2025,0.52,19,Galvanized Steel Wire,4302,Monsoon,Medium
+23761310,West Bengal,Transmission,2,2025,0.81,10,Copper Cable 400mm,6985,Winter,High
+21173052,Delhi,Transmission,11,2025,0.82,17,Relay Panel,11,Monsoon,High
+21515808,Delhi,Distribution,10,2024,0.5,17,Steel Tower,107,Monsoon,High
+7795150,Bihar,Substation,2,2024,0.73,13,Insulator Disc,459,Winter,Medium
+11132512,Gujarat,Transmission,3,2025,0.7,30,Steel Tower,44,Summer,Medium
+11392970,Madhya Pradesh,Transmission,7,2024,0.69,28,Steel Tower,56,Monsoon,Medium
+15454168,Delhi,Transmission,12,2025,0.56,29,Steel Tower,77,Winter,Medium
+23216679,Gujarat,Distribution,8,2025,0.9,19,High Voltage Fuse,7,Monsoon,High
+12076221,Rajasthan,Distribution,12,2024,0.69,14,Relay Panel,7,Winter,Medium
+22855845,Gujarat,Substation,10,2024,0.33,22,ACSR Conductor,6719,Monsoon,High
+16173287,West Bengal,Transmission,10,2025,0.35,13,Earthing Rod,727,Monsoon,Medium
+16438533,Bihar,Substation,1,2025,0.7,10,Copper Cable 400mm,4290,Winter,Medium
+20237982,Bihar,Substation,12,2025,0.4,21,Circuit Breaker,13,Winter,High
+22125168,Delhi,Transmission,11,2025,0.69,23,ACSR Conductor,4447,Monsoon,High
+18684384,Rajasthan,Transmission,4,2025,0.41,12,Insulator Disc,822,Summer,Medium
+24614677,Gujarat,Substation,12,2024,0.72,26,Copper Cable 400mm,6990,Winter,High
+8937302,West Bengal,Transmission,10,2025,0.74,29,Galvanized Steel Wire,1367,Monsoon,Medium
+5561778,Tamil Nadu,Distribution,1,2025,0.46,21,Insulator Disc,305,Winter,Medium
+17897366,Delhi,Substation,3,2024,0.62,11,Copper Cable 400mm,4975,Summer,Medium
+18852989,Delhi,Transmission,2,2024,0.76,12,Steel Tower,75,Winter,Medium
+7647273,Madhya Pradesh,Transmission,6,2025,0.6,25,ACSR Conductor,2011,Monsoon,Medium
+23440838,Gujarat,Substation,6,2024,0.57,16,Circuit Breaker,16,Monsoon,High
+17460975,Karnataka,Substation,12,2024,0.59,19,Earthing Rod,890,Winter,Medium
+9320517,Gujarat,Substation,3,2024,0.43,14,Earthing Rod,540,Summer,Medium
+22715584,Karnataka,Transmission,1,2025,0.4,14,Earthing Rod,1317,Winter,High
+7665532,Karnataka,Substation,4,2025,0.42,13,Earthing Rod,413,Summer,Medium
+16820550,Gujarat,Substation,7,2024,0.68,21,Earthing Rod,925,Monsoon,Medium
+21488939,Madhya Pradesh,Distribution,12,2025,0.35,19,Galvanized Steel Wire,3459,Winter,High
+20328909,Delhi,Transmission,12,2024,0.61,17,Steel Tower,101,Winter,High
+12310940,Maharashtra,Transmission,2,2024,0.32,13,Circuit Breaker,7,Winter,Medium
+9764250,West Bengal,Substation,1,2025,0.58,15,Insulator Disc,419,Winter,Medium
+7210679,Maharashtra,Substation,10,2025,0.38,23,Steel Tower,36,Monsoon,Medium
+24988062,Maharashtra,Distribution,8,2024,0.41,20,Copper Cable 400mm,6946,Monsoon,High
+12469282,Delhi,Transmission,6,2025,0.73,19,Galvanized Steel Wire,1957,Monsoon,Medium
+15441118,Uttar Pradesh,Substation,8,2025,0.5,18,Earthing Rod,864,Monsoon,Medium
+14709567,Madhya Pradesh,Distribution,1,2024,0.87,29,Power Transformer 220kV,7,Winter,Medium
+14005126,Madhya Pradesh,Transmission,7,2025,0.64,20,Power Transformer 220kV,9,Monsoon,Medium
+21877536,Bihar,Distribution,6,2024,0.51,21,Copper Cable 400mm,6410,Monsoon,High
+15528803,Tamil Nadu,Transmission,12,2024,0.31,22,Circuit Breaker,8,Winter,Medium
+9374812,West Bengal,Transmission,7,2024,0.34,14,Earthing Rod,403,Monsoon,Medium
+18986780,Gujarat,Distribution,5,2024,0.65,18,Power Transformer 220kV,6,Summer,Medium
+9276179,Karnataka,Substation,8,2024,0.87,19,Relay Panel,7,Monsoon,Medium
+20457055,Tamil Nadu,Substation,10,2024,0.42,10,Power Transformer 220kV,7,Monsoon,High
+23855969,Delhi,Substation,9,2024,0.67,13,Copper Cable 400mm,4914,Monsoon,High
+10926593,Madhya Pradesh,Substation,12,2024,0.59,25,Relay Panel,7,Winter,Medium
+20502189,Tamil Nadu,Substation,9,2025,0.8,12,Relay Panel,12,Monsoon,High
+7002766,Gujarat,Distribution,4,2025,0.36,12,Relay Panel,2,Summer,Medium
+24169863,Maharashtra,Distribution,4,2025,0.84,26,ACSR Conductor,5534,Summer,High
+13146002,Karnataka,Distribution,7,2025,0.57,13,Circuit Breaker,7,Monsoon,Medium
+9783881,Maharashtra,Substation,12,2024,0.84,20,ACSR Conductor,2582,Winter,Medium
+20046291,Karnataka,Distribution,3,2025,0.37,10,ACSR Conductor,4951,Summer,High
+9523705,Uttar Pradesh,Transmission,12,2025,0.53,11,Earthing Rod,419,Winter,Medium
+8780975,Maharashtra,Transmission,9,2025,0.88,27,Earthing Rod,447,Monsoon,Medium
+22181332,Madhya Pradesh,Substation,9,2024,0.68,21,Insulator Disc,1109,Monsoon,High
+15056502,Gujarat,Substation,4,2024,0.35,19,Copper Cable 400mm,3613,Summer,Medium
+14517286,Delhi,Distribution,6,2025,0.57,16,Relay Panel,4,Monsoon,Medium
+21108966,West Bengal,Distribution,2,2024,0.74,15,Power Transformer 220kV,15,Winter,High
+15711553,Delhi,Substation,11,2025,0.85,20,Power Transformer 220kV,6,Monsoon,Medium
+15127972,Uttar Pradesh,Substation,5,2024,0.71,11,Galvanized Steel Wire,2617,Summer,Medium
+9429863,Tamil Nadu,Transmission,5,2025,0.34,12,Copper Cable 400mm,1772,Summer,Medium
+18143372,Karnataka,Substation,9,2024,0.74,28,Earthing Rod,870,Monsoon,Medium
+8219568,Delhi,Substation,3,2025,0.52,28,Earthing Rod,410,Summer,Medium
+14654477,West Bengal,Transmission,5,2024,0.81,23,Relay Panel,5,Summer,Medium
+13020881,Rajasthan,Distribution,4,2024,0.43,22,Insulator Disc,716,Summer,Medium
+7114712,Maharashtra,Substation,6,2024,0.8,17,Relay Panel,5,Monsoon,Medium
+21330457,Bihar,Substation,5,2025,0.43,18,Insulator Disc,1109,Summer,High
+17807778,Karnataka,Transmission,8,2024,0.54,11,Relay Panel,11,Monsoon,Medium
+10358012,Maharashtra,Transmission,5,2024,0.8,30,Relay Panel,5,Summer,Medium
+15307579,Uttar Pradesh,Distribution,10,2025,0.79,18,Insulator Disc,918,Monsoon,Medium
+24256842,Tamil Nadu,Transmission,6,2024,0.81,13,Circuit Breaker,18,Monsoon,High
+18316234,Delhi,Substation,12,2024,0.32,29,Relay Panel,11,Winter,Medium
+21984199,Bihar,Substation,4,2025,0.58,21,Copper Cable 400mm,4682,Summer,High
+18264541,Karnataka,Distribution,10,2024,0.69,13,ACSR Conductor,3433,Monsoon,Medium
+8325360,Bihar,Distribution,12,2024,0.46,30,ACSR Conductor,1590,Winter,Medium
+20836632,Gujarat,Transmission,6,2025,0.71,17,Power Transformer 220kV,12,Monsoon,High
+15729975,Karnataka,Substation,4,2024,0.77,18,Power Transformer 220kV,8,Summer,Medium
+6632494,Tamil Nadu,Transmission,2,2024,0.87,26,High Voltage Fuse,2,Winter,Medium
+11346025,Rajasthan,Distribution,9,2025,0.88,14,Copper Cable 400mm,2893,Monsoon,Medium
+5965010,Uttar Pradesh,Substation,1,2024,0.9,23,Galvanized Steel Wire,1246,Winter,Medium
+17928917,Gujarat,Substation,4,2025,0.54,25,Circuit Breaker,9,Summer,Medium
+11971463,Rajasthan,Transmission,8,2024,0.55,29,Galvanized Steel Wire,3292,Monsoon,Medium
+21063597,Gujarat,Distribution,3,2025,0.45,30,ACSR Conductor,5602,Summer,High
+5137815,Maharashtra,Substation,11,2025,0.41,20,Insulator Disc,277,Monsoon,Medium
+18013385,Maharashtra,Substation,6,2024,0.79,17,Earthing Rod,720,Monsoon,Medium
+22070835,Bihar,Transmission,5,2025,0.88,13,Copper Cable 400mm,6599,Summer,High
+13961626,Bihar,Substation,11,2025,0.63,15,ACSR Conductor,2443,Monsoon,Medium
+17133950,Karnataka,Substation,10,2025,0.55,17,Steel Tower,51,Monsoon,Medium
+7217161,West Bengal,Transmission,11,2025,0.49,23,Earthing Rod,375,Monsoon,Medium
+10732962,Bihar,Distribution,4,2024,0.87,28,High Voltage Fuse,5,Summer,Medium
+21613587,Maharashtra,Distribution,4,2025,0.49,30,Power Transformer 220kV,12,Summer,High
+16548803,Delhi,Distribution,5,2024,0.78,19,Steel Tower,82,Summer,Medium
+21206004,Karnataka,Substation,8,2025,0.5,29,Steel Tower,63,Monsoon,High
+9854047,Karnataka,Substation,3,2024,0.52,20,Steel Tower,29,Summer,Medium
+11928679,Bihar,Transmission,9,2024,0.84,22,Earthing Rod,703,Monsoon,Medium
+24852179,Tamil Nadu,Distribution,3,2025,0.35,23,Insulator Disc,1366,Summer,High
+16016698,Rajasthan,Substation,6,2024,0.61,30,High Voltage Fuse,10,Monsoon,Medium
+21467485,Tamil Nadu,Transmission,7,2025,0.33,28,Power Transformer 220kV,12,Monsoon,High
+24219893,Rajasthan,Substation,12,2025,0.58,28,Earthing Rod,1380,Winter,High
+22989475,Maharashtra,Transmission,12,2024,0.78,11,Galvanized Steel Wire,6276,Winter,High
+8213874,Karnataka,Transmission,8,2025,0.71,30,Copper Cable 400mm,1535,Monsoon,Medium
+18466442,Delhi,Distribution,11,2024,0.51,15,Galvanized Steel Wire,3157,Monsoon,Medium
+16170433,Maharashtra,Distribution,6,2024,0.47,13,Galvanized Steel Wire,3913,Monsoon,Medium
+17417745,Karnataka,Transmission,4,2024,0.73,21,Relay Panel,8,Summer,Medium
+19571839,Tamil Nadu,Substation,6,2024,0.7,20,ACSR Conductor,5812,Monsoon,Medium
+5019056,Madhya Pradesh,Distribution,9,2025,0.41,14,Relay Panel,1,Monsoon,Medium
+19955696,Bihar,Distribution,10,2024,0.41,19,Relay Panel,13,Monsoon,Medium
+8483061,Delhi,Substation,6,2025,0.32,21,Galvanized Steel Wire,1543,Monsoon,Medium
+8854605,Gujarat,Transmission,5,2025,0.6,30,ACSR Conductor,1877,Summer,Medium
+8281953,Rajasthan,Transmission,6,2024,0.76,24,Earthing Rod,438,Monsoon,Medium
+10113247,Delhi,Substation,10,2025,0.31,14,High Voltage Fuse,5,Monsoon,Medium
+17285235,West Bengal,Distribution,7,2025,0.87,14,Galvanized Steel Wire,4926,Monsoon,Medium
+24452017,Tamil Nadu,Distribution,9,2024,0.78,12,Copper Cable 400mm,3692,Monsoon,High
+22677838,West Bengal,Distribution,4,2024,0.47,30,Earthing Rod,1088,Summer,High
+22102239,Madhya Pradesh,Substation,2,2025,0.85,22,ACSR Conductor,5834,Winter,High
+22548648,Delhi,Substation,4,2024,0.84,26,High Voltage Fuse,11,Summer,High
+22776166,Madhya Pradesh,Distribution,1,2024,0.36,10,Power Transformer 220kV,16,Winter,High
+13251095,West Bengal,Distribution,5,2025,0.55,27,Relay Panel,9,Summer,Medium
+9151484,Bihar,Transmission,6,2024,0.8,15,Steel Tower,18,Monsoon,Medium
+12028863,Tamil Nadu,Distribution,4,2025,0.64,15,Steel Tower,36,Summer,Medium
+24962200,Karnataka,Distribution,11,2024,0.77,11,ACSR Conductor,5716,Monsoon,High
+11811848,Bihar,Substation,2,2025,0.65,28,ACSR Conductor,2704,Winter,Medium
+12367867,Rajasthan,Distribution,4,2024,0.66,11,Copper Cable 400mm,2832,Summer,Medium
+9983952,Tamil Nadu,Transmission,8,2024,0.46,29,Galvanized Steel Wire,2895,Monsoon,Medium
+19807301,Tamil Nadu,Transmission,12,2024,0.33,12,Copper Cable 400mm,3545,Winter,Medium
+14169638,Madhya Pradesh,Distribution,1,2024,0.72,24,Relay Panel,6,Winter,Medium
+21143530,Karnataka,Substation,1,2024,0.41,26,Galvanized Steel Wire,3319,Winter,High
+11359770,Madhya Pradesh,Transmission,9,2025,0.89,25,Copper Cable 400mm,2544,Monsoon,Medium
+15454784,Bihar,Distribution,12,2024,0.42,24,Insulator Disc,865,Winter,Medium
+18585914,Gujarat,Distribution,7,2025,0.64,26,ACSR Conductor,4776,Monsoon,Medium
+9546917,Madhya Pradesh,Transmission,1,2024,0.49,18,ACSR Conductor,1775,Winter,Medium
+7123207,Gujarat,Transmission,2,2024,0.86,19,Steel Tower,21,Winter,Medium
+24969936,Maharashtra,Substation,9,2024,0.41,22,Earthing Rod,1298,Monsoon,High
+5544305,Bihar,Transmission,12,2025,0.88,26,Relay Panel,2,Winter,Medium
+17135227,Tamil Nadu,Transmission,6,2024,0.32,24,High Voltage Fuse,13,Monsoon,Medium
+18932388,Bihar,Distribution,11,2024,0.73,26,Steel Tower,56,Monsoon,Medium
+5736509,Bihar,Distribution,1,2025,0.55,11,Copper Cable 400mm,1474,Winter,Medium
+16916071,Tamil Nadu,Transmission,12,2024,0.61,10,Copper Cable 400mm,3180,Winter,Medium
+24197829,Gujarat,Transmission,4,2024,0.6,24,Insulator Disc,1427,Summer,High
+5997202,Delhi,Transmission,4,2024,0.75,14,Relay Panel,2,Summer,Medium
+12689166,Bihar,Transmission,4,2025,0.7,13,Steel Tower,50,Summer,Medium
+21721728,Madhya Pradesh,Substation,8,2025,0.51,13,Relay Panel,7,Monsoon,High
+8743885,Karnataka,Distribution,11,2024,0.65,30,High Voltage Fuse,2,Monsoon,Medium
+22739126,Uttar Pradesh,Substation,3,2025,0.44,28,Power Transformer 220kV,8,Summer,High
+18929879,Tamil Nadu,Substation,5,2025,0.61,12,Steel Tower,37,Summer,Medium
+11623826,Uttar Pradesh,Transmission,1,2025,0.83,10,Relay Panel,4,Winter,Medium
+7627768,Karnataka,Substation,4,2025,0.35,22,Copper Cable 400mm,1571,Summer,Medium
+8925253,Uttar Pradesh,Transmission,2,2025,0.52,23,Power Transformer 220kV,3,Winter,Medium
+19224317,Karnataka,Transmission,2,2025,0.37,17,Copper Cable 400mm,4863,Winter,Medium
+15007879,Tamil Nadu,Transmission,2,2025,0.79,30,Earthing Rod,810,Winter,Medium
+17201031,Karnataka,Substation,8,2025,0.41,24,Earthing Rod,705,Monsoon,Medium
+10389232,Madhya Pradesh,Transmission,3,2025,0.33,24,Earthing Rod,498,Summer,Medium
+16866647,Rajasthan,Transmission,6,2025,0.51,11,ACSR Conductor,3035,Monsoon,Medium
+22427491,Bihar,Substation,6,2025,0.76,11,ACSR Conductor,4328,Monsoon,High
+5100640,Uttar Pradesh,Transmission,5,2025,0.48,22,Power Transformer 220kV,4,Summer,Medium
+8241759,Maharashtra,Substation,10,2025,0.32,24,Circuit Breaker,4,Monsoon,Medium
+20028653,West Bengal,Substation,10,2024,0.54,16,Power Transformer 220kV,8,Monsoon,High
+24463256,West Bengal,Transmission,7,2024,0.69,21,ACSR Conductor,3816,Monsoon,High
+5820754,Karnataka,Distribution,10,2024,0.31,27,Relay Panel,1,Monsoon,Medium
+17055816,Delhi,Substation,4,2024,0.63,28,Power Transformer 220kV,5,Summer,Medium
+23687961,Tamil Nadu,Transmission,6,2024,0.88,20,Earthing Rod,1184,Monsoon,High
+9791769,Karnataka,Transmission,4,2024,0.33,14,High Voltage Fuse,5,Summer,Medium
+12968368,Karnataka,Substation,1,2024,0.67,14,Insulator Disc,674,Winter,Medium
+5319938,Uttar Pradesh,Distribution,10,2024,0.83,18,ACSR Conductor,1590,Monsoon,Medium
+11242133,Madhya Pradesh,Transmission,6,2025,0.47,16,Circuit Breaker,5,Monsoon,Medium
+19009368,West Bengal,Substation,8,2025,0.59,24,Insulator Disc,931,Monsoon,Medium
+24475797,Bihar,Distribution,11,2025,0.79,26,Power Transformer 220kV,18,Monsoon,High
+16208479,West Bengal,Distribution,1,2024,0.33,14,Earthing Rod,680,Winter,Medium
+9900685,Maharashtra,Distribution,6,2024,0.6,30,ACSR Conductor,1643,Monsoon,Medium
+24600489,Karnataka,Substation,1,2024,0.65,25,Steel Tower,73,Winter,High
+7730570,Maharashtra,Substation,6,2024,0.74,13,Earthing Rod,363,Monsoon,Medium
+17965434,Uttar Pradesh,Distribution,1,2025,0.54,23,Earthing Rod,1024,Winter,Medium
+18636967,Bihar,Substation,6,2024,0.85,24,Galvanized Steel Wire,5292,Monsoon,Medium
+13097087,Uttar Pradesh,Distribution,12,2025,0.59,30,Earthing Rod,589,Winter,Medium
+14930429,Gujarat,Transmission,2,2025,0.76,18,Copper Cable 400mm,3672,Winter,Medium
+16344018,Bihar,Transmission,12,2025,0.74,21,Galvanized Steel Wire,4527,Winter,Medium
+24915707,Bihar,Distribution,5,2025,0.68,27,Insulator Disc,1470,Summer,High
+17006715,Bihar,Substation,1,2024,0.56,24,ACSR Conductor,4081,Winter,Medium
+15152962,Karnataka,Substation,2,2025,0.41,22,Power Transformer 220kV,4,Winter,Medium
+5433230,West Bengal,Transmission,8,2025,0.68,15,Earthing Rod,298,Monsoon,Medium
+23352575,Madhya Pradesh,Substation,7,2025,0.75,23,Galvanized Steel Wire,4670,Monsoon,High
+12924045,Bihar,Transmission,8,2024,0.67,22,Copper Cable 400mm,2132,Monsoon,Medium
+10282131,West Bengal,Transmission,9,2025,0.44,19,ACSR Conductor,2046,Monsoon,Medium
+17724077,Bihar,Distribution,4,2024,0.3,22,High Voltage Fuse,7,Summer,Medium
+20502949,Gujarat,Distribution,6,2025,0.87,20,Galvanized Steel Wire,4121,Monsoon,High
+18452325,Maharashtra,Distribution,11,2025,0.66,14,Galvanized Steel Wire,4834,Monsoon,Medium
+6465361,Madhya Pradesh,Distribution,1,2024,0.65,29,ACSR Conductor,1286,Winter,Medium
+13841328,Rajasthan,Transmission,4,2025,0.41,14,Insulator Disc,609,Summer,Medium
+9491422,Uttar Pradesh,Substation,7,2025,0.74,28,Relay Panel,6,Monsoon,Medium
+20281359,West Bengal,Substation,3,2024,0.66,11,High Voltage Fuse,9,Summer,High
+21433965,Tamil Nadu,Substation,1,2025,0.79,11,Copper Cable 400mm,5680,Winter,High
+24366288,Karnataka,Substation,5,2024,0.44,29,High Voltage Fuse,10,Summer,High
+16677310,West Bengal,Substation,5,2025,0.8,26,ACSR Conductor,3902,Summer,Medium
+23179803,Karnataka,Substation,8,2024,0.74,26,High Voltage Fuse,11,Monsoon,High
+8752392,Rajasthan,Transmission,4,2024,0.79,29,Relay Panel,6,Summer,Medium
+6984734,Delhi,Transmission,4,2024,0.63,25,Relay Panel,4,Summer,Medium
+24460500,West Bengal,Transmission,10,2024,0.36,22,ACSR Conductor,6090,Monsoon,High
+8883285,Karnataka,Distribution,3,2025,0.84,22,Relay Panel,3,Summer,Medium
+9420935,Delhi,Distribution,12,2025,0.37,25,High Voltage Fuse,6,Winter,Medium
+13482524,West Bengal,Transmission,5,2025,0.81,15,Copper Cable 400mm,3249,Summer,Medium
+8960747,Madhya Pradesh,Transmission,3,2025,0.34,20,ACSR Conductor,2025,Summer,Medium
+7887340,Madhya Pradesh,Transmission,11,2025,0.71,19,Power Transformer 220kV,3,Monsoon,Medium
+21521913,Madhya Pradesh,Transmission,3,2024,0.55,13,Steel Tower,64,Summer,High
+8720695,Uttar Pradesh,Distribution,5,2025,0.69,19,Steel Tower,34,Summer,Medium
+7270709,Gujarat,Transmission,1,2024,0.84,13,Galvanized Steel Wire,1904,Winter,Medium
+14047844,Rajasthan,Transmission,5,2025,0.38,21,High Voltage Fuse,6,Summer,Medium
+9760528,Rajasthan,Substation,2,2024,0.34,14,High Voltage Fuse,4,Winter,Medium
+12133761,Maharashtra,Distribution,3,2025,0.58,16,Steel Tower,36,Summer,Medium
+18582435,Bihar,Transmission,7,2024,0.42,24,Galvanized Steel Wire,3679,Monsoon,Medium
+13556569,West Bengal,Transmission,1,2025,0.45,15,Earthing Rod,610,Winter,Medium
+24683694,Rajasthan,Distribution,2,2024,0.32,30,Copper Cable 400mm,6960,Winter,High
+18783836,Gujarat,Substation,8,2024,0.43,16,Insulator Disc,995,Monsoon,Medium
+9051135,West Bengal,Transmission,7,2024,0.83,26,Insulator Disc,425,Monsoon,Medium
+23644753,Karnataka,Transmission,5,2025,0.43,17,Circuit Breaker,14,Summer,High
+7129693,Gujarat,Transmission,7,2024,0.53,21,Steel Tower,14,Monsoon,Medium
+16218736,Gujarat,Substation,4,2025,0.58,30,Power Transformer 220kV,4,Summer,Medium
+5327634,Rajasthan,Substation,2,2024,0.42,11,Circuit Breaker,3,Winter,Medium
+10043889,Karnataka,Transmission,8,2024,0.53,28,Copper Cable 400mm,1767,Monsoon,Medium
+22084916,Maharashtra,Substation,11,2025,0.43,21,Earthing Rod,993,Monsoon,High
+5813754,Delhi,Transmission,12,2024,0.8,26,Galvanized Steel Wire,1697,Winter,Medium
+7591291,Uttar Pradesh,Distribution,4,2025,0.83,11,Circuit Breaker,2,Summer,Medium
+10158257,Gujarat,Transmission,10,2024,0.54,24,Relay Panel,4,Monsoon,Medium
+5368358,Tamil Nadu,Substation,8,2025,0.87,30,Earthing Rod,241,Monsoon,Medium
+11184109,Delhi,Distribution,11,2024,0.86,30,Power Transformer 220kV,6,Monsoon,Medium
+24262215,Delhi,Transmission,6,2024,0.81,18,Insulator Disc,1382,Monsoon,High
+13670891,Uttar Pradesh,Substation,8,2024,0.61,30,Power Transformer 220kV,7,Monsoon,Medium
+12619780,Maharashtra,Transmission,9,2024,0.71,11,ACSR Conductor,1993,Monsoon,Medium
+8220906,Uttar Pradesh,Distribution,12,2024,0.4,23,Galvanized Steel Wire,2400,Winter,Medium
+12661329,Karnataka,Transmission,3,2024,0.49,22,Relay Panel,5,Summer,Medium
+18439883,Uttar Pradesh,Distribution,10,2025,0.82,10,Circuit Breaker,8,Monsoon,Medium
+14884077,Tamil Nadu,Substation,11,2025,0.55,17,Insulator Disc,684,Monsoon,Medium
+18628772,Rajasthan,Distribution,6,2024,0.9,23,ACSR Conductor,3763,Monsoon,Medium
+7199126,Tamil Nadu,Distribution,9,2025,0.82,16,Galvanized Steel Wire,1936,Monsoon,Medium
+21454836,Delhi,Transmission,3,2025,0.78,22,Relay Panel,11,Summer,High
+9637591,Delhi,Distribution,6,2025,0.51,14,Insulator Disc,501,Monsoon,Medium
+19646251,Maharashtra,Distribution,4,2024,0.86,21,Galvanized Steel Wire,5618,Summer,Medium
+7255617,West Bengal,Substation,4,2025,0.89,22,Copper Cable 400mm,1676,Summer,Medium
+24390114,Delhi,Distribution,7,2025,0.67,23,ACSR Conductor,4707,Monsoon,High
+6725812,Maharashtra,Substation,4,2024,0.87,19,Copper Cable 400mm,1822,Summer,Medium
+14135327,Karnataka,Distribution,4,2025,0.31,22,Earthing Rod,678,Summer,Medium
+18468785,Bihar,Distribution,1,2025,0.52,14,Power Transformer 220kV,14,Winter,Medium
+15304200,Uttar Pradesh,Transmission,3,2024,0.37,29,Power Transformer 220kV,6,Summer,Medium
+6181910,Tamil Nadu,Distribution,10,2025,0.47,29,Relay Panel,3,Monsoon,Medium
+12930251,Uttar Pradesh,Distribution,10,2025,0.52,14,Relay Panel,5,Monsoon,Medium
+23157252,Karnataka,Distribution,5,2024,0.88,16,Circuit Breaker,18,Summer,High
+11843458,Karnataka,Distribution,2,2024,0.52,18,Galvanized Steel Wire,2830,Winter,Medium
+8374946,Delhi,Distribution,11,2024,0.58,26,Relay Panel,2,Monsoon,Medium
+7358632,West Bengal,Transmission,5,2025,0.77,12,Steel Tower,14,Summer,Medium
+8209677,Gujarat,Transmission,10,2024,0.5,30,Earthing Rod,418,Monsoon,Medium
+12104294,Bihar,Distribution,10,2025,0.48,10,Insulator Disc,568,Monsoon,Medium
+17692258,Tamil Nadu,Distribution,4,2024,0.56,22,Power Transformer 220kV,5,Summer,Medium
+6375194,Maharashtra,Substation,9,2024,0.63,28,ACSR Conductor,956,Monsoon,Medium
+8467851,Gujarat,Distribution,4,2024,0.71,28,Copper Cable 400mm,1270,Summer,Medium
+18643694,West Bengal,Distribution,9,2025,0.53,23,Copper Cable 400mm,5555,Monsoon,Medium
+22426246,Tamil Nadu,Substation,9,2025,0.88,20,Steel Tower,67,Monsoon,High
+11167912,Delhi,Distribution,12,2024,0.51,21,Power Transformer 220kV,4,Winter,Medium
+23103924,West Bengal,Transmission,3,2025,0.58,10,ACSR Conductor,4690,Summer,High
+20199769,Madhya Pradesh,Substation,8,2025,0.57,27,Steel Tower,40,Monsoon,High
+10041744,West Bengal,Distribution,11,2024,0.52,11,Copper Cable 400mm,2761,Monsoon,Medium
+20566868,Bihar,Distribution,6,2025,0.35,24,Relay Panel,15,Monsoon,High
+15993264,Rajasthan,Distribution,4,2024,0.79,21,Circuit Breaker,9,Summer,Medium
+15697726,Madhya Pradesh,Distribution,7,2024,0.57,30,Earthing Rod,737,Monsoon,Medium
+21298423,Madhya Pradesh,Transmission,8,2025,0.64,10,ACSR Conductor,4834,Monsoon,High
+16303298,Madhya Pradesh,Distribution,6,2025,0.46,10,Power Transformer 220kV,10,Monsoon,Medium
+12643444,West Bengal,Transmission,4,2024,0.53,27,Insulator Disc,657,Summer,Medium
+17355697,Madhya Pradesh,Transmission,4,2025,0.7,11,Relay Panel,6,Summer,Medium
+11521392,West Bengal,Distribution,6,2025,0.7,28,High Voltage Fuse,6,Monsoon,Medium
+7032078,Uttar Pradesh,Transmission,9,2025,0.57,11,Galvanized Steel Wire,1976,Monsoon,Medium
+8803576,Bihar,Transmission,4,2025,0.36,15,Insulator Disc,422,Summer,Medium
+22556842,Bihar,Transmission,1,2024,0.85,30,ACSR Conductor,3721,Winter,High
+18082908,Tamil Nadu,Distribution,12,2025,0.56,14,Relay Panel,5,Winter,Medium
+19768972,Rajasthan,Transmission,6,2024,0.57,15,Galvanized Steel Wire,3637,Monsoon,Medium
+20439268,Madhya Pradesh,Distribution,11,2025,0.33,27,High Voltage Fuse,10,Monsoon,High
+24371047,Bihar,Distribution,7,2025,0.65,30,Galvanized Steel Wire,4971,Monsoon,High
+10397813,Bihar,Distribution,1,2025,0.58,15,Circuit Breaker,7,Winter,Medium
+13968588,Rajasthan,Transmission,1,2025,0.36,26,Circuit Breaker,7,Winter,Medium
+17640311,West Bengal,Substation,11,2025,0.42,20,Relay Panel,6,Monsoon,Medium
+17345543,Rajasthan,Transmission,5,2024,0.31,13,Relay Panel,10,Summer,Medium
+17995642,Madhya Pradesh,Transmission,10,2025,0.53,11,Relay Panel,7,Monsoon,Medium
+8097853,Bihar,Transmission,2,2025,0.71,26,Copper Cable 400mm,1279,Winter,Medium
+24942064,Bihar,Transmission,2,2025,0.69,19,Circuit Breaker,18,Winter,High
+11082597,Uttar Pradesh,Transmission,3,2025,0.45,27,Galvanized Steel Wire,2338,Summer,Medium
+22841630,West Bengal,Substation,5,2024,0.32,19,High Voltage Fuse,14,Summer,High
+22908507,Rajasthan,Distribution,5,2024,0.58,13,Steel Tower,114,Summer,High
+10205606,Maharashtra,Substation,5,2024,0.88,22,Steel Tower,20,Summer,Medium
+16077563,Uttar Pradesh,Distribution,5,2025,0.7,11,High Voltage Fuse,12,Summer,Medium
+23872627,West Bengal,Substation,2,2024,0.75,30,Galvanized Steel Wire,6254,Winter,High
+9632472,Madhya Pradesh,Substation,1,2025,0.51,20,Steel Tower,28,Winter,Medium
+14213858,Rajasthan,Distribution,4,2025,0.78,19,Steel Tower,42,Summer,Medium
+24041612,Uttar Pradesh,Transmission,10,2025,0.45,12,Relay Panel,18,Monsoon,High
+8754277,West Bengal,Distribution,7,2025,0.86,26,Copper Cable 400mm,2591,Monsoon,Medium
+18588584,Tamil Nadu,Distribution,6,2024,0.39,25,Steel Tower,37,Monsoon,Medium
+7947884,Madhya Pradesh,Transmission,9,2025,0.64,21,Copper Cable 400mm,1382,Monsoon,Medium
+15460748,Bihar,Substation,12,2024,0.46,22,High Voltage Fuse,5,Winter,Medium
+14055950,West Bengal,Transmission,1,2025,0.45,28,Relay Panel,4,Winter,Medium
+20099077,Delhi,Distribution,12,2024,0.89,29,Galvanized Steel Wire,5406,Winter,High
+14433215,Madhya Pradesh,Substation,6,2025,0.55,19,Earthing Rod,663,Monsoon,Medium
+24807679,Bihar,Distribution,1,2024,0.9,24,Copper Cable 400mm,6102,Winter,High
+19864335,Bihar,Distribution,11,2025,0.67,27,Copper Cable 400mm,5144,Monsoon,Medium
+8348817,Uttar Pradesh,Transmission,8,2025,0.43,18,Earthing Rod,367,Monsoon,Medium
+12741133,Uttar Pradesh,Distribution,6,2024,0.58,14,Steel Tower,25,Monsoon,Medium
+13828407,Maharashtra,Substation,5,2024,0.58,12,Relay Panel,10,Summer,Medium
+24149288,Uttar Pradesh,Substation,2,2025,0.85,12,Steel Tower,72,Winter,High
+11991884,Bihar,Distribution,11,2025,0.58,15,Insulator Disc,587,Monsoon,Medium
+10900571,Uttar Pradesh,Distribution,7,2025,0.36,12,Circuit Breaker,8,Monsoon,Medium
+20121444,Rajasthan,Distribution,8,2025,0.36,25,Copper Cable 400mm,3561,Monsoon,High
+14078113,Gujarat,Distribution,9,2024,0.87,14,Earthing Rod,760,Monsoon,Medium
+22140771,Bihar,Distribution,8,2024,0.46,23,Steel Tower,66,Monsoon,High
+9529453,Madhya Pradesh,Distribution,11,2024,0.75,30,Relay Panel,3,Monsoon,Medium
+19733503,Rajasthan,Transmission,12,2025,0.34,14,Steel Tower,78,Winter,Medium
+5662470,Gujarat,Substation,4,2025,0.57,28,Circuit Breaker,3,Summer,Medium
+9921225,Uttar Pradesh,Substation,1,2024,0.71,27,ACSR Conductor,2896,Winter,Medium
+23341869,Rajasthan,Substation,2,2025,0.86,14,Galvanized Steel Wire,5765,Winter,High
+9066747,Uttar Pradesh,Transmission,8,2025,0.56,25,High Voltage Fuse,4,Monsoon,Medium
+23702179,Tamil Nadu,Transmission,1,2024,0.36,27,ACSR Conductor,5475,Winter,High
+12397359,Gujarat,Distribution,10,2024,0.48,11,Insulator Disc,582,Monsoon,Medium
+12386232,Gujarat,Substation,6,2024,0.53,29,Steel Tower,24,Monsoon,Medium
+8286869,West Bengal,Substation,10,2024,0.79,13,Power Transformer 220kV,5,Monsoon,Medium
+13616489,Karnataka,Distribution,5,2025,0.59,15,Steel Tower,40,Summer,Medium
+21675706,Karnataka,Substation,12,2025,0.83,14,Insulator Disc,1300,Winter,High
+19253878,Uttar Pradesh,Distribution,6,2024,0.38,13,Insulator Disc,1135,Monsoon,Medium

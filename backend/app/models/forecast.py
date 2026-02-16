@@ -12,7 +12,7 @@ class RiskLevel(str, enum.Enum):
 class DemandForecast(Base):
     __tablename__ = "demand_forecast"
 
-    forecast_id = Column(Integer, primary_key=True, index=True)
+    forecast_id = Column(Integer, primary_key=True, autoincrement=True)
     item_id = Column(Integer, ForeignKey("inventory_items.item_id"))
     project_id = Column(Integer, ForeignKey("power_projects.project_id"))
     forecast_month = Column(Date)

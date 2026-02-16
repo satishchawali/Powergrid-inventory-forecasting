@@ -37,6 +37,43 @@ function DashboardPage() {
         fetchDashboardData();
     }, []);
 
+    const InventoryChart = ({ materials }) => {
+        if (!materials || materials.length === 0) return null;
+
+        const quantities = materials.map(m => parseInt(m.quantity.replace(/,/g, '')));
+        const rawMax = Math.max(...quantities);
+        const maxValue = rawMax * 1.2;
+
+        return (
+            <div className="dashboard-chart-container">
+                <div className="chart-y-axis">
+                    {[100, 75, 50, 25, 0].map(p => {
+                        // Using square root scaling: height percentage p corresponds to (p/100)^2 * maxValue
+                        const val = Math.round(Math.pow(p / 100, 2) * maxValue);
+                        return <span key={p}>{val.toLocaleString()}</span>;
+                    })}
+                </div>
+                <div className="dashboard-bars">
+                    {materials.slice(0, 6).map((m, i) => {
+                        const qty = parseInt(m.quantity.replace(/,/g, ''));
+                        // Square root scaling: height = sqrt(qty / maxValue) * 100
+                        const height = Math.sqrt(qty / maxValue) * 100;
+                        const isLow = m.status.toLowerCase().includes('low');
+                        return (
+                            <div key={i} className="dashboard-bar-group">
+                                <div className={`dashboard-bar ${isLow ? 'low' : ''}`} style={{ height: `${height}%` }}>
+                                    <title>{`${m.name}: ${m.quantity}`}</title>
+                                    <div className="bar-tooltip">{m.name}: {m.quantity}</div>
+                                </div>
+                                <span className="bar-label">{m.name.split(' ')[0]}</span>
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>
+        );
+    };
+
     if (loading) {
         return (
             <div className="dashboard-container loading-container">
@@ -89,20 +126,24 @@ function DashboardPage() {
                         <button onClick={() => navigate("/materials")}>View All</button>
                     </div>
 
-                    {materials.map((m, index) => (
-                        <div className="list-row" key={index}>
-                            <div>
-                                <strong>{m.name}</strong>
-                                <p>{m.category}</p>
+                    <InventoryChart materials={materials} />
+
+                    <div className="materials-list">
+                        {materials.map((m, index) => (
+                            <div className="list-row" key={index}>
+                                <div>
+                                    <strong>{m.name}</strong>
+                                    <p>{m.category}</p>
+                                </div>
+                                <div className="right">
+                                    <span className={`badge ${m.status.replace(" ", "").toLowerCase()}`}>
+                                        {m.status}
+                                    </span>
+                                    <p>{m.quantity}</p>
+                                </div>
                             </div>
-                            <div className="right">
-                                <span className={`badge ${m.status.replace(" ", "").toLowerCase()}`}>
-                                    {m.status}
-                                </span>
-                                <p>{m.quantity}</p>
-                            </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
 
                 <div className="card">

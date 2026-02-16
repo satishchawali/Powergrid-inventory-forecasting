@@ -107,8 +107,9 @@ export const changePassword = async (data) => {
     return await response.json();
 };
 
-export const getForecast = async (period = 7) => {
-    const response = await apiFetch(`/forecast?period=${period}`);
+export const getForecast = async (params = {}) => {
+    const query = new URLSearchParams(params).toString();
+    const response = await apiFetch(`/forecast?${query}`);
 
     if (!response.ok) {
         throw new Error(`Forecast error (${response.status})`);
@@ -117,8 +118,9 @@ export const getForecast = async (period = 7) => {
     return await response.json();
 };
 
-export const getInventory = async () => {
-    const response = await apiFetch("/inventory/");
+export const getInventory = async (params = {}) => {
+    const query = new URLSearchParams(params).toString();
+    const response = await apiFetch(`/inventory/?${query}`);
 
     if (!response.ok) {
         throw new Error(`Inventory error (${response.status})`);
