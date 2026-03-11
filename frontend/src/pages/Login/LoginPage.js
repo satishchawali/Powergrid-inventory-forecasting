@@ -1,9 +1,11 @@
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 import logo from "../../assets/logo.png"
 import "./LoginPage.css";
 import { loginUser } from "../../services/api";
 import { useEffect } from "react";
+import { useAuth } from "../../context/AuthContext";
 
 export default function LoginPage() {
     useEffect(() => {
@@ -12,26 +14,29 @@ export default function LoginPage() {
 
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
     const navigate = useNavigate();
+    const { login } = useAuth();
 
     const usernameRef = useRef(null);
     const passwordRef = useRef(null);
 
-    const login = async () => {
+    const handleLogin = async () => {
         if (!username || !password) {
-            alert("Please fill all fields");
+            toast.error("Please fill all fields");
             return;
         }
 
+        setIsLoading(true);
         try {
             const res = await loginUser(username, password);
-            localStorage.setItem("token", res.access_token);
-            localStorage.setItem("username", res.username);
-            localStorage.setItem("email", res.email);
-            localStorage.setItem("full_name", res.full_name);
+            login(res);
+            toast.success("Welcome back!");
             navigate("/dashboard");
-        } catch {
-            alert("Login failed ❌");
+        } catch (error) {
+            toast.error("Login failed. Please check your credentials.");
+        } finally {
+            setIsLoading(false);
         }
     };
 
@@ -65,13 +70,17 @@ export default function LoginPage() {
                     onChange={(e) => setPassword(e.target.value)}
                     onKeyDown={(e) => {
                         if (e.key === "Enter") {
-                            login(); // submit on Enter
+                            handleLogin(); // submit on Enter
                         }
                     }}
                 />
 
-                <button className="login-btn" onClick={login}>
-                    Login
+                <button
+                    className="login-btn"
+                    onClick={handleLogin}
+                    disabled={isLoading}
+                >
+                    {isLoading ? "Logging in..." : "Login"}
                 </button>
 
                 <p className="register-text">

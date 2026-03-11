@@ -75,10 +75,15 @@ const ForecastPage = () => {
         const chartWidth = width - padding * 2;
         const chartHeight = height - padding * 2;
 
-        const maxDemand = Math.max(...combined.map(d => d.demand)) * 1.15 || 5000;
-        const xStep = chartWidth / (combined.length - 1 || 1);
+        const validDemand = combined.filter(d => d && typeof d.demand === 'number');
+        const calculatedMax = validDemand.length > 0 ? Math.max(...validDemand.map(d => d.demand)) : 0;
+        const maxDemand = (calculatedMax || 5000) * 1.25;
+        const xStep = chartWidth / (combined.length > 1 ? combined.length - 1 : 1);
 
-        const getY = (val) => height - padding - (val / maxDemand) * chartHeight;
+        const getY = (val) => {
+            if (maxDemand === 0) return height - padding;
+            return height - padding - (val / maxDemand) * chartHeight;
+        };
         const getX = (i) => padding + i * xStep;
 
         const hPoints = data.historical.map((d, i) => ({ x: getX(i), y: getY(d.demand), ...d }));
@@ -195,30 +200,36 @@ const ForecastPage = () => {
         const catEntries = Object.entries(categories);
         const actualTotal = catEntries.reduce((a, b) => a + b[1].total, 0);
 
-        // Square-root scaling for visual balance
-        const sqrtValues = catEntries.map(([cat, obj]) => ({
+        // Linear scaling for mathematical accuracy as requested by "not correct" feedback
+        const pieValues = catEntries.map(([cat, obj]) => ({
             cat,
-            weight: Math.sqrt(obj.total),
+            weight: obj.total / (actualTotal || 1),
             val: obj.total,
             materials: obj.materials
         }));
-        const totalSqrtWeight = sqrtValues.reduce((a, b) => a + b.weight, 0);
+        const totalWeight = pieValues.reduce((a, b) => a + b.weight, 0);
 
         let startAngle = 0;
 
         return (
             <div className="pie-chart-container">
                 <svg viewBox="0 0 100 100" className="pie-chart-svg">
-                    {sqrtValues.map((obj, i) => {
+                    {pieValues.map((obj, i) => {
                         const color = getMaterialColor(obj.cat, i);
-                        const visualPercentage = obj.weight / totalSqrtWeight;
+                        const visualPercentage = obj.weight;
+                        if (visualPercentage <= 0) return null;
+                        
                         const endAngle = startAngle + visualPercentage * 360;
-                        const x1 = 50 + 40 * Math.cos(Math.PI * startAngle / 180);
-                        const y1 = 50 + 40 * Math.sin(Math.PI * startAngle / 180);
-                        const x2 = 50 + 40 * Math.cos(Math.PI * endAngle / 180);
-                        const y2 = 50 + 40 * Math.sin(Math.PI * endAngle / 180);
+                        const x1 = 50 + 40 * Math.cos(Math.PI * (startAngle - 90) / 180);
+                        const y1 = 50 + 40 * Math.sin(Math.PI * (startAngle - 90) / 180);
+                        const x2 = 50 + 40 * Math.cos(Math.PI * (endAngle - 90) / 180);
+                        const y2 = 50 + 40 * Math.sin(Math.PI * (endAngle - 90) / 180);
+                        
                         const largeArcFlag = visualPercentage > 0.5 ? 1 : 0;
-                        const pathData = `M 50 50 L ${x1} ${y1} A 40 40 0 ${largeArcFlag} 1 ${x2} ${y2} Z`;
+                        const pathData = visualPercentage === 1 
+                            ? `M 50 10 A 40 40 0 1 1 49.99 10 Z` 
+                            : `M 50 50 L ${x1} ${y1} A 40 40 0 ${largeArcFlag} 1 ${x2} ${y2} Z`;
+                        
                         startAngle = endAngle;
                         return (
                             <path key={obj.cat} d={pathData} fill={color} className="pie-slice">

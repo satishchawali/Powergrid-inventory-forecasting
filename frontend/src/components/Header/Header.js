@@ -1,9 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import toast from 'react-hot-toast';
+import { useAuth } from '../../context/AuthContext';
 import "./Header.css";
 
 const Header = () => {
     const navigate = useNavigate();
+    const { logout } = useAuth();
     const currentDate = new Date().toLocaleString('en-IN', {
         day: '2-digit',
         month: 'short',
@@ -15,8 +18,8 @@ const Header = () => {
 
 
     const handleLogout = () => {
-        localStorage.clear();
-        navigate('/login');
+        logout();
+        toast.success("Logged out successfully");
     };
 
     return (
@@ -32,7 +35,6 @@ const Header = () => {
                 </div>
 
                 <button className="logout-btn" onClick={handleLogout}>
-                    {/* <span className="logout-icon">↪️</span> */}
                     Logout
                 </button>
             </div>

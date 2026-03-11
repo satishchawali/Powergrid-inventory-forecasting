@@ -15,7 +15,8 @@ CREATE TABLE power_projects (
     region VARCHAR(50),
     start_date DATE,
     expected_end_date DATE,
-    project_status ENUM('PLANNED','ONGOING','COMPLETED','DELAYED')
+    project_status ENUM('PLANNED','ONGOING','COMPLETED','DELAYED'),
+    project_budget FLOAT DEFAULT 10000000.0
 );
 CREATE TABLE inventory_items (
     item_id INT PRIMARY KEY AUTO_INCREMENT,

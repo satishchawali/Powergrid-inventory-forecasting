@@ -1,11 +1,13 @@
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 import logo from "../../assets/logo.png";
 import "./RegisterPage.css";
 import { registerUser } from "../../services/api";
 
 export default function RegisterPage() {
     const navigate = useNavigate();
+    const [isLoading, setIsLoading] = useState(false);
     const [form, setForm] = useState({
         username: "",
         email: "",
@@ -18,18 +20,21 @@ export default function RegisterPage() {
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
 
-    const register = async () => {
+    const handleRegister = async () => {
         if (!form.username || !form.email || !form.password || !form.full_name) {
-            alert("Please fill all fields");
+            toast.error("Please fill all fields");
             return;
         }
 
+        setIsLoading(true);
         try {
             await registerUser(form);
-            alert("Registered successfully 🎉");
+            toast.success("Account created! Please login.");
             navigate("/login");
         } catch (error) {
-            alert(error.message);
+            toast.error(error.message || "Registration failed");
+        } finally {
+            setIsLoading(false);
         }
     };
 
@@ -99,13 +104,17 @@ export default function RegisterPage() {
                     }
                     onKeyDown={(e) => {
                         if (e.key === "Enter") {
-                            register();
+                            handleRegister();
                         }
                     }}
                 />
 
-                <button className="register-btn" onClick={register}>
-                    Register
+                <button
+                    className="register-btn"
+                    onClick={handleRegister}
+                    disabled={isLoading}
+                >
+                    {isLoading ? "Creating account..." : "Register"}
                 </button>
 
                 <p className="register-text">
