@@ -12,17 +12,24 @@ export default function RegisterPage() {
         username: "",
         email: "",
         full_name: "",
-        password: ""
+        password: "",
+        confirmPassword: ""
     });
 
     const usernameRef = useRef(null);
     const fullNameRef = useRef(null);
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
+    const confirmPasswordRef = useRef(null);
 
     const handleRegister = async () => {
-        if (!form.username || !form.email || !form.password || !form.full_name) {
+        if (!form.username || !form.email || !form.password || !form.confirmPassword || !form.full_name) {
             toast.error("Please fill all fields");
+            return;
+        }
+
+        if (form.password !== form.confirmPassword) {
+            toast.error("Passwords do not match");
             return;
         }
 
@@ -101,6 +108,22 @@ export default function RegisterPage() {
                     autoComplete="new-password"
                     onChange={(e) =>
                         setForm({ ...form, password: e.target.value })
+                    }
+                    onKeyDown={(e) => {
+                        if (e.key === "Enter") {
+                            confirmPasswordRef.current.focus();
+                        }
+                    }}
+                />
+
+                <input
+                    ref={confirmPasswordRef}
+                    type="password"
+                    placeholder="Confirm Password"
+                    value={form.confirmPassword}
+                    autoComplete="new-password"
+                    onChange={(e) =>
+                        setForm({ ...form, confirmPassword: e.target.value })
                     }
                     onKeyDown={(e) => {
                         if (e.key === "Enter") {

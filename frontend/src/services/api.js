@@ -164,3 +164,11 @@ export const getReportStatus = async (reportId) => {
     if (!response.ok) throw new Error("Failed to check report status");
     return await response.json();
 };
+
+export const deleteReport = async (reportId) => {
+    const response = await apiFetch(`/reports/${reportId}`, {
+        method: "DELETE",
+    });
+    if (!response.ok) throw new Error("Failed to delete report");
+    return await response.json();
+};

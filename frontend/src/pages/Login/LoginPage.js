@@ -70,7 +70,7 @@ export default function LoginPage() {
                     onChange={(e) => setPassword(e.target.value)}
                     onKeyDown={(e) => {
                         if (e.key === "Enter") {
-                            handleLogin(); // submit on Enter
+                            handleLogin();
                         }
                     }}
                 />

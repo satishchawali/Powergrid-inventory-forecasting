@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Response
 from typing import List, Optional
 from datetime import datetime
 from sqlalchemy.orm import Session
@@ -58,3 +58,17 @@ def get_report_status(report_id: int, db: Session = Depends(get_db)):
         db.refresh(report)
         
     return report
+
+@router.get("/{report_id}/download")
+def download_report(report_id: int, db: Session = Depends(get_db)):
+    report = db.query(Report).filter(Report.id == report_id).first()
+    if not report:
+        raise HTTPException(status_code=404, detail="Report not found")
+    
+    content = f"Mock report content for {report.title}\nType: {report.type}\nStatus: {report.status}\n"
+    
+    headers = {
+        'Content-Disposition': f'attachment; filename="report_{report_id}.{report.format.lower()}"'
+    }
+    
+    return Response(content=content, media_type="text/plain", headers=headers)

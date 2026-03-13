@@ -269,11 +269,13 @@ const ForecastPage = () => {
                     </div>
                     <span className="label">Monthly Historical Avg</span>
                 </div>
-                <div className="bar forecasted" style={{ height: `${fHeight}px` }}>
-                    <div className="bar-pattern"></div>
-                    <span className="value">{Math.round(fAvg).toLocaleString()}</span>
+                <div className="bar-group">
+                    <div className="bar forecasted" style={{ height: `${fHeight}px` }}>
+                        <div className="bar-pattern"></div>
+                        <span className="value">{Math.round(fAvg).toLocaleString()}</span>
+                    </div>
+                    <span className="label">Monthly Forecasted Avg</span>
                 </div>
-                <span className="label">Monthly Forecasted Avg</span>
             </div>
         );
     };

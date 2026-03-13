@@ -42,7 +42,9 @@ export default function ReportsPage() {
             const pending = prev.filter(r => r.status === "Generating");
             if (pending.length === 0) return prev;
 
-            getReports().then(setReports).catch(console.error);
+            Promise.all(pending.map(p => getReportStatus(p.id)))
+                .then(() => getReports().then(setReports))
+                .catch(console.error);
             return prev;
         });
     };
@@ -57,6 +59,32 @@ export default function ReportsPage() {
             alert("Failed to start generation");
         } finally {
             setGenerating(false);
+        }
+    };
+
+    const handleDownload = async (reportId, format) => {
+        try {
+            const token = localStorage.getItem("access_token");
+            const headers = token ? { Authorization: `Bearer ${token}` } : {};
+
+            const response = await fetch(`http://127.0.0.1:8000/reports/${reportId}/download`, {
+                headers
+            });
+
+            if (!response.ok) throw new Error("Download failed");
+
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = `report_${reportId}.${format.toLowerCase()}`;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
+        } catch (err) {
+            console.error(err);
+            alert("Failed to download report");
         }
     };
 
@@ -105,7 +133,12 @@ export default function ReportsPage() {
                                     {report.status}
                                 </span>
                                 {report.status === "Completed" && (
-                                    <button className="report-download-link">Download {report.format}</button>
+                                    <button
+                                        className="report-download-link"
+                                        onClick={() => handleDownload(report.id, report.format)}
+                                    >
+                                        Download {report.format}
+                                    </button>
                                 )}
                             </div>
                         </div>
