@@ -77,9 +77,12 @@ CREATE TABLE demand_forecast (
 
 CREATE TABLE reports (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    title VARCHAR(200),
-    status VARCHAR(50),
-    created_at DATE
+    title VARCHAR(200) NOT NULL,
+    type VARCHAR(100),
+    format VARCHAR(20) DEFAULT 'PDF',
+    status VARCHAR(50) DEFAULT 'Completed',
+    size VARCHAR(50),
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 ALTER TABLE users
