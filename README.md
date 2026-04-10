@@ -50,9 +50,18 @@ The system is divided into three main components:
 - **Data processing:** Pandas, Numpy, Scikit-learn (for serving the model insights)
 
 ### 3. Machine Learning (`/ml`)
-- **Tools:** Pandas, NumPy, Scikit-learn, XGBoost, Joblib
-- **Pipeline:** Automated data generation, preprocessing, model training, and evaluation.
-- **Models:** Random Forest, Gradient Boosting
+- **Tools:** Pandas, NumPy, Scikit-learn, XGBoost, LightGBM, Joblib
+- **Pipeline:**
+  - Data preprocessing & cleaning
+  - Feature engineering (cyclic encoding, interaction features)
+  - Multi-model training
+  - Hyperparameter tuning (GridSearchCV)
+  - Model evaluation & comparison
+  - Best model selection and persistence
+- **Models Used:**
+  - XGBoost (Best Performing Model)
+  - Random Forest Regressor
+  - LightGBM Regressor
 
 ---
 
